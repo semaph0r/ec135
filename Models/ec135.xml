@@ -7,11 +7,11 @@
 
 	<path>ec135.ac</path>
 	<offsets>
-		<z-m>-2</z-m>
+		<z-m>-1.8</z-m>
 		<y-m>0.0</y-m>
-		<x-m>-0.5</x-m>
+		<x-m>3</x-m>
 
-		<pitch-deg>3.50</pitch-deg>
+		<pitch-deg>0</pitch-deg>
 		
 	</offsets>
 	
