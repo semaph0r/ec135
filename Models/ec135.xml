@@ -1354,7 +1354,7 @@
 
 	<model>
 		<name>AI</name>
-		<path>Aircraft/ec135/instrumentation/ai_new/ai.xml</path>
+		<path>Aircraft/ec135/instrumentation/GH14-391/ai.xml</path>
 		<offsets>
 			<x-m>-3.517</x-m>
 			<y-m>0.330</y-m>
@@ -1417,7 +1417,7 @@
 
 	<model>
 		<name>right HSI</name>
-		<path>Aircraft/ec135/instrumentation/hsi/hsi-bk-hi.xml</path>
+		<path>Aircraft/ec135/instrumentation/kfc200/ki252a.xml</path>
 
 		<offsets>
 
@@ -1536,7 +1536,7 @@
 
 	<model>
 		<name>left AI</name>
-		<path>Aircraft/ec135/instrumentation/ai_new/ai.xml</path>
+		<path>Aircraft/ec135/instrumentation/GH14-391/ai.xml</path>
 		<offsets>
 			<x-m>-3.517</x-m>
 			<y-m>-0.316</y-m>
@@ -1595,7 +1595,7 @@
 	</model>
 	<model>
 		<name>left HSI</name>
-		<path>Aircraft/ec135/instrumentation/hsi/hsi-bk-hi.xml</path>
+		<path>Aircraft/ec135/instrumentation/kfc200/ki252a.xml</path>
 		<offsets>
 
 			<x-m>-3.436</x-m>
