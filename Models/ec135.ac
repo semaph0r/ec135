@@ -12,28 +12,28 @@ MATERIAL "DefaultWhite.040" rgb 0.37 0.56 0.61 amb 1 1 1 emis 0 0 0 spec 0.5 0.5
 MATERIAL "DefaultWhite.041" rgb 0.37 0.56 0.61 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 MATERIAL "DefaultWhite.042" rgb 0.37 0.56 0.61 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 MATERIAL "DefaultWhite.043" rgb 0.37 0.56 0.61 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
-MATERIAL "Material.029" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.018" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.029" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
+MATERIAL "Material.018" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
 MATERIAL "Material.017" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.42 0.42 0.42 shi 32 trans 0
-MATERIAL "Material.038" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.038" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
 MATERIAL "Material.016" rgb 0.28 0.28 0.28 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.034" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.036" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.034" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.036" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
 MATERIAL "Material.037" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0 0 0 shi 32 trans 0
 MATERIAL "Material.012" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.021" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0 0 0 shi 32 trans 0
 MATERIAL "Material.019" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.022" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0 0 0 shi 32 trans 0
-MATERIAL "Material.020" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0 0 0 shi 32 trans 0
-MATERIAL "Material.023" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0 0 0 shi 32 trans 0
-MATERIAL "Material.011" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0 0 0 shi 32 trans 0
+MATERIAL "Material.020" rgb 0 0 0 amb 0 0 0 emis 0 0 0 spec 0 0 0 shi 32 trans 0
+MATERIAL "Material.023" rgb 0 0 0 amb 0 0 0 emis 0 0 0 spec 0 0 0 shi 32 trans 0
+MATERIAL "Material.011" rgb 0 0 0 amb 0 0 0 emis 0 0 0 spec 0 0 0 shi 32 trans 0
 MATERIAL "DefaultWhite.010" rgb 0.42 0.42 0.42 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 MATERIAL "ac3dmat1" rgb 0.14 0.14 0.14 amb 0.2 0.2 0.2 emis 0 0 0 spec 0.5 0.5 0.5 shi 10 trans 0
 MATERIAL "DefaultWhite.003" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
-MATERIAL "Material.033" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.010" rgb 0.42 0.42 0.42 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0.5
-MATERIAL "DefaultWhite.004" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
-MATERIAL "Material.014" rgb 0.42 0.42 0.42 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0.5
+MATERIAL "Material.033" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
+MATERIAL "Material.010" rgb 0.42 0.42 0.42 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0.5
+MATERIAL "DefaultWhite.004" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 128 trans 0
+MATERIAL "Material.014" rgb 0.42 0.42 0.42 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0.5
 MATERIAL "Material.048" rgb 1 1 1 amb 0.5 0.5 0.5 emis 1 1 1 spec 1 1 1 shi 32 trans 0
 MATERIAL "DefaultWhite.023" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0
 MATERIAL "DefaultWhite.024" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0
@@ -43,16 +43,16 @@ MATERIAL "DefaultWhite.296" rgb 0.85 0.85 0.85 amb 1 1 1 emis 0 0 0 spec 1 1 1 s
 MATERIAL "DefaultWhite.298" rgb 0.85 0.85 0.85 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0
 MATERIAL "DefaultWhite.300" rgb 0.85 0.85 0.85 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0
 MATERIAL "Material.050" rgb 0.28 0.28 0.28 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "DefaultWhite.011" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0
+MATERIAL "DefaultWhite.011" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
 MATERIAL "DefaultWhite.012" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0
 MATERIAL "Material.051" rgb 1 1 1 amb 0.5 0.5 0.5 emis 1 1 1 spec 1 1 1 shi 32 trans 0
 MATERIAL "DefaultWhite.286" rgb 0.395981 0.356008 0.356008 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
-MATERIAL "Material.032" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.043" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.046" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.009" rgb 0.42 0.42 0.42 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0.5
+MATERIAL "Material.032" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
+MATERIAL "Material.043" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
+MATERIAL "Material.046" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
+MATERIAL "Material.009" rgb 0.42 0.42 0.42 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0.5
 MATERIAL "Material.008" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.14 0.14 0.14 shi 32 trans 0
-MATERIAL "Material.025" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.025" rgb 0 0 0 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.026" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.057" rgb 0.14 0.14 0.14 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.058" rgb 0.027682 0.083045 0.055363 amb 0.5 0.5 0.5 emis 0 0 0 spec 0 0 0 shi 32 trans 0
@@ -63,41 +63,41 @@ MATERIAL "Material.059" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 t
 MATERIAL "Material.060" rgb 0.770235 0.962412 0.592236 amb 0.5 0.5 0.5 emis 1 1 1 spec 1 1 1 shi 32 trans 0
 MATERIAL "DefaultWhite.223" rgb 0.28 0.28 0.28 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0
 MATERIAL "Material.061" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.42 0.42 0.42 shi 32 trans 0
-MATERIAL "Material.042" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.042" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
 MATERIAL "ac3dmat1.001" rgb 0.14 0.14 0.14 amb 0.2 0.2 0.2 emis 0 0 0 spec 0.5 0.5 0.5 shi 10 trans 0
-MATERIAL "Material.040" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.041" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.044" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 128 trans 0
+MATERIAL "Material.040" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
+MATERIAL "Material.041" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
+MATERIAL "Material.044" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
 MATERIAL "Material.045" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.024" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.085" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.083" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.024" rgb 0.8 0.8 0.8 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
+MATERIAL "Material.085" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
+MATERIAL "Material.083" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.035" rgb 0.42 0.42 0.42 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0.5
-MATERIAL "Material.084" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.084" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
 MATERIAL "DefaultWhite.342" rgb 0.14 0.14 0.14 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 MATERIAL "glossy_grey.002" rgb 0.476203 0.510087 0.470761 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 13 trans 0
 MATERIAL "black.005" rgb 0.14 0.14 0.14 amb 0.47079 0.47079 0.47079 emis 0 0 0 spec 1 1 1 shi 12 trans 0
 MATERIAL "Material.082" rgb 0.42 0.42 0.42 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.065" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.065" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.066" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0 0 0 shi 32 trans 0
 MATERIAL "Material.067" rgb 0.28 0.28 0.28 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.42 0.42 0.42 shi 32 trans 0
 MATERIAL "Material.068" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.069" rgb 0.42 0.42 0.42 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "DefaultWhite.348" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
-MATERIAL "skid" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "skid" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "DefaultWhite.013" rgb 0.42 0.42 0.42 amb 1 1 1 emis 0 0 0 spec 0.7 0.7 0.7 shi 64 trans 0
 MATERIAL "Material.072" rgb 0.9 0.9 1 amb 0.5 0.5 0.5 emis 1 1 1 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.073" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0.25
-MATERIAL "Material.013" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.013" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
 MATERIAL "Material.074" rgb 0.0633 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.85 0.85 0.85 shi 32 trans 0
 MATERIAL "Material.075" rgb 0.42 0.42 0.42 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.076" rgb 1 0.5 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.077" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.85 0.85 0.85 shi 32 trans 0
 MATERIAL "Material.078" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.85 0.85 0.85 shi 32 trans 0
 MATERIAL "Material.079" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.85 0.85 0.85 shi 32 trans 0
-MATERIAL "Material.015" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.039" rgb 0.42 0.42 0.42 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0.5
-MATERIAL "Material.027" rgb 0.42 0.42 0.42 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0.5
+MATERIAL "Material.015" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.039" rgb 0.42 0.42 0.42 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0.5
+MATERIAL "Material.027" rgb 0.42 0.42 0.42 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0.5
 MATERIAL "Material.031" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.081" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.030" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
@@ -25133,7 +25133,8 @@ name "Plane.007"
 data 9
 Plane.014
 crease 30.000000
-numvert 30
+numvert 31
+-0.003733 1.702739 -0.815966
 -0.003733 1.702739 -0.815966
 -0.003733 1.702739 -0.815966
 -0.003733 1.702739 -0.815966
