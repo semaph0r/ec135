@@ -1356,11 +1356,11 @@
 		<name>AI</name>
 		<path>Aircraft/ec135/instrumentation/GH14-391/ai.xml</path>
 		<offsets>
-			<x-m>-3.517</x-m>
-			<y-m>0.330</y-m>
-			<z-m>1.642</z-m>
+			<x-m>-3.481</x-m>
+			<y-m>0.316</y-m>
+			<z-m>1.656</z-m>
 
-			<pitch-deg>-23</pitch-deg>
+			<pitch-deg>-24</pitch-deg>
 
 		</offsets>
 	</model>
@@ -1372,11 +1372,11 @@
 		<path>Aircraft/ec135/instrumentation/asi/asi.xml</path>
 		<offsets>
 			<!-- fix me: set back for now -->
-			<x-m>-3.500</x-m>
-			<y-m>0.225</y-m>
-			<z-m>1.711</z-m>
+			<x-m>-3.502</x-m>
+			<y-m>0.216</y-m>
+			<z-m>1.705</z-m>
 
-			<pitch-deg>-23</pitch-deg>
+			<pitch-deg>-24</pitch-deg>
 
 		</offsets>
 	</model>
@@ -1403,11 +1403,11 @@
 		<path>Aircraft/ec135/instrumentation/vsi/vsi.xml</path>
 		<offsets>
 			<!-- fix me: set back for now -->
-			<x-m>-3.444</x-m>
-			<y-m>0.428</y-m>
-			<z-m>1.574</z-m>
+			<x-m>-3.447</x-m>
+			<y-m>0.421</y-m>
+			<z-m>1.580</z-m>
 
-			<pitch-deg>-23</pitch-deg>
+			<pitch-deg>-24</pitch-deg>
 
 		</offsets>
 	</model>
@@ -1421,11 +1421,11 @@
 
 		<offsets>
 
-			<x-m>-3.439</x-m>
-			<y-m>0.330</y-m>
-			<z-m>1.568</z-m>
+			<x-m>-3.436</x-m>
+			<y-m>0.318</y-m>
+			<z-m>1.556</z-m>
 
-			<pitch-deg>-23</pitch-deg>
+			<pitch-deg>-24</pitch-deg>
 
 		</offsets>
 	</model>
@@ -1538,11 +1538,11 @@
 		<name>left AI</name>
 		<path>Aircraft/ec135/instrumentation/GH14-391/ai.xml</path>
 		<offsets>
-			<x-m>-3.517</x-m>
-			<y-m>-0.316</y-m>
-			<z-m>1.637</z-m>
+			<x-m>-3.481</x-m>
+			<y-m>-0.314</y-m>
+			<z-m>1.656</z-m>
 
-			<pitch-deg>-23</pitch-deg>
+			<pitch-deg>-24</pitch-deg>
 
 		</offsets>
 	</model>
@@ -1553,12 +1553,12 @@
 		<name>left ASI</name>
 		<path>Aircraft/ec135/instrumentation/asi/asi.xml</path>
 		<offsets>
-			<!-- fix me: set back for now -->
-			<x-m>-3.475</x-m>
-			<y-m>-0.424</y-m>
-			<z-m>1.651</z-m>
+			
+			<x-m>-3.482</x-m>
+			<y-m>-0.413</y-m>
+			<z-m>1.660</z-m>
 
-			<pitch-deg>-23</pitch-deg>
+			<pitch-deg>-24</pitch-deg>
 
 		</offsets>
 	</model>
@@ -1585,9 +1585,9 @@
 		<path>Aircraft/ec135/instrumentation/vsi/vsi.xml</path>
 		<offsets>
 			<!-- fix me: set back for now -->
-			<x-m>-3.463</x-m>
+			<x-m>-3.468</x-m>
 			<y-m>-0.216</y-m>
-			<z-m>1.620</z-m>
+			<z-m>1.628</z-m>
 
 			<pitch-deg>-24</pitch-deg>
 
@@ -1599,10 +1599,10 @@
 		<offsets>
 
 			<x-m>-3.436</x-m>
-			<y-m>-0.316</y-m>
-			<z-m>1.566</z-m>
+			<y-m>-0.314</y-m>
+			<z-m>1.556</z-m>
 
-			<pitch-deg>-23</pitch-deg>
+			<pitch-deg>-24</pitch-deg>
 
 		</offsets>
 	</model>
