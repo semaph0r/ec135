@@ -9,8 +9,8 @@
 		<property>/orientation/roll-deg</property>
 		<center>
 			<x-m>-0.075</x-m>
-			<y-m>0.001</y-m>
-			<z-m>-0.004</z-m>
+			<y-m>0.00</y-m>
+			<z-m>0.002</z-m>
 		</center>
 		<axis>
 			<x>1</x>
@@ -24,9 +24,9 @@
 		<object-name>Circle</object-name>
 		<property>/orientation/roll-deg</property>
 		<center>
-			<x-m>0.009</x-m>
-			<y-m>0</y-m>
-			<z-m>0.004</z-m>
+			<x-m>0.007</x-m>
+			<y-m>0.00</y-m>
+			<z-m>0.002</z-m>
 		</center>
 		<axis>
 			<x>1</x>
@@ -42,8 +42,8 @@
 		<factor>0.5</factor>
 		<center>
 			<x-m>-0.075</x-m>
-			<y-m>0.001</y-m>
-			<z-m>-0.004</z-m>
+			<y-m>0.00</y-m>
+			<z-m>0.002</z-m>
 		</center>
 		<axis>
 			<x>0</x>
