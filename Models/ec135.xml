@@ -1517,14 +1517,27 @@
 
 
 	<model>
-		<name>FDM1</name>
-		<path>Aircraft/ec135/instrumentation/fdm1.ac</path>
+		<name>cad</name>
+		<path>Aircraft/ec135/instrumentation/cad/cad.ac</path>
 		<offsets>
-			<x-m>-3.4350</x-m>
-			<y-m>-0.090</y-m>
-			<z-m>1.564</z-m>
+			<x-m>-3.445</x-m>
+			<y-m>-0.078</y-m>
+			<z-m>1.589</z-m>
 
-			<pitch-deg>-23</pitch-deg>
+			<pitch-deg>-24</pitch-deg>
+
+		</offsets>
+	</model>
+	
+	<model>
+		<name>vemd</name>
+		<path>Aircraft/ec135/instrumentation/vemd/vemd.xml</path>
+		<offsets>
+			<x-m>-3.430</x-m>
+			<y-m>0.078</y-m>
+			<z-m>1.5495</z-m>
+
+			<pitch-deg>-24</pitch-deg>
 
 		</offsets>
 	</model>

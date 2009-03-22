@@ -50,7 +50,7 @@ MATERIAL "DefaultWhite.286" rgb 0.395981 0.356008 0.356008 amb 1 1 1 emis 0 0 0 
 MATERIAL "Material.032" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
 MATERIAL "Material.043" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
 MATERIAL "fuselage" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
-MATERIAL "glareshield" rgb 0 0 0 amb 0.450586 0.450586 0.450586 emis 0 0 0 spec 0.28 0.28 0.28 shi 128 trans 0
+MATERIAL "glareshield" rgb 0 0 0 amb 0.0 0.0 0.0 emis 0 0 0 spec 1.0 1.0 1.0 shi 128 trans 0
 MATERIAL "Material.009" rgb 0.42 0.42 0.42 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0.5
 MATERIAL "Material.008" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.14 0.14 0.14 shi 32 trans 0
 MATERIAL "Material.025" rgb 0 0 0 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0

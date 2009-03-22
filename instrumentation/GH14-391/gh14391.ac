@@ -2,13 +2,13 @@ AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 MATERIAL "DefaultWhite.001" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 MATERIAL "Material.008" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.007" rgb 0.14 0.14 0.14 amb 1 1 1 emis 0 0 0 spec 0.28 0.28 0.28 shi 32 trans 0
-MATERIAL "flag" rgb 1 0.4 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "black2" rgb 0.14 0.14 0.14 amb 0.14 0.14 0.14 emis 0 0 0 spec 0 0 0 shi 128 trans 0
+MATERIAL "flag" rgb 1 0.4 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0 0 0 shi 128 trans 0
 MATERIAL "Material.005" rgb 1 1 0 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.001" rgb 0.14 0.14 0.14 amb 1 1 1 emis 0 0 0 spec 0 0 0 shi 32 trans 0
-MATERIAL "Material.002" rgb 0.56 0.56 0.56 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.003" rgb 1 1 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Material.004" rgb 1 0.5 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "black" rgb 0.14 0.14 0.14 amb 0.14 0.14 0.14 emis 0 0 0 spec 0 0 0 shi 128 trans 0
+MATERIAL "grey" rgb 0.56 0.56 0.56 amb 0.56 0.56 0.56 emis 0 0 0 spec 0 0 0 shi 32 trans 0
+MATERIAL "yellow" rgb 1 1 0 amb 1 1 0 emis 0 0 0 spec 0 0 0 shi 128 trans 0
+MATERIAL "orange" rgb 1 0.5 0 amb 1 0.5 0 emis 0 0 0 spec 0 0 0 shi 128 trans 0
 MATERIAL "Material.009" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.006" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
 OBJECT world
@@ -3044,9 +3044,9 @@ numvert 54
 0.014238 0.002048 -0.008243
 0.014238 -0.001461 -0.008278
 0.014238 -0.001753 0.007648
-0.014238 -0.02729 -0.0025
-0.014238 -0.014768 -0.001996
-0.014238 -0.014813 0.000258
+0.014238 -0.02729 -0.003007
+0.014238 -0.014768 -0.002804
+0.014238 -0.014813 -0.000256
 0.014238 -0.001493 -4e-006
 0.014238 -0.027408 0.004951
 0.014238 -0.01491 0.005019
