@@ -1633,6 +1633,38 @@
 
 		</offsets>
 	</model>
+	
+<model>
+		<name>engine panel</name>
+		<path>Aircraft/ec135/instrumentation/engine_panel/engine_panel.xml</path>
+		<offsets>
+
+			<x-m>-3.398</x-m>
+			<y-m>-0.0714</y-m>
+			<z-m>1.473</z-m>
+
+			<pitch-deg>-24</pitch-deg>
+
+		</offsets>
+	</model>
+	
+<!--misc-->
+
+<model>
+		<name>ventilation</name>
+		<path>Aircraft/ec135/instrumentation/ventilation.xml</path>
+		<offsets>
+
+			<x-m>-3.399</x-m>
+			<y-m>0</y-m>
+			<z-m>1.473</z-m>
+
+			<pitch-deg>-24</pitch-deg>
+
+		</offsets>
+	</model>
+
+
 
 <!--retractable landinglight-->
   	<animation>
