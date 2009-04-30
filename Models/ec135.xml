@@ -1385,7 +1385,7 @@
 
 	<model>
 		<name>ALT</name>
-		<path>Aircraft/ec135/instrumentation/alt/alt2.xml</path>
+		<path>Aircraft/ec135/instrumentation/alt/altimeter.xml</path>
 		<offsets>
 			<!-- fix me: set back for now -->
 			<x-m>-3.481</x-m>
@@ -1459,7 +1459,7 @@
 	<!--midle instruments-->
 	<model>
 		<name>Small AI</name>
-		<path>Aircraft/ec135/instrumentation/ai_small/ai.xml</path>
+		<path>Aircraft/ec135/instrumentation/ai_small/STBYai.xml</path>
 		<offsets>
 			<x-m>-3.491</x-m>
 			<y-m>0.004</y-m>
@@ -1580,7 +1580,7 @@
 
 	<model>
 		<name>left ALT</name>
-		<path>Aircraft/ec135/instrumentation/alt/alt2.xml</path>
+		<path>Aircraft/ec135/instrumentation/alt2/altimeter.xml</path>
 		<offsets>
 			<!-- fix me: set back for now -->
 			<x-m>-3.498</x-m>
@@ -1614,6 +1614,20 @@
 			<x-m>-3.436</x-m>
 			<y-m>-0.314</y-m>
 			<z-m>1.556</z-m>
+
+			<pitch-deg>-24</pitch-deg>
+
+		</offsets>
+	</model>
+
+<model>
+		<name>compass</name>
+		<path>Aircraft/ec135/instrumentation/compass1/compass.xml</path>
+		<offsets>
+
+			<x-m>-3.4447</x-m>
+			<y-m>-0.414</y-m>
+			<z-m>1.585</z-m>
 
 			<pitch-deg>-24</pitch-deg>
 
@@ -2011,7 +2025,8 @@
 <animation>
 		<type>shader</type>
 		<shader>chrome</shader>
-		<texture>glass_shader.png</texture>
+		<!--<texture>glass_shader.png</texture>-->
+		<texture>Aircraft/Generic/Effects/glass_shader.png</texture>
 		<object-name>windshield</object-name>
 		<object-name>glas</object-name>
 		<object-name>frontdoorglas_re</object-name>
@@ -2022,13 +2037,8 @@
 		<object-name>backdoorglas_li</object-name>
 		<object-name>reardoor_li_window</object-name>
 </animation>
-	
 
-  
-	
-  
 
-	
 
 	<!-- Material Animations -->
 
