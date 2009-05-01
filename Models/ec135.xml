@@ -1640,7 +1640,7 @@
 		<offsets>
 
 			<x-m>-3.398</x-m>
-			<y-m>-0.0714</y-m>
+			<y-m>-0.078</y-m>
 			<z-m>1.473</z-m>
 
 			<pitch-deg>-24</pitch-deg>
@@ -1663,6 +1663,36 @@
 
 		</offsets>
 	</model>
+	
+<model>
+		<name>cata_button</name>
+		<path>Aircraft/ec135/instrumentation/cata_button.xml</path>
+		<offsets>
+
+			<x-m>-3.375</x-m>
+			<y-m>-0.072</y-m>
+			<z-m>1.420</z-m>
+
+			<pitch-deg>-24</pitch-deg>
+
+		</offsets>
+	</model>
+	
+<model>
+		<name>dme</name>
+		<path>Aircraft/ec135/instrumentation/dme/dme.xml</path>
+		<offsets>
+
+			<x-m>-3.377</x-m>
+			<y-m>0.081</y-m>
+			<z-m>1.424</z-m>
+
+			<pitch-deg>-24</pitch-deg>
+
+		</offsets>
+</model>
+
+
 
 
 

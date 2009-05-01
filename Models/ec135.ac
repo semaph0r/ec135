@@ -14777,7 +14777,7 @@ OBJECT poly
 name "Plane.001"
 data 5
 Plane
-texture "analogpanel.ec135.png"
+texture "analogpanel.ec135.2.png"
 texrep 1 1
 crease 30.000000
 numvert 208
