@@ -8,7 +8,7 @@ Syd Adams
 
     <path>ki252a.ac</path>
     
-    <animation>
+    <!--<animation>
         <type>material</type>
         <object-name>kfc-hdgbug</object-name>
         <object-name>kfc-crs</object-name>
@@ -28,7 +28,7 @@ Syd Adams
             <blue>0.007</blue>
             <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
         </emission>
-    </animation>
+    </animation>-->
     
 <!-- 	KI-525A 	-->	
     

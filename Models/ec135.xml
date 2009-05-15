@@ -17,7 +17,7 @@
 	
 <model>
 		<name>flightdeck</name>
-		<path>Aircraft/ec135/models/flightdeck.xml</path>
+		<path>Aircraft/ec135/Models/flightdeck.xml</path>
 		<offsets>
 
 			<x-m>0</x-m>
