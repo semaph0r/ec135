@@ -476,7 +476,6 @@
 		<rotor>
 			<name>rotor-inside</name>
 			<mode>looped</mode>
-			<path>Sounds/rotor.wav</path>
 			<path>Aircraft/ec135/Sounds/ec_rotor_in.wav</path>
 			<condition>
 				<and>
