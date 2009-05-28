@@ -5,7 +5,7 @@
 <PropertyList>
 
 
-	<path>flightdeck.ac</path>
+	<path>flightdeck2.ac</path>
 	<offsets>
 		<z-m>0</z-m>
 		<y-m>0.0</y-m>
@@ -447,7 +447,8 @@
 
 	<animation>
 		<type>rotate</type>
-		<object-name>rightstick</object-name>
+		<object-name>stickgrip</object-name>
+		<object-name>griphead</object-name>
 		<property>/controls/flight/elevator</property>
 		<factor>8</factor>
 		<offset-deg>-2.5</offset-deg>
@@ -465,7 +466,8 @@
 
 	<animation>
 		<type>rotate</type>
-		<object-name>rightstick</object-name>
+			<object-name>stickgrip</object-name>
+		<object-name>griphead</object-name>
 		<property>/controls/flight/aileron</property>
 		<factor>4.94</factor>
 		<offset>-0.71</offset>
@@ -481,16 +483,20 @@
 		</axis>
 	</animation>
 
+	
+
+
 	<animation>
 		<type>rotate</type>
-		<object-name>leftstick</object-name>
-		<property>/controls/flight/elevator</property>
-		<factor>8</factor>
-		<offset-deg>-2.5</offset-deg>
+		<object-name>rrpedal</object-name>
+
+		<property>/controls/flight/rudder</property>
+		<factor>20</factor>
+		<offset>0</offset>
 		<center>
-			<x-m>-3.133</x-m>
-			<y-m>-0.404</y-m>
-			<z-m>1.003</z-m>
+			<x-m>-3.603</x-m>
+			<y-m>0.0</y-m>
+			<z-m>1.035</z-m>
 		</center>
 		<axis>
 			<x>0</x>
@@ -501,26 +507,7 @@
 
 	<animation>
 		<type>rotate</type>
-		<object-name>leftstick</object-name>
-		<property>/controls/flight/aileron</property>
-		<factor>4.94</factor>
-		<offset>-0.71</offset>
-		<center>
-			<x-m>-3.133</x-m>
-			<y-m>-0.404</y-m>
-			<z-m>1.003</z-m>
-		</center>
-		<axis>
-			<x>-1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-
-	<animation>
-		<type>rotate</type>
-		<object-name>rightpedal</object-name>
+		<object-name>rlpedal</object-name>
 
 		<property>/controls/flight/rudder</property>
 		<factor>20</factor>
@@ -537,18 +524,178 @@
 		</axis>
 	</animation>
 
+<animation>
+		<type>rotate</type>
+		<object-name>collective</object-name>
+		<object-name>collectivehead</object-name>
+		<object-name>lever.002</object-name>
+		<object-name>lever.003</object-name>
+		<object-name>lever</object-name>
+		<object-name>lever.001</object-name>
+		<object-name>basis</object-name>
+		<object-name>Plane.005</object-name>
+		<object-name>knobs</object-name>
+		<object-name>Cylinder.003</object-name>
+		<object-name>leather</object-name>
+		<property>/controls/engines/engine/throttle</property>
+		<factor>-22.5</factor>
+		<offset>45</offset>
+		<center>
+			<x-m>-2.448</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.973</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+<animation>
+		<type>rotate</type>
+		<object-name>frontdoor_intli</object-name>
+			<object-name>frontdoor_crossli</object-name>
+				
+		<property>/sim/model/door-positions/pilotDoor/position-norm</property>
+		<factor>60</factor>
+
+		<axis>
+			<x1-m>-3.368</x1-m>
+			<y1-m>0.750</y1-m>
+			<z1-m>1.282</z1-m>
+			<x2-m>-3.019</x2-m>
+			<y2-m>0.749</y2-m>
+			<z2-m>1.893</z2-m>
+		</axis>
+	</animation>
 	<animation>
 		<type>rotate</type>
-		<object-name>leftpedal</object-name>
+		<object-name>frontdoor_reint</object-name>
+		<object-name>frontdoor_crossre</object-name>
+		
+		<property>/sim/model/door-positions/copilotDoor/position-norm</property>
+		<factor>-60</factor>
 
-		<property>/controls/flight/rudder</property>
-		<factor>20</factor>
-		<offset>0</offset>
-		<center>
-			<x-m>-3.603</x-m>
-			<y-m>0.0</y-m>
-			<z-m>1.035</z-m>
-		</center>
+		<axis>
+			<x1-m>-3.368</x1-m>
+			<y1-m>-0.750</y1-m>
+			<z1-m>1.282</z1-m>
+			<x2-m>-3.019</x2-m>
+			<y2-m>-0.749</y2-m>
+			<z2-m>1.893</z2-m>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>reardoorint_re</object-name>
+		
+		<property>/sim/model/door-positions/rearDoors/position-norm</property>
+		<factor>100</factor>
+
+		<axis>
+			<x1-m>0.010</x1-m>
+			<y1-m>0.727</y1-m>
+			<z1-m>1.271</z1-m>
+			<x2-m>0.260</x2-m>
+			<y2-m>0.733</y2-m>
+			<z2-m>1.567</z2-m>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>reardoorint_li</object-name>
+		<object-name>reardoorint_li_win</object-name>
+		
+		<property>/sim/model/door-positions/rearDoors/position-norm</property>
+		<factor>-100</factor>
+
+		<axis>
+			<x1-m>0.010</x1-m>
+			<y1-m>-0.727</y1-m>
+			<z1-m>1.271</z1-m>
+			<x2-m>0.260</x2-m>
+			<y2-m>-0.773</y2-m>
+			<z2-m>1.567</z2-m>
+		</axis>
+	</animation>
+
+	<!--sideward animation backdoor right-->
+	<animation>
+		<type>translate</type>
+		<object-name>backdoor_intre</object-name>
+				
+		<property>/sim/model/door-positions/ribackDoor/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>.1</ind>
+				<dep>.05</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>.05</dep>
+			</entry>
+		</interpolation>
+		<axis>
+			<x>01</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<!--forward animation backdoor right-->
+	<animation>
+		<type>translate</type>
+		<object-name>backdoor_intre</object-name>
+		
+		<property>/sim/model/door-positions/ribackDoor/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>.1</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>0.9</dep>
+			</entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<!--sideward animation backdoor left-->
+	<animation>
+		<type>translate</type>
+		<object-name>backdoor_intli</object-name>
+	
+		<property>/sim/model/door-positions/lebackDoor/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>.1</ind>
+				<dep>.05</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>.05</dep>
+			</entry>
+		</interpolation>
 		<axis>
 			<x>0</x>
 			<y>-1</y>
@@ -556,5 +703,31 @@
 		</axis>
 	</animation>
 
+	<!--forward animation backdoor left-->
+	<animation>
+		<type>translate</type>
+		<object-name>backdoor_intli</object-name>
+		
+		<property>/sim/model/door-positions/lebackDoor/position-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>.1</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>0.9</dep>
+			</entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
 
 </PropertyList>

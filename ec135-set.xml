@@ -38,7 +38,7 @@ EC 135 simulation config.
 			<livery>
                               <file type="string">Bavarian Police "Edelweiss"</file>
             </livery>
-	    <liverytail>
+	   <liverytail>
 	    <file type="string">Bavarian Police "Edelweiss"</file>
 	    </liverytail>
 	    <rotorblade>
@@ -65,8 +65,43 @@ EC 135 simulation config.
 				<plateright>true</plateright>
 				<reardoorwindow>true</reardoorwindow>
 				<reardoor_norm>false</reardoor_norm>
+				
+				<doors>
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">pilot's door</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">copilot's door</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">right backdoor</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">left backdoor</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">right reardoor</name>
+					</door>
+
+					<door>
+						<position-norm type="double">0.0</position-norm>
+						<name type="string">left reardoor</name>
+					</door>
+				</doors>
+				
 			</ec135>
 		</model>
+		
+		
 
 		<!--view-->
 		<view n="0">
@@ -214,44 +249,18 @@ EC 135 simulation config.
 
 		<menubar>
 			<default>
-				<menu n="10">
-					<label>EC135</label>
-					<enabled type="bool">true</enabled>
-					<item>
-						<label>Open/close pilots door</label>
-						<binding>
-							<command>nasal</command>
-							<script>ec135.pilotDoor.toggle();</script>
-						</binding>
-					</item>
-					<item>
-						<label>Open/close Copilots door</label>
-						<binding>
-							<command>nasal</command>
-							<script>ec135.copilotDoor.toggle();</script>
-						</binding>
-					</item>
-					<item>
-						<label>Open/close right backdoor</label>
-						<binding>
-							<command>nasal</command>
-							<script>ec135.ribackDoor.toggle();</script>
-						</binding>
-					</item>
-					<item>
-						<label>Open/close left backdoor</label>
-						<binding>
-							<command>nasal</command>
-							<script>ec135.lebackDoor.toggle();</script>
-						</binding>
-					</item>
-					<item>
-						<label>Open/close reardoors</label>
-						<binding>
-							<command>nasal</command>
-							<script>ec135.rearDoors.toggle();</script>
-						</binding>
-					</item>
+				 <menu n="10">
+      <label>Ec135</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+                                                 
+												     
 					<item>
 						<label>Show/hide GSDI</label>
 						<binding>
@@ -264,12 +273,27 @@ EC 135 simulation config.
 		</menubar>
 	</sim>
 
+	<consumables>
+		<fuel>
+			<tank>
+				<name>Main</name>
+				<selected type="bool" write="n">1</selected>
+				<density-ppg type="double" write="n">6.682</density-ppg>
+			</tank>
+
+			<tank>
+				<name>Supply</name>
+				<selected type="bool" write="n">1</selected>
+				<density-ppg type="double" write="n">6.682</density-ppg>
+			</tank>
+		</fuel>
+	</consumables>
+
 	<controls>
-		<engines>
-			<engine n="0">
-				<magnetos>0</magnetos>
-			</engine>
-		</engines>
+		<rotor>
+			<reltarget type="double">0</reltarget>
+			<maxreltorque type="double">0</maxreltorque>
+		</rotor>
 
 
 		<lighting>
@@ -290,19 +314,62 @@ EC 135 simulation config.
 
 	<input>
 		<keyboard>
-
-			<!-- Livery Box -->
-			<key n="108">
-				<name>l</name>
-				<desc>Show livery select dialog</desc>
+		
+		<!--<key n="4">
+				<name>Ctrl-D</name>
+				<desc>Open/close selected door</desc>
 				<binding>
 					<command>nasal</command>
-					<script>aircraft.livery.dialog.toggle()</script>
+					<script>ec135.doors.toggle()</script>
 				</binding>
 			</key>
+		
+		<key n="68">
+				<name>D</name>
+				<desc>Select previous door</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ec135.doors.previous()</script>
+				</binding>
+			</key>
+		
+		<key n="100">
+				<name>d</name>
+				<desc>Select next door</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ec135.doors.next()</script>
+				</binding>
+			</key>-->
+		
+<key n="4">
+    <name>Ctrl-d</name>
+    <desc>Toggle SAS enabled</desc>
+    <binding>
+      <command>nasal</command>
+      <script>ec135.sas.toggleEnable();</script>
+    </binding>
+  </key>
 
-			<key n="78">
-				<name>N</name>
+
+
+ <!-- <key n="6">
+    <name>Ctrl-f</name>
+    <desc>Toggle AutoHover</desc>
+    <binding>
+      <command>nasal</command>
+      <script>ec135.afcs.toggleAutoHover();</script>
+   </binding>
+    <binding>
+      <command>nasal</command>
+      <script>ec135.cas.toggleEnable();</script>
+    </binding>
+
+  </key>-->
+
+			
+			<key n="82">
+				<name>R</name>
 				<desc>Toggle rotor brake</desc>
 				<binding>
 					<command>nasal</command>
@@ -312,9 +379,25 @@ EC 135 simulation config.
 					</script>
 				</binding>
 			</key>
+			
+			<key n="105">
+				<name>i</name>
+				<desc>Toggle ignition switch</desc>
+				<binding>
+					<command>nasal</command>
+					<script>
+						foreach (var e; controls.engines) {
+							if (e.selected.getValue()) {
+								var i = e.controls.getNode("ignition", 1);
+								i.setValue(!i.getValue());
+							}
+						}
+					</script>
+				</binding>
+			</key>
 
-			<key n="110">
-				<name>n</name>
+			<key n="114">
+				<name>r</name>
 				<desc>Apply rotor brake</desc>
 				<binding>
 					<command>nasal</command>
@@ -328,12 +411,27 @@ EC 135 simulation config.
 				</mod-up>
 			</key>
 
+			<key n="118">
+				<name>Alt-v</name>
+				<desc>Toggle dynamic cockpit view</desc>
+				<mod-alt>
+					<binding>
+						<command>property-toggle</command>
+						<property>/sim/view/dynamic/enabled</property>
+					</binding>
+				</mod-alt>
+			</key>
+
+
 			<key n="123">
 				<name>{</name>
 				<desc>Shutdown Engines</desc>
 				<binding>
 					<command>nasal</command>
-					<script>ec135.engines(0)</script>
+					<script>ec135.shutdown()</script>
+					<condition>
+						<property>/sim/signals/fdm-initialized</property>
+					</condition>
 				</binding>
 			</key>
 
@@ -342,7 +440,10 @@ EC 135 simulation config.
 				<desc>Start Engines</desc>
 				<binding>
 					<command>nasal</command>
-					<script>ec135.engines(1)</script>
+					<script>ec135.startup()</script>
+					<condition>
+						<property>/sim/signals/fdm-initialized</property>
+					</condition>
 				</binding>
 			</key>
 
@@ -389,6 +490,8 @@ EC 135 simulation config.
 		<ec135>
 			<file>Aircraft/ec135/Models/ec135.nas</file>
 			<file>Aircraft/ec135/Models/hsi.nas</file>
+			<!--<file>Aircraft/ec135/Nasal/fcs.nas</file>-->
+			<file>Aircraft/ec135/Nasal/fcs2.nas</file>
 		</ec135>
 	</nasal>
 
