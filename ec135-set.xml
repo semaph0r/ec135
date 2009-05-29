@@ -353,7 +353,7 @@ EC 135 simulation config.
 
 
 
- <!-- <key n="6">
+ <!--<key n="6">
     <name>Ctrl-f</name>
     <desc>Toggle AutoHover</desc>
     <binding>
