@@ -295,7 +295,7 @@ var CAS = {
     props.globals.getNode("/controls/flight/fcs/gains/cas/output", 1).setValues(obj.output_gains);
     setprop("/autopilot/locks/altitude", '');
     setprop("/autopilot/locks/heading", '');
-    setprop("/controls/flight/fcs/cas-enabled", 0);
+    setprop("/controls/flight/fcs/cas-enabled", 1);
     return obj;
   },
 

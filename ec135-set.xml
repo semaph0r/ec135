@@ -433,6 +433,10 @@ EC 135 simulation config.
 						<property>/sim/signals/fdm-initialized</property>
 					</condition>
 				</binding>
+				<!-- <binding>
+      <command>nasal</command>
+      <script>ec135.cas.toggleEnable();</script>
+    </binding>-->
 			</key>
 
 			<key n="125">
@@ -445,6 +449,10 @@ EC 135 simulation config.
 						<property>/sim/signals/fdm-initialized</property>
 					</condition>
 				</binding>
+				<!-- <binding>
+      <command>nasal</command>
+      <script>ec135.cas.toggleEnable();</script>
+    </binding>-->
 			</key>
 
 			<key n="79">
@@ -492,6 +500,7 @@ EC 135 simulation config.
 			<file>Aircraft/ec135/Models/hsi.nas</file>
 			<!--<file>Aircraft/ec135/Nasal/fcs.nas</file>-->
 			<file>Aircraft/ec135/Nasal/fcs2.nas</file>
+			<file>Aircraft/ec135/Nasal/casdisable.nas</file>
 		</ec135>
 	</nasal>
 

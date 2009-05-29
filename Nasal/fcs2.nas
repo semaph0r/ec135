@@ -41,7 +41,7 @@ var FCSFilter = {
     var path = "/controls/flight/fcs/" ~ name ~ "-enabled";
     var status = getprop(path);
     setprop(path, 1 - status);
-    screen.log.write(name ~ " " ~ messages[1 - status]);
+    #screen.log.write(name ~ " " ~ messages[1 - status]);
   },
 
   getStatus : func(name) {
@@ -295,7 +295,7 @@ var CAS = {
     props.globals.getNode("/controls/flight/fcs/gains/cas/output", 1).setValues(obj.output_gains);
     setprop("/autopilot/locks/altitude", '');
     setprop("/autopilot/locks/heading", '');
-    setprop("/controls/flight/fcs/cas-enabled", 0);
+    setprop("/controls/flight/fcs/cas-enabled", 1);
     return obj;
   },
 
@@ -529,12 +529,12 @@ var tail = nil;
 var count = 0;
 
 var sensitivities = {'roll' : 0.0, 'pitch' : 0.0, 'yaw' : 1.125 };
-var sas_initial_gains = {'roll' : 0.0034, 'pitch' : -0.0112, 'yaw' : 0.008 };
-var cas_input_gains = {'roll' : 3, 'pitch' : -40, 'yaw' : 30, 
-                       'attitude-roll' : 80, 'attitude-pitch' : -80 };
+var sas_initial_gains = {'roll' : 0.0022, 'pitch' : -0.0084, 'yaw' : 0.008 };
+var cas_input_gains = {'roll' : 0, 'pitch' :0 , 'yaw' :0 , 
+                       'attitude-roll' :0, 'attitude-pitch' : 0 };
 var cas_output_gains = {'roll' : 0, 'pitch' : 0, 'yaw' : 0, 
                         'roll-brake-freq' : 0, 'pitch-brake-freq' : 0, 
-                        'roll-brake' : 00, 'pitch-brake' : 0, 
+                        'roll-brake' : 0, 'pitch-brake' : 0, 
                         'anti-side-slip-gain' : 0};
 
 var update = func {
