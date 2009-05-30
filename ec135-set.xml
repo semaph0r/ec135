@@ -499,7 +499,7 @@ EC 135 simulation config.
 			<file>Aircraft/ec135/Models/ec135.nas</file>
 			<file>Aircraft/ec135/Models/hsi.nas</file>
 			<!--<file>Aircraft/ec135/Nasal/fcs.nas</file>-->
-			<file>Aircraft/ec135/Nasal/fcs2.nas</file>
+			<file>Aircraft/ec135/Nasal/fcs.nas</file>
 			<file>Aircraft/ec135/Nasal/casdisable.nas</file>
 		</ec135>
 	</nasal>

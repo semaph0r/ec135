@@ -448,14 +448,14 @@
 			</condition>
 			<volume>
 				<property>rotors/tail/torque</property>
-				<factor>0.1</factor>
+				<factor>0.05</factor>
 			</volume>
 			<pitch>
 				<property>rotors/tail/rpm</property>
 				<factor>0.00029</factor>
 				<offset>0</offset>
 				<min>0</min>
-				<max>1.5</max>
+				<max>1.0</max>
 			</pitch>
 			<position>
 				<x> 4 </x>

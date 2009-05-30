@@ -530,13 +530,12 @@ var count = 0;
 
 var sensitivities = {'roll' : 0.0, 'pitch' : 0.0, 'yaw' : 1.125 };
 var sas_initial_gains = {'roll' : 0.0022, 'pitch' : -0.0084, 'yaw' : 0.008 };
-var cas_input_gains = {'roll' : 0, 'pitch' :0 , 'yaw' :0 , 
-                       'attitude-roll' :0, 'attitude-pitch' : 0 };
-var cas_output_gains = {'roll' : 0, 'pitch' : 0, 'yaw' : 0, 
-                        'roll-brake-freq' : 0, 'pitch-brake-freq' : 0, 
-                        'roll-brake' : 0, 'pitch-brake' : 0, 
-                        'anti-side-slip-gain' : 0};
-
+var cas_input_gains = {'roll' : 30, 'pitch' : -60, 'yaw' : 30, 
+                       'attitude-roll' : 80, 'attitude-pitch' : -80 };
+var cas_output_gains = {'roll' : 0.06, 'pitch' : -0.1, 'yaw' : 0.5, 
+                        'roll-brake-freq' : 10, 'pitch-brake-freq' : 3, 
+                        'roll-brake' : 0.4, 'pitch-brake' : 6, 
+                        'anti-side-slip-gain' : -4.5};
 var update = func {
   count += 1;
   # AFCS, CAS, and SAS run at 60Hz
