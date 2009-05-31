@@ -2,7 +2,7 @@ AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 MATERIAL "Material.004" rgb 0.42 0.42 0.42 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0.5
 MATERIAL "Material.018" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
-MATERIAL "Material.016" rgb 0.28 0.28 0.28 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Material.016" rgb 0.28 0.28 0.28 amb 0.49 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "Material.036" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 128 trans 0
 MATERIAL "Material.037" rgb 0 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0 0 0 shi 32 trans 0
 MATERIAL "Material.019" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
