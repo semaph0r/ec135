@@ -39,7 +39,7 @@
 		<name>ASI</name>
 		<path>Aircraft/ec135/instrumentation/asi/asi.xml</path>
 		<offsets>
-			<!-- fix me: set back for now -->
+			
 			<x-m>-3.502</x-m>
 			<y-m>0.216</y-m>
 			<z-m>1.705</z-m>
@@ -55,7 +55,7 @@
 		<name>ALT</name>
 		<path>Aircraft/ec135/instrumentation/alt/altimeter.xml</path>
 		<offsets>
-			<!-- fix me: set back for now -->
+			
 			<x-m>-3.482</x-m>
 			<y-m>0.421</y-m>
 			<z-m>1.660</z-m>
@@ -70,7 +70,7 @@
 		<name>VSI</name>
 		<path>Aircraft/ec135/instrumentation/vsi/vsi.xml</path>
 		<offsets>
-			<!-- fix me: set back for now -->
+			
 			<x-m>-3.447</x-m>
 			<y-m>0.421</y-m>
 			<z-m>1.580</z-m>
@@ -262,7 +262,7 @@
 		<name>left ALT</name>
 		<path>Aircraft/ec135/instrumentation/alt2/altimeter.xml</path>
 		<offsets>
-			<!-- fix me: set back for now -->
+			
 			<x-m>-3.498</x-m>
 			<y-m>-0.212</y-m>
 			<z-m>1.706</z-m>
@@ -277,7 +277,7 @@
 		<name>left VSI</name>
 		<path>Aircraft/ec135/instrumentation/vsi/vsi.xml</path>
 		<offsets>
-			<!-- fix me: set back for now -->
+			
 			<x-m>-3.468</x-m>
 			<y-m>-0.216</y-m>
 			<z-m>1.628</z-m>
@@ -326,7 +326,7 @@
 			<pitch-deg>-24</pitch-deg>
 
 		</offsets>
-	</model>
+	</model>-->
 	
 <!--misc-->
 
@@ -450,7 +450,7 @@
 		<object-name>stickgrip</object-name>
 		<object-name>griphead</object-name>
 		<property>/controls/flight/elevator</property>
-		<factor>8</factor>
+		<factor>16</factor>
 		<offset-deg>-2.5</offset-deg>
 		<center>
 			<x-m>-3.134</x-m>
@@ -469,7 +469,7 @@
 			<object-name>stickgrip</object-name>
 		<object-name>griphead</object-name>
 		<property>/controls/flight/aileron</property>
-		<factor>4.94</factor>
+		<factor>8.94</factor>
 		<offset>-0.71</offset>
 		<center>
 			<x-m>-3.134</x-m>

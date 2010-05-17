@@ -3,6 +3,9 @@
 ************************************************************************
 EC 135 simulation config.
 
+This model of the Ec 135 is dedicated to heliflyer.
+Thanks for all the help!
+
 ************************************************************************
 -->
 
@@ -35,9 +38,11 @@ EC 135 simulation config.
 		<model>
 			<path archive="y">Aircraft/ec135/Models/ec135.xml</path>
 			<variant type="int">0</variant>
+			
 			<livery>
                               <file type="string">Bavarian Police "Edelweiss"</file>
             </livery>
+	    
 	   <liverytail>
 	    <file type="string">Bavarian Police "Edelweiss"</file>
 	    </liverytail>
@@ -110,8 +115,8 @@ EC 135 simulation config.
 			<internal type="bool">true</internal>
 			<config>
                                         <x-offset-m type="double">0.41</x-offset-m><!--left-->
-				<y-offset-m type="double">0.37</y-offset-m><!--up-->
-				<z-offset-m type="double">0.47</z-offset-m><!--back-->
+				<y-offset-m type="double">0.35</y-offset-m><!--up-->
+				<z-offset-m type="double">0.95</z-offset-m><!--back-->
 				<pitch-offset-deg>-14</pitch-offset-deg>
 				<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
 			</config>
@@ -353,19 +358,7 @@ EC 135 simulation config.
 
 
 
- <!--<key n="6">
-    <name>Ctrl-f</name>
-    <desc>Toggle AutoHover</desc>
-    <binding>
-      <command>nasal</command>
-      <script>ec135.afcs.toggleAutoHover();</script>
-   </binding>
-    <binding>
-      <command>nasal</command>
-      <script>ec135.cas.toggleEnable();</script>
-    </binding>
 
-  </key>-->
 
 			
 			<key n="82">

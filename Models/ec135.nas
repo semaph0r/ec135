@@ -1,6 +1,5 @@
 # Melchior FRANZ, < mfranz # aon : at >
 
-
 #Thanks to Melchior for a wonderful heli-two-engine code! Unfortunately it doesn't come close to the ec135- it would be much easier and better to have engine-support in the YASim helicopter-code. So any volunteers outthere?
 
 if (!contains(globals, "cprint"))

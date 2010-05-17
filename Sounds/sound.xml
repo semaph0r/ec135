@@ -146,9 +146,8 @@
 			<volume>
 				<property>sim/model/ec135/sound/volume</property>
 				<factor>5</factor>
-			</volume>
-			<reference-dist>50</reference-dist>
-			<max-dist>200</max-dist>
+			<reference-dist>1000</reference-dist>
+			<max-dist>5000</max-dist>
 		</engine>
 
 		<engine>
@@ -165,9 +164,8 @@
 			<volume>
 				<property>sim/model/ec135/sound/volume</property>
 				<factor>5</factor>
-			</volume>
-			<reference-dist>50</reference-dist>
-			<max-dist>200</max-dist>
+			<reference-dist>1000</reference-dist>
+			<max-dist>5000</max-dist>
 		</engine>
 
 		<engine>
@@ -185,9 +183,13 @@
 			<volume>
 				<property>sim/model/ec135/sound/volume</property>
 				<factor>5</factor>
-			</volume>
-			<reference-dist>50</reference-dist>
-			<max-dist>200</max-dist>
+			</volume><position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>1000</reference-dist>
+			<max-dist>5000</max-dist>
 		</engine>
 
 		<engine>
@@ -206,9 +208,13 @@
 			<volume>
 				<property>sim/model/ec135/sound/volume</property>
 				<factor>5</factor>
-			</volume>
-			<reference-dist>50</reference-dist>
-			<max-dist>200</max-dist>
+			</volume><position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>1000</reference-dist>
+			<max-dist>5000</max-dist>
 		</engine>
 
 		<engine>
@@ -225,9 +231,13 @@
 			<volume>
 				<property>sim/model/ec135/sound/volume</property>
 				<factor>5</factor>
-			</volume>
-			<reference-dist>50</reference-dist>
-			<max-dist>200</max-dist>
+			</volume><position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>1000</reference-dist>
+			<max-dist>5000</max-dist>
 		</engine>
 
 		<engine>
@@ -246,8 +256,13 @@
 				<property>sim/model/ec135/sound/volume</property>
 				<factor>5</factor>
 			</volume>
-			<reference-dist>50</reference-dist>
-			<max-dist>200</max-dist>
+			<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>1000</reference-dist>
+			<max-dist>5000</max-dist>
 		</engine>
 
 		<!--<engine>
@@ -394,8 +409,13 @@
 				<min>0</min>
 				<max>1.0</max>
 			</pitch>
-			<reference-dist>100</reference-dist>
-			<max-dist>1000</max-dist>
+			<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>2000</reference-dist>
+			<max-dist>7000</max-dist>
 		</rotor>
 	
 	<rotor>
@@ -427,11 +447,16 @@
 				<min>0</min>
 				<max>1.0</max>
 			</pitch>
-			<reference-dist>100</reference-dist>
-			<max-dist>1000</max-dist>
+			<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>2000</reference-dist>
+			<max-dist>7000</max-dist>
 		</rotor>
 		
-		<rotor>
+		<!--<rotor>
 			<name>fenestron</name>
 			<mode>looped</mode>
 			<path>Aircraft/ec135/Sounds/fenestron_ec135.wav</path>
@@ -470,7 +495,7 @@
 				<outer-angle>100</outer-angle>
 				<outer-gain>0.9</outer-gain>
 			</orientation>
-		</rotor>
+		</rotor>-->
 
 
 		<rotor>
@@ -503,14 +528,19 @@
 				<min>0</min>
 				<max>1.5</max>
 			</pitch>
-			<reference-dist>100</reference-dist>
-			<max-dist>1000</max-dist>
+			<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>10</max-dist>
 		</rotor>
 
 		<rotor>
 			<name>stall</name>
 			<mode>looped</mode>
-			<path>Aircraft/ec135/Sounds/ec135_rotor.wav</path>
+			<path>Aircraft/ec135/Sounds/R-1535Slow.wav</path>
 			<condition>
 				<and>
 					<greater-than>
@@ -524,7 +554,7 @@
 			</condition>
 			<volume>
 				<property>sim/model/ec135/sound/volume</property>
-				<factor>0.5</factor>
+				<factor>1.0</factor>
 			</volume>
 			<volume>
 				<property>rotors/main/stall-filtered</property>
@@ -537,14 +567,19 @@
 				<offset>0</offset>
 				<max>1.75</max>
 			</pitch>
-			<reference-dist>1000</reference-dist>
-			<max-dist>3000</max-dist>
+			<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>20</max-dist>
 		</rotor>
 
 		<rotor>
 			<name>blade-vortex-interaction</name>
 			<mode>looped</mode>
-			<path>Aircraft/ec135/Sounds/ec135_rotor.wav</path>
+			<path>Aircraft/ec135/Sounds/R-1535Slow.wav</path>
 			<condition>
 				<greater-than>
 					<property>sim/sound/vibration</property>
@@ -561,8 +596,13 @@
 				<min>0</min>
 				<max>1.5</max>
 			</pitch>
-			<reference-dist>1000</reference-dist>
-			<max-dist>3000</max-dist>
+			<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>20</max-dist>
 		</rotor>
 
 		<!--<overspeed>
@@ -609,12 +649,12 @@
 			</condition>
 			<reference-dist>0.5</reference-dist>
 			<max-dist>1.0</max-dist>
-		</warning>
+		</warning>-->
 
 		<contact>
 			<name>ground contact</name>
 			<mode>once</mode>
-			<path>Sounds/helicopter-skid.wav</path>
+			<path>Aircraft/ec135/Sounds/TC1.wav</path>
 			<condition>
 				<property>gear/gear[0]/wow</property>
 			</condition>
@@ -624,14 +664,19 @@
 			<pitch>
 				<factor>0.01</factor>
 			</pitch>
-			<reference-dist>5.0</reference-dist>
-			<max-dist>10.0</max-dist>
+			<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>20</max-dist>
 		</contact>
 
 		<contact>
 			<name>ground contact</name>
 			<mode>once</mode>
-			<path>Sounds/helicopter-skid.wav</path>
+			<path>Aircraft/ec135/Sounds/TC1.wav</path>
 			<condition>
 				<property>gear/gear[1]/wow</property>
 			</condition>
@@ -641,14 +686,19 @@
 			<pitch>
 				<factor>0.01</factor>
 			</pitch>
-			<reference-dist>5.0</reference-dist>
-			<max-dist>10.0</max-dist>
+			<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>20</max-dist>
 		</contact>
 
 		<contact>
 			<name>ground contact</name>
 			<mode>once</mode>
-			<path>Sounds/helicopter-skid.wav</path>
+			<path>Aircraft/ec135/Sounds/TC1.wav</path>
 			<condition>
 				<property>gear/gear[2]/wow</property>
 			</condition>
@@ -658,14 +708,19 @@
 			<pitch>
 				<factor>0.01</factor>
 			</pitch>
-			<reference-dist>5.0</reference-dist>
-			<max-dist>10.0</max-dist>
+		<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>20</max-dist>
 		</contact>
 
 		<contact>
 			<name>ground contact</name>
 			<mode>once</mode>
-			<path>Sounds/helicopter-skid.wav</path>
+			<path>Aircraft/ec135/Sounds/TC1.wav</path>
 			<condition>
 				<property>gear/gear[3]/wow</property>
 			</condition>
@@ -675,14 +730,19 @@
 			<pitch>
 				<factor>0.01</factor>
 			</pitch>
-			<reference-dist>5.0</reference-dist>
-			<max-dist>10.0</max-dist>
+			<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>20</max-dist>
 		</contact>
 
 		<contact>
 			<name>ground contact</name>
 			<mode>once</mode>
-			<path>Sounds/helicopter-skid.wav</path>
+		<path>Aircraft/ec135/Sounds/TC1.wav</path>
 			<condition>
 				<property>gear/gear[4]/wow</property>
 			</condition>
@@ -692,11 +752,60 @@
 			<pitch>
 				<factor>0.01</factor>
 			</pitch>
-			<reference-dist>5.0</reference-dist>
-			<max-dist>10.0</max-dist>
+		<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>20</max-dist>
+		</contact>
+		
+		<contact>
+			<name>ground contact</name>
+			<mode>once</mode>
+			<path>Aircraft/ec135/Sounds/TC1.wav</path>
+			<condition>
+				<property>gear/gear[5]/wow</property>
+			</condition>
+			<volume>
+				<factor>0.8</factor>
+			</volume>
+			<pitch>
+				<factor>0.01</factor>
+			</pitch>
+			<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>20</max-dist>
+		</contact>
+		
+		<contact>
+			<name>ground contact</name>
+			<mode>once</mode>
+		       <path>Aircraft/ec135/Sounds/TC1.wav</path>
+			<condition>
+				<property>gear/gear[6]/wow</property>
+			</condition>
+			<volume>
+				<factor>0.8</factor>
+			</volume>
+			<pitch>
+				<factor>0.01</factor>
+			</pitch>
+			<position>
+				<x>-0.88</x>
+				<y>0.40</y>
+				<z>0.5</z>
+			</position>
+			<reference-dist>5</reference-dist>
+			<max-dist>20</max-dist>
 		</contact>
 
-		<slide>
+		<!--<slide>
 			<name>skid sliding1</name>
 			<mode>looped</mode>
 			<path>Sounds/rumble.wav</path>

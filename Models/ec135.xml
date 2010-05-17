@@ -3,15 +3,39 @@
 <!-- Eurocopter EC 135 Helicopter by Heiko Schulz, animation set -->
 
 <PropertyList>
-
+  
+ <!--<effect>
+    <inherits-from>Aircraft/ec135/Models/Effects/ec135_bumpspec</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>fenestron</object-name>
+  </effect>-->
+  
+  <effect>
+    <inherits-from>Effects/ec135reflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>fenestron</object-name>
+  </effect>
+  
+  <effect>
+   <inherits-from>Effects/ec135reflectglas</inherits-from>
+  <object-name>windshield</object-name>
+		<object-name>glas</object-name>
+		<object-name>frontdoorglas_re</object-name>
+		<object-name>backdoorglas_re</object-name>
+		<object-name>backglas</object-name>
+		<object-name>windshield_tri</object-name>
+		<object-name>frontdoorglas_li</object-name>
+		<object-name>backdoorglas_li</object-name>
+		<object-name>reardoor_li_window</object-name>
+</effect>
 
 	<path>ec135.ac</path>
 	<offsets>
-		<z-m>-1.8</z-m>
+		<z-m>-1.72</z-m>
 		<y-m>0.0</y-m>
-		<x-m>3</x-m>
+		<x-m>3.6</x-m>
 
-		<pitch-deg>0</pitch-deg>
+		<pitch-deg>-0.5</pitch-deg>
 		
 	</offsets>
 	
@@ -106,7 +130,7 @@
 		<object-name>blurred2</object-name>
 		<object-name>blurred3</object-name>
 		<object-name>blurred4</object-name>
-		<offset-deg>5.0</offset-deg>
+		<offset-deg>8.0</offset-deg>
 		<axis>
 			<x>0</x>
 			<y>-1</y>
@@ -141,7 +165,7 @@
 		<object-name>blade4b</object-name>
 		<object-name>blade4c</object-name>
 		<object-name>blade4d</object-name>
-		<offset-deg>5.0</offset-deg>
+		<offset-deg>8.0</offset-deg>
 		<axis>
 			<x>0</x>
 			<y>-1</y>
@@ -1356,137 +1380,50 @@
 
 	<!--Lights-->
 
-	<!--strobe-->
-	<animation>
-		<type>select</type>
-		<object-name>strobe_r</object-name>
-		<condition>
-			<property>/sim/model/ec135/lighting/strobes/state</property>
-		</condition>
-	</animation>
+	<!--strobe originally by David Glowsky simulates correctly the random strobes-->
+	<model>
+		<name>stroberandom</name>
+		<path>Aircraft/ec135/Models/stroberandom.xml</path>
+		<offsets>
 
-	<animation>
-		<type>material</type>
-		<object-name>strobe_r</object-name>
-		<threshold>0.001</threshold>
-	</animation>
+			<x-m>-0.002</x-m>
+			<y-m>-0.868</y-m>
+			<z-m>1.704</z-m>
 
-	<animation>
-		<type>translate</type>
-		<object-name>strobe_r</object-name>
-		<offset-m>1.88</offset-m>
-		<axis>
-			<x>-0.004</x>
-			<y>0.816</y>
-			<z>1.699</z>
-		</axis>
-	</animation>
+			<pitch-deg>0</pitch-deg>
 
-	<animation>
-		<type>billboard</type>
-		<object-name>strobe_r</object-name>
-	</animation>
+		</offsets>
+	</model>
+	
+	<model>
+		<name>stroberandom</name>
+		<path>Aircraft/ec135/Models/stroberandom.xml</path>
+		<offsets>
 
-	<animation>
-		<type>scale</type>
-		<object-name>strobe_r</object-name>
-		<property>/sim/time/sun-angle-rad</property>
-		<offset>-1.4</offset>
-		<x-min>1.5</x-min>
-		<y-min>1.5</y-min>
-		<z-min>1.5</z-min>
-		<x-factor>2</x-factor>
-		<y-factor>2</y-factor>
-		<z-factor>2</z-factor>
-	</animation>
+			<x-m>-0.002</x-m>
+			<y-m>0.868</y-m>
+			<z-m>1.704</z-m>
 
-	<animation>
-		<type>select</type>
-		<object-name>strobe_l</object-name>
-		<condition>
-			<property>/sim/model/ec135/lighting/strobes/state</property>
-		</condition>
-	</animation>
+			<pitch-deg>0</pitch-deg>
 
-	<animation>
-		<type>material</type>
-		<object-name>strobe_l</object-name>
-		<threshold>0.001</threshold>
-	</animation>
-
-	<animation>
-		<type>translate</type>
-		<object-name>strobe_l</object-name>
-		<offset-m>1.88</offset-m>
-		<axis>
-			<x>-0.004</x>
-			<y>-0.816</y>
-			<z>1.699</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>billboard</type>
-		<object-name>strobe_l</object-name>
-	</animation>
-
-	<animation>
-		<type>scale</type>
-		<object-name>strobe_l</object-name>
-		<property>/sim/time/sun-angle-rad</property>
-		<offset>-1.4</offset>
-		<x-min>1.5</x-min>
-		<y-min>1.5</y-min>
-		<z-min>1.5</z-min>
-		<x-factor>2</x-factor>
-		<y-factor>2</y-factor>
-		<z-factor>2</z-factor>
-	</animation>
+		</offsets>
+	</model>
 
 
 	<!--beacon tail-->
-	<animation>
-		<type>select</type>
-		<object-name>beacon_T</object-name>
-		<condition>
-			<property>/sim/model/ec135/lighting/beacon-top/state</property>
-		</condition>
-	</animation>
+	<model>
+		<name>stroberandom</name>
+		<path>Aircraft/ec135/Models/beacon.xml</path>
+		<offsets>
 
-	<animation>
-		<type>material</type>
-		<object-name>beacon_T</object-name>
-		<threshold>0.001</threshold>
-	</animation>
+			<x-m>5.385</x-m>
+			<y-m>-0.048</y-m>
+			<z-m>4.264</z-m>
 
-	<animation>
-		<type>translate</type>
-		<object-name>beacon_T</object-name>
-		<offset-m>6.875</offset-m>
-		<axis>
-			<x>5.390</x>
-			<y>0</y>
-			<z>4.268</z>
-		</axis>
-	</animation>
+			<pitch-deg>0</pitch-deg>
 
-	<animation>
-		<type>billboard</type>
-		<object-name>beacon_T</object-name>
-	</animation>
-
-	<animation>
-		<type>scale</type>
-		<object-name>beacon_T</object-name>
-		<property>/sim/time/sun-angle-rad</property>
-		<offset>-1.4</offset>
-		<x-min>1.5</x-min>
-		<y-min>1.5</y-min>
-		<z-min>1.5</z-min>
-		<x-factor>2</x-factor>
-		<y-factor>2</y-factor>
-		<z-factor>2</z-factor>
-	</animation>
+		</offsets>
+	</model>
 	
 <!--bigsearchlight
 <model>
@@ -1641,11 +1578,10 @@
 	</animation>
 
 
-<animation>
+<!--<animation>
 		<type>shader</type>
 		<shader>chrome</shader>
-		<!--<texture>glass_shader.png</texture>-->
-		<texture>Aircraft/ec135/Models/glass_shader.png</texture>
+		<texture>Aircraft/Generic/Effects/Sperical/sperical_map2.png</texture>
 		<object-name>windshield</object-name>
 		<object-name>glas</object-name>
 		<object-name>frontdoorglas_re</object-name>
@@ -1655,7 +1591,7 @@
 		<object-name>frontdoorglas_li</object-name>
 		<object-name>backdoorglas_li</object-name>
 		<object-name>reardoor_li_window</object-name>
-</animation>
+</animation>-->
 
 
 
@@ -1667,7 +1603,7 @@
 		<object-name>fuselage</object-name>
 		<property-base>sim/model/livery/</property-base>
 		<texture-prop>texture</texture-prop>
-		<texture>default.fuselage.rgb</texture>
+		<texture>fuselage.adac.png</texture>
 	</animation>
 	
 	

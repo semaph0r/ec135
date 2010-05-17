@@ -1,5 +1,4 @@
 
-
 aphb = props.globals.getNode( "/autopilot/settings/heading-bug-deg" );
 v = aphb.getValue();
 if( v == nil ) {

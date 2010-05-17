@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 
+<!--This livery is dedicated to heliflyer aka Georg Vollnhals. Thanks for all the help!-->
+
 <PropertyList>
 	<sim>
 		<model>
@@ -7,13 +9,13 @@
 				<livery>
 					<name type="string">ADAC</name>
 					 <index type="int">1</index>
-					  <texture>fuselage.adac.png</texture>
+					  <texture>fuselage.adac.dds</texture>
 			
 				</livery>
 				<liverytail>
 				<name type="string">ADAC</name>
 					 <index type="int">1</index>
-					  <texture>tail.adac.png</texture>
+					  <texture>tail.adac.dds</texture>
 				</liverytail>
 				<rotorblade>
 				<name type="string">ANWB</name>
