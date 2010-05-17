@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				
+				
+					<name type="string">D-HBYD "Bavarian Police Helicopter Squadron"</name>
+					
+                                                   <index type="int">3</index>
+					
+					    <texture>D-HBYD.fuselage.png</texture>
+
+				</livery>
+				
+				<liverytail>
+				<name type="string">D-HBYD "Bavarian Police Helicopter Squadron"</name>
+					 <index type="int">3</index>
+					  <texture>D-HBYD.tail.png</texture>
+				</liverytail>
+				<rotorblade>
+				<name type="string">D-HBYD "Bavarian Police Helicopter Squadron"</name>
+					 <index type="int">1</index>
+					  <texture>rotorblade.anwb.png.png</texture>
+				</rotorblade>
+				
+			<ec135>
+			<binocular_standart type="bool">false</binocular_standart>
+				<binocular_tri type="bool">true</binocular_tri>
+				<winch>true</winch>
+				<mirror>false</mirror>
+				<wirecutter_skid>false</wirecutter_skid>
+				<wirecutter_up>false</wirecutter_up>
+				<wirecutter_down>false</wirecutter_down>
+				<nose>false</nose>
+				<nosefl>false</nosefl>
+				<radardome>true</radardome>
+				<antennaset>true</antennaset>
+				<plateleft>false</plateleft>
+				<plateright>true</plateright>
+				<reardoorwindow>false</reardoorwindow>
+				<reardoor_norm>true</reardoor_norm>
+			</ec135>
+		</model>
+	</sim>
+</PropertyList>
