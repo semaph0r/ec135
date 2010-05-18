@@ -9,13 +9,13 @@
 				<livery>
 					<name type="string">ADAC</name>
 					 <index type="int">1</index>
-					  <texture>fuselage.adac.dds</texture>
+					  <texture>fuselage.adac.png</texture>
 			
 				</livery>
 				<liverytail>
 				<name type="string">ADAC</name>
 					 <index type="int">1</index>
-					  <texture>tail.adac.dds</texture>
+					  <texture>tail.adac.png</texture>
 				</liverytail>
 				<rotorblade>
 				<name type="string">ANWB</name>

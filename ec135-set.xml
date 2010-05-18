@@ -31,7 +31,7 @@ Thanks for all the help!
 		<author>Heiko Schulz, Maik Justus (FDM), Melchior Franz (Nasal)</author>
 		<status>alpha</status>
 		<license>GPL v2</license>
-		<aircraft-version>0.4</aircraft-version>
+		<aircraft-version>0.6</aircraft-version>
 
 		<flight-model>yasim</flight-model>
 		<aero>ec135</aero>
@@ -41,10 +41,10 @@ Thanks for all the help!
 			<splash-texture>Aircraft/ec135/splash.rgb</splash-texture>
 		</startup>
 
+		
 		<sound>
 			<path>Aircraft/ec135/Sounds/sound.xml</path>
 		</sound>
-
 
 		<instrumentation>
 			<path>Aircraft/ec135/instrumentation/instrumentation.xml</path>
