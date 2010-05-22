@@ -103,11 +103,11 @@ nx="0.07" ny="-1" nz="-0.05" fx="1" fy="0" fz="0" ccw="1"
 
 
 <rotorgear
-  max-power-engine="616"
+  max-power-engine="1218"
 	  max-power-rotor-brake="100"
 	  rotorgear-friction="1.4"
 	  engine-prop-factor="0.005"
-  engine-accel-limit="4"
+  engine-accel-limit="100"
   yasimdragfactor="60"
   yasimliftfactor="12"
 >
