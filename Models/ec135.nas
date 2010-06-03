@@ -235,7 +235,7 @@ var Engine = {
 	update: func(dt, trim = 0) {
 		var starter = me.starterLP.filter(me.starterN.getValue() * 0.19);	# starter 15-20% N1max
 		me.powerN.setValue(me.power = clamp(me.powerN.getValue()));
-		var power = me.power * 0.97 + trim;					# 97% = N2% in flight position
+		var power = me.power * 0.99 + trim;					# 99% = N2% in flight position
 
 		if (me.running)
 			power += (1 - collective.getValue()) * 0.03;			# droop compensator
@@ -547,8 +547,8 @@ var procedure = {
 			me.next(4.5);
 
 		} elsif (me.stage == 4) {
-			cprint("", "4: move power lever #1 to idle position -> engine #1 spools up to N1 63%");
-			engines.engine[0].powerN.setValue(0.63);
+			cprint("", "4: move power lever #1 to idle position -> engine #1 spools up to N1 70%");
+			engines.engine[0].powerN.setValue(0.70);
 			me.next(5);
 
 		} elsif (me.stage == 5) {
@@ -573,8 +573,8 @@ var procedure = {
 			me.next(5);
 
 		} elsif (me.stage == 9) {
-			cprint("", "9: move power lever #2 to idle position -> engine #2 spools up to N1 63%");
-			engines.engine[1].powerN.setValue(0.63);
+			cprint("", "9: move power lever #2 to idle position -> engine #2 spools up to N1 70%");
+			engines.engine[1].powerN.setValue(0.70);
 			me.next(8);
 
 		} elsif (me.stage == 10) {
@@ -595,8 +595,8 @@ var procedure = {
 			engines.engine[1].starterN.setValue(0);
 			engines.engine[0].ignitionN.setValue(0);
 			engines.engine[1].ignitionN.setValue(0);
-			engines.engine[0].powerN.setValue(0.63);
-			engines.engine[1].powerN.setValue(0.63);
+			engines.engine[0].powerN.setValue(0.70);
+			engines.engine[1].powerN.setValue(0.70);
 			me.next(40);
 
 		} elsif (me.stage == -2) {
@@ -620,6 +620,7 @@ torque.setDoubleValue(0);
 
 var update_torque = func(dt) {
 	var f = dt / (0.2 + dt);
+	#var gw = getprop("/yasim/gross-weight-lbs");
 	torque_val = torque.getValue() * f + torque_val * (1 - f);
 	torque_pct.setDoubleValue(torque_val / 5300);
 }
