@@ -3,26 +3,10 @@
 ************************************************************************
 EC 135 simulation config.
 
-This model of the Ec 135 is dedicated to heliflyer who passed away June 2009.
+This model of the Ec 135 is dedicated to heliflyer.
 Thanks for all the help!
 
 ************************************************************************
--->
-<!--
- This file is part of FlightGear, the free flight simulator
- http://www.flightgear.org/
-
- Copyright (C) 2009 Heiko Schulz, Heiko.H.Schulz@gmx.net
-
- This program is free software; you can redistribute it and/or
- modify it under the terms of the GNU General Public License as
- published by the Free Software Foundation; either version 2 of the
- License, or (at your option) any later version.
-
- This program is distributed in the hope that it will be useful, but
- WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- General Public License for more details.
 -->
 
 <PropertyList>
@@ -41,10 +25,10 @@ Thanks for all the help!
 			<splash-texture>Aircraft/ec135/splash.rgb</splash-texture>
 		</startup>
 
-		
 		<sound>
 			<path>Aircraft/ec135/Sounds/sound.xml</path>
 		</sound>
+
 
 		<instrumentation>
 			<path>Aircraft/ec135/instrumentation/instrumentation.xml</path>
@@ -54,11 +38,9 @@ Thanks for all the help!
 		<model>
 			<path archive="y">Aircraft/ec135/Models/ec135.xml</path>
 			<variant type="int">0</variant>
-			
 			<livery>
                               <file type="string">Bavarian Police "Edelweiss"</file>
             </livery>
-	    
 	   <liverytail>
 	    <file type="string">Bavarian Police "Edelweiss"</file>
 	    </liverytail>
@@ -315,6 +297,22 @@ Thanks for all the help!
 			<reltarget type="double">0</reltarget>
 			<maxreltorque type="double">0</maxreltorque>
 		</rotor>
+		
+	<engines>
+			<engine n="0">
+				<magnetos>1</magnetos>
+				<propeller-pitch alias="/controls/engines/power-trim"/>
+				<mixture alias="/controls/engines/power-balance"/>
+			</engine>
+			<engine n="1">
+				<magnetos>1</magnetos>
+				<propeller-pitch alias="/controls/engines/power-trim"/>
+				<mixture alias="/controls/engines/power-balance"/>
+				<throttle alias="/controls/engines/engine[0]/throttle"/>
+			</engine>
+			<power-trim type="double">0</power-trim>
+			<power-balance type="double">0</power-balance>
+	</engines>
 
 
 		<lighting>
@@ -374,7 +372,21 @@ Thanks for all the help!
 
 
 
+ <!--
+only needed for test flights and bug hunting 
+ <key n="6">
+    <name>Ctrl-f</name>
+    <desc>Toggle AutoHover</desc>
+    <binding>
+      <command>nasal</command>
+      <script>ec135.afcs.toggleAutoHover();</script>
+   </binding>
+    <binding>
+      <command>nasal</command>
+      <script>ec135.cas.toggleEnable();</script>
+    </binding>
 
+  </key>-->
 
 			
 			<key n="82">
