@@ -1,6 +1,6 @@
 #
 # Flight Control System by Tatsuhiro Nishioka 
-# $Id: fcs.nas,v 1.11 2008/08/28 02:41:04 tat Exp $
+# $Id$
 #
 #This one simulates a P/R and Jaw SAS
 
@@ -528,7 +528,7 @@ var stabilator = nil;
 var tail = nil;
 var count = 0;
 
-var sensitivities = {'roll' : 0.0, 'pitch' : 0.0, 'yaw' : 1.125 };
+var sensitivities = {'roll' : 0.05, 'pitch' : -0.15, 'yaw' : 1.125 };
 var sas_initial_gains = {'roll' : 0.0011, 'pitch' : -0.0042, 'yaw' : 0.004 };
 var cas_input_gains = {'roll' : 30, 'pitch' : -60, 'yaw' : 30, 
                        'attitude-roll' : 80, 'attitude-pitch' : -80 };

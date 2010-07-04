@@ -147,8 +147,8 @@
 				<property>sim/model/ec135/sound/volume</property>
 				<factor>5</factor>
 			</volume>
-			<reference-dist>50</reference-dist>
-			<max-dist>200</max-dist>
+			<reference-dist>200</reference-dist>
+			<max-dist>5000</max-dist>
 		</engine>
 
 		<engine>
@@ -166,8 +166,8 @@
 				<property>sim/model/ec135/sound/volume</property>
 				<factor>5</factor>
 			</volume>
-			<reference-dist>50</reference-dist>
-			<max-dist>200</max-dist>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
 		</engine>
 
 		<engine>
@@ -186,8 +186,8 @@
 				<property>sim/model/ec135/sound/volume</property>
 				<factor>5</factor>
 			</volume>
-			<reference-dist>50</reference-dist>
-			<max-dist>200</max-dist>
+			<reference-dist>200</reference-dist>
+			<max-dist>5000</max-dist>
 		</engine>
 
 		<engine>
@@ -207,8 +207,8 @@
 				<property>sim/model/ec135/sound/volume</property>
 				<factor>5</factor>
 			</volume>
-			<reference-dist>50</reference-dist>
-			<max-dist>200</max-dist>
+			<reference-dist>200</reference-dist>
+			<max-dist>5000</max-dist>
 		</engine>
 
 		<engine>
@@ -226,8 +226,8 @@
 				<property>sim/model/ec135/sound/volume</property>
 				<factor>5</factor>
 			</volume>
-			<reference-dist>50</reference-dist>
-			<max-dist>200</max-dist>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
 		</engine>
 
 		<engine>
@@ -246,11 +246,11 @@
 				<property>sim/model/ec135/sound/volume</property>
 				<factor>5</factor>
 			</volume>
-			<reference-dist>50</reference-dist>
-			<max-dist>200</max-dist>
+			<reference-dist>200</reference-dist>
+			<max-dist>5000</max-dist>
 		</engine>
 
-		
+
 		<rotor>
 			<name>rotor-outside</name>
 			<mode>looped</mode>
@@ -280,11 +280,11 @@
 				<min>0</min>
 				<max>1.5</max>
 			</pitch>
-			
-			<reference-dist>200</reference-dist>
-			<max-dist>1000</max-dist>
+	
+			<reference-dist>50</reference-dist>
+			<max-dist>10000</max-dist>
 		</rotor>
-
+		
 		<rotor>
 			<name>rotor-inside</name>
 			<mode>looped</mode>
@@ -316,8 +316,8 @@
 				<min>0</min>
 				<max>1.5</max>
 			</pitch>
-			<reference-dist>500</reference-dist>
-			<max-dist>1000</max-dist>
+			<reference-dist>50</reference-dist>
+			<max-dist>5000</max-dist>
 		</rotor>
 
 		<rotor>
@@ -350,8 +350,8 @@
 				<offset>0</offset>
 				<max>1.75</max>
 			</pitch>
-			<reference-dist>500</reference-dist>
-			<max-dist>1500</max-dist>
+			<reference-dist>50</reference-dist>
+			<max-dist>8000</max-dist>
 		</rotor>
 
 		<rotor>
@@ -374,10 +374,10 @@
 				<min>0</min>
 				<max>1.5</max>
 			</pitch>
-			<reference-dist>500</reference-dist>
-			<max-dist>3000</max-dist>
+			<reference-dist>50</reference-dist>
+			<max-dist>10000</max-dist>
 		</rotor>
-		
+
 		
 
 		<overspeed>
@@ -403,7 +403,7 @@
 			<reference-dist>1.0</reference-dist>
 			<max-dist>2.0</max-dist>
 		</overspeed>
-		
+
 		
 
 		<warning>
@@ -427,7 +427,7 @@
 			<reference-dist>0.5</reference-dist>
 			<max-dist>1.0</max-dist>
 		</warning>
-		
+
 
 		<contact>
 			<name>ground contact</name>
@@ -676,7 +676,7 @@
 			<max-dist>500</max-dist>
 		</crash>
 
-		
+
 
 		<door>
 			<name>close right frontdoor</name>

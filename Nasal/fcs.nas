@@ -1,6 +1,6 @@
 #
 # Flight Control System by Tatsuhiro Nishioka 
-# $Id: fcs.nas,v 1.11 2008/08/28 02:41:04 tat Exp $
+# $Id$
 #
 #This one simulates a jaw SAS
 
