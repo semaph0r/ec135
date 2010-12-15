@@ -43,5 +43,8 @@
 				<reardoor_norm>true</reardoor_norm>
 			</ec135>
 		</model>
+	   <rendering>
+    <refl_correction type="string">-0.1</refl_correction>
+    </rendering>
 	</sim>
 </PropertyList>
