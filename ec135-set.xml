@@ -525,6 +525,7 @@ only needed for test flights and bug hunting
 			<!--<file>Aircraft/ec135/Nasal/fcs.nas</file>-->
 			<file>Aircraft/ec135/Nasal/fcs.nas</file>
 			<file>Aircraft/ec135/Nasal/casdisable.nas</file>
+			<file>Aircraft/ec135/Nasal/residualthrust.nas</file>
 		</ec135>
 	</nasal>
 
