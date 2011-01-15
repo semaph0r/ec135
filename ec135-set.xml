@@ -107,7 +107,11 @@ Thanks for all the help!
     <refl_correction type="string">-0.1</refl_correction>
     </rendering>
 		
-		
+<airport>
+        <runways>
+            <start-offset-m>3.3</start-offset-m>
+        </runways>
+</airport>		
 
 		<!--view-->
 		<view n="0">
