@@ -39,9 +39,9 @@
 				<reardoorwindow>true</reardoorwindow>
 				<reardoor_norm>false</reardoor_norm>
 			</ec135>
-		   <rendering>
+		   		   </model>
+			<rendering>	   
     <refl_correction type="string">-0.1</refl_correction>
     </rendering>
-		</model>
 	</sim>
 </PropertyList>

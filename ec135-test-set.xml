@@ -11,14 +11,14 @@ Thanks for all the help!
 
 <PropertyList>
 	<sim>
-		<description>Eurocopter EC135 0.4</description>
+		<description>Eurocopter EC135 1.0.</description>
 		<author>Heiko Schulz, Maik Justus (FDM), Melchior Franz (Nasal)</author>
 		<status>alpha</status>
 		<license>GPL v2</license>
 		<aircraft-version>0.6</aircraft-version>
 
 		<flight-model>yasim</flight-model>
-		<aero>ec135</aero>
+		<aero>ec135-test</aero>
 		<fuel-fraction>0.8</fuel-fraction>
 
 		<startup>

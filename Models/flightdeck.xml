@@ -450,8 +450,8 @@
 		<object-name>stickgrip</object-name>
 		<object-name>griphead</object-name>
 		<property>/controls/flight/elevator</property>
-		<factor>16</factor>
-		<offset-deg>-2.5</offset-deg>
+		<factor>10.9</factor>
+		<offset-deg>-2.6</offset-deg>
 		<center>
 			<x-m>-3.134</x-m>
 			<y-m>0.401</y-m>
@@ -469,8 +469,8 @@
 			<object-name>stickgrip</object-name>
 		<object-name>griphead</object-name>
 		<property>/controls/flight/aileron</property>
-		<factor>8.94</factor>
-		<offset>-0.71</offset>
+		<factor>7.5</factor>
+		<offset>-2.16</offset>
 		<center>
 			<x-m>-3.134</x-m>
 			<y-m>0.401</y-m>
@@ -491,8 +491,8 @@
 		<object-name>rrpedal</object-name>
 
 		<property>/controls/flight/rudder</property>
-		<factor>20</factor>
-		<offset>0</offset>
+		<factor>25.5</factor>
+		<offset>17.4</offset>
 		<center>
 			<x-m>-3.603</x-m>
 			<y-m>0.0</y-m>
@@ -510,8 +510,8 @@
 		<object-name>rlpedal</object-name>
 
 		<property>/controls/flight/rudder</property>
-		<factor>20</factor>
-		<offset>0</offset>
+		<factor>25.5</factor>
+		<offset>17.4</offset>
 		<center>
 			<x-m>-3.603</x-m>
 			<y-m>0.0</y-m>

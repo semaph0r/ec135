@@ -30,8 +30,8 @@
   delta=".15"
   pitch-a="10"
   pitch-b="15"
-  flapmin="-13"
-  flapmax="13"
+  flapmin="-15"
+  flapmax="15"
   flap0="-5"
   flap0factor="0"
   notorque="0"
@@ -74,10 +74,10 @@
 
 
 <rotor name="tail" x="-8.855" y="0.18" z="0.696"
-nx="0.00" ny="-1" nz="0.0" fx="1" fy="0" fz="0" ccw="1"
-	  maxcollective="20" mincollective="-10.0"
+nx="0.07" ny="-1" nz="-0.05" fx="1" fy="0" fz="0" ccw="1"
+	  maxcollective="10" mincollective="-7.5"
 	  diameter="1" numblades="10" weightperblade="1" relbladecenter="0.7"
-	  dynamic="1" rpm="3584" rellenflaphinge="0.0" delta3="0" translift="0" delta="0.5"
+	  dynamic="1" rpm="3584" rellenflaphinge="0.1" delta3="0" translift="0" delta="0.5"
 	  pitch-a="10"
 	  pitch-b="15"
 	  airfoil-lift-coefficient="4.25"
@@ -85,12 +85,11 @@ nx="0.00" ny="-1" nz="0.0" fx="1" fy="0" fz="0" ccw="1"
 	  airfoil-drag-coefficient1="0.10"
 	  notorque="0"
 	  taper="1"
-	  chord="0.105"
-	   twist="-8.5"
+	  chord="0.205"
 	  number-of-segments="5"
 	  number-of-parts="4"
 	  rel-len-blade-start="0.4"
-	  incidence-stall-zero-speed="9"
+	  incidence-stall-zero-speed="16"
 	  incidence-stall-half-sonic-speed="18"
 	  lift-factor-stall="0.18"
 	  stall-change-over="5.5"
@@ -141,29 +140,16 @@ nx="0.00" ny="-1" nz="0.0" fx="1" fy="0" fz="0" ccw="1"
 
 
 
-<vstab x="-8.6" y="0" z=".61" 
-taper=".5" 
-length="1.37" 
-chord=".79" 
-sweep="40"
-incidence="5">
-<stall aoa="16" width="4" peak="1.5"/>
+<vstab x="-8.6" y="0" z=".61" taper=".5" length="1.37" chord=".79" sweep="40">
+  <stall aoa="16" width="4" peak="1.5"/>
 </vstab>
 
-<vstab x="-7.4" y="1.27" z=".12" 
-taper="1" 
-length=".65" 
-chord=".40" 
-sweep="20">
-<stall aoa="16" width="4" peak="1.5"/>
+<vstab x="-7.4" y="1.27" z=".12" taper="1" length=".65" chord=".40" sweep="20">
+  <stall aoa="16" width="4" peak="1.5"/>
 </vstab>
 
-<vstab x="-7.4" y="-1.27" z=".12" 
-taper="1" 
-length=".65" 
-chord=".40" 
-sweep="20">
-<stall aoa="16" width="4" peak="1.5"/>
+<vstab x="-7.4" y="-1.27" z=".12" taper="1" length=".65" chord=".40" sweep="20">
+		<stall aoa="16" width="4" peak="1.5"/>
 </vstab>
 
 <hstab x="-7.4" y="0.05" z="0.43" taper="1.0" effectiveness="2.0" length="1.30" chord="0.36" sweep="0" incidence="45">
@@ -173,7 +159,7 @@ sweep="20">
 <!-- left skid -->
 <gear x="-0.96" y="+1.00" z="-1.65" skid="1" compression="0.1" spring="0.8"   sfric="0.5" dfric="0.4"/>
 
-<gear x="-3.6" y="+1.00" z="-1.51" skid="1" compression="0.1" spring="0.8"   sfric="0.5" dfric="0.5"/>
+<gear x="-3.6" y="+1.00" z="-1.51" skid="1" compression="0.1" spring="0.8"   sfric="0.5" dfric="0.4"/>
 
 <!-- right skid -->
 <gear x="-0.96" y="-1.00" z="-1.65" skid="1" compression="0.1" spring="0.8"   sfric="0.5" dfric="0.4"/>
@@ -225,10 +211,10 @@ sweep="20">
 </thruster>
 
 <!-- residual thrust-->
-<thruster x="-4.142" y="0.6" z="0.821" vx="-1" vy="0" vz="0" thrust="470">
+<thruster x="-4.142" y="0.6" z="0.821" vx="-1" vy="0" vz="0" thrust="9410">
   <control-input axis="/engines/engine[0]/residualthrust"  src0="0" src1="1" dst0="0" dst1="-1" control="THROTTLE"/>
 </thruster>
-<thruster x="-4.142" y="-0.6" z="0.821" vx="-1" vy="0" vz="0" thrust="470">
+<thruster x="-4.142" y="-0.6" z="0.821" vx="-1" vy="0" vz="0" thrust="9410">
   <control-input axis="/engines/engine[0]/residualthrust"  src0="0" src1="1" dst0="0" dst1="-1" control="THROTTLE"/>
 </thruster>
 

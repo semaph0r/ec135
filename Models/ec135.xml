@@ -51,6 +51,9 @@
 			<pitch-deg>0</pitch-deg>
 
 		</offsets>
+		<condition>
+			<property>sim/model/ec135/radardome</property>
+		</condition>
 	</model>
 	
   <nasal>
@@ -130,7 +133,7 @@
 		<object-name>blurred2</object-name>
 		<object-name>blurred3</object-name>
 		<object-name>blurred4</object-name>
-		<offset-deg>8.0</offset-deg>
+		<offset-deg>5.0</offset-deg>
 		<axis>
 			<x>0</x>
 			<y>-1</y>
@@ -165,7 +168,7 @@
 		<object-name>blade4b</object-name>
 		<object-name>blade4c</object-name>
 		<object-name>blade4d</object-name>
-		<offset-deg>8.0</offset-deg>
+		<offset-deg>5.0</offset-deg>
 		<axis>
 			<x>0</x>
 			<y>-1</y>

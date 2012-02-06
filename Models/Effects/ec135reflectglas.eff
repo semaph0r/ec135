@@ -91,7 +91,7 @@ EXAMPLES: You can find examples of both usages in the Hunter and Lightning model
 		<rainbowiness type="float">0.15</rainbowiness>
 		<fresneliness>0.0</fresneliness>
 		<noisiness>0.0</noisiness>
-		<refl_correction>-0.2</refl_correction>
+		<refl_correction>0</refl_correction>
 		<ambient_correction>0.0</ambient_correction>
 		<reflect_map>0</reflect_map>
 	</parameters>
