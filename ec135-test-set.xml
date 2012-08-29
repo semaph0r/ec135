@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!--
 ************************************************************************
-EC 135 simulation config.
+EC 135 P2 simulation config.
 
-This model of the Ec 135 is dedicated to heliflyer.
+This model of the EC 135 is dedicated to heliflyer.
 Thanks for all the help!
 
 ************************************************************************
@@ -11,11 +11,17 @@ Thanks for all the help!
 
 <PropertyList>
 	<sim>
-		<description>Eurocopter EC135 1.0.</description>
+		<description>Eurocopter EC135 P2</description>
 		<author>Heiko Schulz, Maik Justus (FDM), Melchior Franz (Nasal)</author>
-		<status>alpha</status>
+		<status>beta</status>
+		<rating>
+                    <FDM type="int">4</FDM>
+                    <systems type="int">1</systems>
+                     <cockpit type="int">2</cockpit>
+                    <model type="int">4</model>
+                    </rating>
 		<license>GPL v2</license>
-		<aircraft-version>0.6</aircraft-version>
+		
 
 		<flight-model>yasim</flight-model>
 		<aero>ec135-test</aero>
@@ -39,35 +45,54 @@ Thanks for all the help!
 			<path archive="y">Aircraft/ec135/Models/ec135.xml</path>
 			<variant type="int">0</variant>
 			<livery>
-                              <file type="string">Bavarian Police "Edelweiss"</file>
-            </livery>
-	   <liverytail>
-	    <file type="string">Bavarian Police "Edelweiss"</file>
-	    </liverytail>
-	    <rotorblade>
-				<name type="string">Bavarian Police "Edelweiss"</name>
-					 <index type="int">1</index>
-					  <texture>rotorblade.png</texture>
-				</rotorblade>
-			<ec135>
-				<state type="int">0</state>
+                              <file type="string">Default</file>
+                               </livery>
+	   	    	<ec135>
+				<AnalogDual>true</AnalogDual>
+				<DigitalDual>false</DigitalDual>
+			          <state type="int">0</state>
 				<rotor-step-deg type="float">-1.0</rotor-step-deg>
-
 				<hide-gsdi>true</hide-gsdi>
-				<binocular_standart type="bool">true</binocular_standart>
-				<binocular_tri type="bool">false</binocular_tri>
-				<winch>false</winch>
-				<mirror>false</mirror>
-				<wirecutter_skid>false</wirecutter_skid>
-				<wirecutter_up>false</wirecutter_up>
-				<nose>false</nose>
+				<BigRadom>false</BigRadom>
+				<smallradom>false</smallradom>
 				<nosefl>true</nosefl>
-				<radardome>false</radardome>
-				<antennaset>true</antennaset>
-				<plateleft>false</plateleft>
-				<plateright>true</plateright>
-				<reardoorwindow>true</reardoorwindow>
-				<reardoor_norm>false</reardoor_norm>
+				<nose>false</nose>
+				<searchlight_front>false</searchlight_front>
+				<searchlight_left>false</searchlight_left>
+				<FLIR>false</FLIR>
+				<windscreen_tri>false</windscreen_tri>
+				<windscreen>true</windscreen>
+				<mirror>false</mirror>
+				<wirecutter_up>false</wirecutter_up>
+				<wirecutter_down>false</wirecutter_down>
+				<sandfilter>false</sandfilter>
+				<IBF>true</IBF>
+				<nonIBF>false</nonIBF>
+				<winch>false</winch>
+				<SSLightR>false</SSLightR>
+				<SSLightL>true</SSLightL>
+				<loudspeaker>false</loudspeaker>
+				<hellas>false</hellas>
+				<lowskid>1</lowskid>
+				<snowboard_lowskid>false</snowboard_lowskid>
+				<wirecutter_skid>false</wirecutter_skid>
+				<longskid_floats>0</longskid_floats>
+				<midskid>0</midskid>
+				<snowboard_midskid>false</snowboard_midskid>
+				<wirecutter_midskid>false</wirecutter_midskid>
+				<highskid>0</highskid>
+				<snowboard_highskid>false</snowboard_highskid>
+				<wirecutter_highskid>false</wirecutter_highskid>
+				<standardstep>true</standardstep>
+				<multifunctioncarrier>false</multifunctioncarrier>
+				<roundstep>false</roundstep>
+				<snowboard>false</snowboard>
+				<DoubleCargoHook>false</DoubleCargoHook>
+				<buckle>true</buckle>
+				<reardoor_winR>false</reardoor_winR>
+				<reardoor_winL>true</reardoor_winL>
+				<reardoorL>false</reardoorL>
+				<reardoorR>true</reardoorR>
 				
 				<doors>
 					<door>
@@ -128,9 +153,9 @@ Thanks for all the help!
 			<type>lookfrom</type>
 			<internal type="bool">true</internal>
 			<config>
-                                        <x-offset-m type="double">0.41</x-offset-m><!--left-->
-				<y-offset-m type="double">0.35</y-offset-m><!--up-->
-				<z-offset-m type="double">0.95</z-offset-m><!--back-->
+                                        <x-offset-m type="double">0.42</x-offset-m><!--left-->
+				<y-offset-m type="double">0.64</y-offset-m><!--up-->
+				<z-offset-m type="double">1.42</z-offset-m><!--back-->
 				<pitch-offset-deg>-14</pitch-offset-deg>
 				<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
 			</config>
@@ -138,37 +163,37 @@ Thanks for all the help!
 
 		<view n="1">
 			<config>
-				<target-z-offset-m archive="y" type="double">2.5</target-z-offset-m>
+				<target-z-offset-m archive="y" type="double">3.3</target-z-offset-m>
 			</config>
 		</view>
 
 		<view n="2">
 			<config>
-				<target-z-offset-m archive="y" type="double">2.5</target-z-offset-m>
+				<target-z-offset-m archive="y" type="double">3.3</target-z-offset-m>
 			</config>
 		</view>
 
 		<view n="3">
 			<config>
-				<target-z-offset-m archive="y" type="double">2.5</target-z-offset-m>
+				<target-z-offset-m archive="y" type="double">3.3</target-z-offset-m>
 			</config>
 		</view>
 
 		<view n="4">
 			<config>
-				<target-z-offset-m archive="y" type="double">2.5</target-z-offset-m>
+				<target-z-offset-m archive="y" type="double">3.3</target-z-offset-m>
 			</config>
 		</view>
 
 		<view n="5">
 			<config>
-				<target-z-offset-m archive="y" type="double">2.5</target-z-offset-m>
+				<target-z-offset-m archive="y" type="double">3.3</target-z-offset-m>
 			</config>
 		</view>
 
 		<view n="6">
 			<config>
-				<target-z-offset-m archive="y" type="double">2.5</target-z-offset-m>
+				<target-z-offset-m archive="y" type="double">3.3</target-z-offset-m>
 			</config>
 		</view>
 
@@ -181,7 +206,7 @@ Thanks for all the help!
 
 		<weight n="1">
 			<name>Co-Pilot</name>
-			<weight-lb>0</weight-lb>
+			<weight-lb>180</weight-lb>
 			<max-lb>300</max-lb>
 		</weight>
 
@@ -208,6 +233,8 @@ Thanks for all the help!
 			<weight-lb>0</weight-lb>
 			<max-lb>800</max-lb>
 		</weight>
+		
+		<flight-recorder include="Systems/flight-recorder.xml"/>
 
 		<help>
 			<title>EC 135 - background and help</title>
@@ -533,8 +560,8 @@ only needed for test flights and bug hunting
 
 	<nasal>
 		<ec135>
-			<file>Aircraft/ec135/Models/ec135.nas</file>
-			<file>Aircraft/ec135/Models/hsi.nas</file>
+			<file>Aircraft/ec135/Nasal/ec135.nas</file>
+			<!--<file>Aircraft/ec135/Models/hsi.nas</file>-->
 			<!--<file>Aircraft/ec135/Nasal/fcs.nas</file>-->
 			<file>Aircraft/ec135/Nasal/fcs2.nas</file>
 			<file>Aircraft/ec135/Nasal/casdisable.nas</file>

@@ -3,60 +3,8 @@
 <!-- Eurocopter EC 135 Helicopter by Heiko Schulz, animation set -->
 
 <PropertyList>
-  
- <!--<effect>
-    <inherits-from>Aircraft/ec135/Models/Effects/ec135_bumpspec</inherits-from>
-    <object-name>fuselage</object-name>
-    <object-name>fenestron</object-name>
-  </effect>-->
-  
-  <effect>
-    <inherits-from>Effects/ec135reflect</inherits-from>
-    <object-name>fuselage</object-name>
-    <object-name>fenestron</object-name>
-  </effect>
-  
-  <effect>
-   <inherits-from>Effects/ec135reflectglas</inherits-from>
-  <object-name>windshield</object-name>
-		<object-name>glas</object-name>
-		<object-name>frontdoorglas_re</object-name>
-		<object-name>backdoorglas_re</object-name>
-		<object-name>backglas</object-name>
-		<object-name>windshield_tri</object-name>
-		<object-name>frontdoorglas_li</object-name>
-		<object-name>backdoorglas_li</object-name>
-		<object-name>reardoor_li_window</object-name>
-</effect>
 
-	<path>ec135.ac</path>
-	<offsets>
-		<z-m>-1.72</z-m>
-		<y-m>0.0</y-m>
-		<x-m>3.6</x-m>
-
-		<pitch-deg>-0.5</pitch-deg>
-		
-	</offsets>
-	
-<model>
-		<name>flightdeck</name>
-		<path>Aircraft/ec135/Models/flightdeck.xml</path>
-		<offsets>
-
-			<x-m>0</x-m>
-			<y-m>0</y-m>
-			<z-m>0</z-m>
-
-			<pitch-deg>0</pitch-deg>
-
-		</offsets>
-		<condition>
-			<property>sim/model/ec135/radardome</property>
-		</condition>
-	</model>
-	
-  <nasal>
+<nasal>
         <load>
             var livery_update = aircraft.livery_update.new(
 	    "Aircraft/ec135/Models/liveries", 10,
@@ -66,1566 +14,896 @@
         <unload>
             livery_update.stop();
         </unload>
-    </nasal>
-
-
-<!--<animation>
-<object-name>fuselage</object-name>
-<object-name>fuselage.001</object-name>
-</animation>-->
-
-
-
-
-
-	<params>
-		<flap>
-			<factor>-0.20</factor>
-		</flap>
-		<flapA>
-			<factor>0.21</factor>
-		</flapA>
-		<flapB>
-			<factor>0.25</factor>
-		</flapB>
-		<flapC>
-			<factor>0.32</factor>
-		</flapC>
-		<flapD>
-			<factor>0.35</factor>
-		</flapD>
-	</params>
-
-	<animation>
-		<name>mainrotors</name>
-		<object-name>blade1</object-name>
-		<object-name>blade1a</object-name>
-		<object-name>blade1b</object-name>
-		<object-name>blade1c</object-name>
-		<object-name>blade1d</object-name>
-		<object-name>blade2</object-name>
-		<object-name>blade2a</object-name>
-		<object-name>blade2b</object-name>
-		<object-name>blade2c</object-name>
-		<object-name>blade2d</object-name>
-		<object-name>blade3</object-name>
-		<object-name>blade3a</object-name>
-		<object-name>blade3b</object-name>
-		<object-name>blade3c</object-name>
-		<object-name>blade3d</object-name>
-		<object-name>blade4</object-name>
-		<object-name>blade4a</object-name>
-		<object-name>blade4b</object-name>
-		<object-name>blade4c</object-name>
-		<object-name>blade4d</object-name>
-	</animation>
-
-	<!-- main rotor tilt-->
-
-	<animation>
-		<type>rotate</type>
-		<object-name>mast</object-name>
-		<object-name>rotorhead</object-name>
-		<object-name>rotorcap</object-name>
-		<object-name>rotorcap.i</object-name>
-		<object-name>bladelever</object-name>
-		<object-name>blurred1</object-name>
-		<object-name>blurred2</object-name>
-		<object-name>blurred3</object-name>
-		<object-name>blurred4</object-name>
-		<offset-deg>5.0</offset-deg>
-		<axis>
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
-		</axis>
-		<center>
-			<x-m>-0.995</x-m>
-			<y-m>0.0</y-m>
-			<z-m>2.939</z-m>
-		</center>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade1</object-name>
-		<object-name>blade1a</object-name>
-		<object-name>blade1b</object-name>
-		<object-name>blade1c</object-name>
-		<object-name>blade1d</object-name>
-		<object-name>blade2</object-name>
-		<object-name>blade2a</object-name>
-		<object-name>blade2b</object-name>
-		<object-name>blade2c</object-name>
-		<object-name>blade2d</object-name>
-		<object-name>blade3</object-name>
-		<object-name>blade3a</object-name>
-		<object-name>blade3b</object-name>
-		<object-name>blade3c</object-name>
-		<object-name>blade3d</object-name>
-		<object-name>blade4</object-name>
-		<object-name>blade4a</object-name>
-		<object-name>blade4b</object-name>
-		<object-name>blade4c</object-name>
-		<object-name>blade4d</object-name>
-		<offset-deg>5.0</offset-deg>
-		<axis>
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
-		</axis>
-		<center>
-			<x-m>-0.995</x-m>
-			<y-m>0.0</y-m>
-			<z-m>2.939</z-m>
-		</center>
-	</animation>
-
-
-
-	<!--main rotor (always visible parts) -->
-
-	<animation>
-		<type>spin</type>
-		<object-name>rotorhead</object-name>
-		<object-name>rotorcap</object-name>
-		<object-name>rotorcap.i</object-name>
-		<object-name>bladelever</object-name>
-		<object-name>blurred1</object-name>
-		<object-name>blurred2</object-name>
-		<object-name>blurred3</object-name>
-		<object-name>blurred4</object-name>
-		<property>rotors/main/rpm</property>
-		<factor>-0.74</factor>
-		<axis>
-			<x1-m>-1.003</x1-m>
-			<y1-m>0.0</y1-m>
-			<z1-m>3.533</z1-m>
-			<x2-m>-0.995</x2-m>
-			<y2-m>0.0</y2-m>
-			<z2-m>2.939</z2-m>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>spin</type>
-		<object-name>blade1</object-name>
-		<object-name>blade1a</object-name>
-		<object-name>blade1b</object-name>
-		<object-name>blade1c</object-name>
-		<object-name>blade1d</object-name>
-		<object-name>blade2</object-name>
-		<object-name>blade2a</object-name>
-		<object-name>blade2b</object-name>
-		<object-name>blade2c</object-name>
-		<object-name>blade2d</object-name>
-		<object-name>blade3</object-name>
-		<object-name>blade3a</object-name>
-		<object-name>blade3b</object-name>
-		<object-name>blade3c</object-name>
-		<object-name>blade3d</object-name>
-		<object-name>blade4</object-name>
-		<object-name>blade4a</object-name>
-		<object-name>blade4b</object-name>
-		<object-name>blade4c</object-name>
-		<object-name>blade4d</object-name>
-		<property>rotors/main/rpm</property>
-		<factor>-1.0</factor>
-		<axis>
-			<x1-m>-1.003</x1-m>
-			<y1-m>0.0</y1-m>
-			<z1-m>3.533</z1-m>
-			<x2-m>-0.995</x2-m>
-			<y2-m>0.0</y2-m>
-			<z2-m>2.939</z2-m>
-		</axis>
-	</animation>
-
-	<!-- main rotor disc -->
-
-
-	<animation>
-		<type>material</type>
-		<object-name>blurred1</object-name>
-		<object-name>blurred2</object-name>
-		<object-name>blurred3</object-name>
-		<object-name>blurred4</object-name>
-		<transparency>
-			<alpha-prop>rotors/main/rpm</alpha-prop>
-			<factor>0.004</factor>
-			<offset>-0.25</offset>
-			<max>0.4</max>
-		</transparency>
-		<threshold>0.001</threshold>
-	</animation>
-
-
-	<animation>
-		<type>select</type>
-		<object-name>mainrotors</object-name>
-		<condition>
-			<less-than>
-				<property>rotors/main/rpm</property>
-				<value>175</value>
-			</less-than>
-		</condition>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blurred1</object-name>
-		<object-name>blurred2</object-name>
-		<object-name>blurred3</object-name>
-		<object-name>blurred4</object-name>
-		<property>rotors/main/blade[0]/position-deg</property>
-		<factor>1</factor>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-		<center>
-			<x-m>-1.018</x-m>
-			<y-m>0.0</y-m>
-			<z-m>3.250</z-m>
-		</center>
-	</animation>
-
-	<animation>
-		<type>noshadow</type>
-		<object-name>blurred1</object-name>
-		<object-name>blurred2</object-name>
-		<object-name>blurred3</object-name>
-		<object-name>blurred4</object-name>
-	</animation>
-
-	<!-- main rotor blades -->
-
-
-	<animation>
-		<type>material</type>
-		<object-name>mainrotors</object-name>
-		<global type="bool">true</global>
-		<transparency>
-			<alpha-prop>rotors/main/rpm</alpha-prop>
-			<factor>-0.0050</factor>
-			<offset>1</offset>
-			<max>1</max>
-		</transparency>
-	</animation>-->
-
-	<animation>
-		<type>rotate</type>
-		<object-name>rotorhead</object-name>
-		<object-name>bladelever</object-name>
-		<property>rotors/main/blade[0]/position-deg</property>
-		<offset-deg>45</offset-deg>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-		<center>
-			<x-m>-1.018</x-m>
-			<y-m>0.0</y-m>
-			<z-m>3.250</z-m>
-		</center>
-	</animation>
-
-
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade1</object-name>
-		<object-name>blade1a</object-name>
-		<object-name>blade1b</object-name>
-		<object-name>blade1c</object-name>
-		<object-name>blade1d</object-name>
-		<property>rotors/main/blade[0]/position-deg</property>
-		<factor>1</factor>
-		<offset-deg>0</offset-deg>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-		<center>
-			<x-m>-1.018</x-m>
-			<y-m>0.0</y-m>
-			<z-m>3.250</z-m>
-		</center>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade2</object-name>
-		<object-name>blade2a</object-name>
-		<object-name>blade2b</object-name>
-		<object-name>blade2c</object-name>
-		<object-name>blade2d</object-name>
-		<property>rotors/main/blade[1]/position-deg</property>
-		<factor>1</factor>
-		<offset-deg>90</offset-deg>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-		<center>
-			<x-m>-1.018</x-m>
-			<y-m>0.0</y-m>
-			<z-m>3.250</z-m>
-		</center>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade3</object-name>
-		<object-name>blade3a</object-name>
-		<object-name>blade3b</object-name>
-		<object-name>blade3c</object-name>
-		<object-name>blade3d</object-name>
-		<property>rotors/main/blade[2]/position-deg</property>
-		<factor>1</factor>
-		<offset-deg>180</offset-deg>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-		<center>
-			<x-m>-1.018</x-m>
-			<y-m>0.0</y-m>
-			<z-m>3.250</z-m>
-		</center>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade4</object-name>
-		<object-name>blade4a</object-name>
-		<object-name>blade4b</object-name>
-		<object-name>blade4c</object-name>
-		<object-name>blade4d</object-name>
-		<property>rotors/main/blade[3]/position-deg</property>
-		<factor>1</factor>
-		<offset-deg>275</offset-deg>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-		<center>
-			<x-m>-1.018</x-m>
-			<y-m>0.0</y-m>
-			<z-m>3.250</z-m>
-		</center>
-	</animation>
-
-
-	<!--blade1-->
-	<!-- incidence animation and flap-animation-->
-	<animation>
-		<type>rotate</type>
-		<object-name>blade1</object-name>
-		<object-name>blade1a</object-name>
-		<object-name>blade1b</object-name>
-		<object-name>blade1c</object-name>
-		<object-name>blade1d</object-name>
-		<property>rotors/main/blade[0]/incidence-deg</property>
-		<factor>1.5</factor>
-		<center>
-			<x-m>-0.888</x-m>
-			<y-m>0</y-m>
-			<z-m>3.384</z-m>
-		</center>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade1</object-name>
-		<object-name>blade1a</object-name>
-		<object-name>blade1b</object-name>
-		<object-name>blade1c</object-name>
-		<object-name>blade1d</object-name>
-		<property>rotors/main/blade[0]/flap-deg</property>
-		<factor alias="../../params/flap/factor"/>
-		<center>
-			<x-m>-0.894</x-m>
-			<y-m>0</y-m>
-			<z-m>3.485</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade1a</object-name>
-		<object-name>blade1b</object-name>
-		<object-name>blade1c</object-name>
-		<object-name>blade1d</object-name>
-		<property>rotors/main/blade[0]/flap-deg</property>
-		<factor alias="../../params/flapB/factor"/>
-		<center>
-			<x-m>0.336</x-m>
-			<y-m>0</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade1b</object-name>
-		<object-name>blade1c</object-name>
-		<object-name>blade1d</object-name>
-		<property>rotors/main/blade[0]/flap-deg</property>
-		<factor alias="../../params/flapC/factor"/>
-		<center>
-			<x-m>1.163</x-m>
-			<y-m>0</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade1c</object-name>
-		<object-name>blade1d</object-name>
-		<property>rotors/main/blade[0]/flap-deg</property>
-		<factor alias="../../params/flapD/factor"/>
-		<center>
-			<x-m>2.004</x-m>
-			<y-m>0</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade1d</object-name>
-		<property>rotors/main/blade[0]/flap-deg</property>
-		<factor alias="../../params/flapD/factor"/>
-		<center>
-			<x-m>2.839</x-m>
-			<y-m>0</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	
-
-	<!--blade2-->
-	<!-- incidence animation and flap-animation-->
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade2</object-name>
-		<object-name>blade2a</object-name>
-		<object-name>blade2b</object-name>
-		<object-name>blade2c</object-name>
-		<object-name>blade2d</object-name>
-		<property>rotors/main/blade[0]/incidence-deg</property>
-		<factor>1.5</factor>
-		<center>
-			<x-m>-1.0</x-m>
-			<y-m>-0.102</y-m>
-			<z-m>3.384</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade2</object-name>
-		<object-name>blade2a</object-name>
-		<object-name>blade2b</object-name>
-		<object-name>blade2c</object-name>
-		<object-name>blade2d</object-name>
-		<property>rotors/main/blade[1]/flap-deg</property>
-		<factor alias="../../params/flapA/factor"/>
-		<center>
-			<x-m>-1.0</x-m>
-			<y-m>-0.100</y-m>
-			<z-m>3.485</z-m>
-		</center>
-		<axis>
-			<x>-1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade2a</object-name>
-		<object-name>blade2b</object-name>
-		<object-name>blade2c</object-name>
-		<object-name>blade2d</object-name>
-		<property>rotors/main/blade[1]/flap-deg</property>
-		<factor alias="../../params/flapB/factor"/>
-		<center>
-			<x-m>-1.0</x-m>
-			<y-m>-1.321</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>-1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade2b</object-name>
-		<object-name>blade2c</object-name>
-		<object-name>blade2d</object-name>
-		<property>rotors/main/blade[1]/flap-deg</property>
-		<factor alias="../../params/flapC/factor"/>
-		<center>
-			<x-m>-1.0</x-m>
-			<y-m>-2.158</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>-1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade2c</object-name>
-		<object-name>blade2d</object-name>
-		<property>rotors/main/blade[1]/flap-deg</property>
-		<factor alias="../../params/flapD/factor"/>
-		<center>
-			<x-m>-1.0</x-m>
-			<y-m>-2.995</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>-1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade2d</object-name>
-		<property>rotors/main/blade[1]/flap-deg</property>
-		<factor alias="../../params/flapD/factor"/>
-		<center>
-			<x-m>-1.0</x-m>
-			<y-m>-3.845</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>-1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<!--blade3-->
-	<!-- incidence animation and flap-animation-->
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade3</object-name>
-		<object-name>blade3a</object-name>
-		<object-name>blade3b</object-name>
-		<object-name>blade3c</object-name>
-		<object-name>blade3d</object-name>
-		<property>rotors/main/blade[0]/incidence-deg</property>
-		<factor>1.5</factor>
-		<center>
-			<x-m>-1.091</x-m>
-			<y-m>0</y-m>
-			<z-m>3.384</z-m>
-		</center>
-		<axis>
-			<x>-1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade3</object-name>
-		<object-name>blade3a</object-name>
-		<object-name>blade3b</object-name>
-		<object-name>blade3c</object-name>
-		<object-name>blade3d</object-name>
-		<property>rotors/main/blade[2]/flap-deg</property>
-		<factor alias="../../params/flapA/factor"/>
-		<center>
-			<x-m>-1.096</x-m>
-			<y-m>0</y-m>
-			<z-m>3.485</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade3a</object-name>
-		<object-name>blade3b</object-name>
-		<object-name>blade3c</object-name>
-		<object-name>blade3d</object-name>
-		<property>rotors/main/blade[2]/flap-deg</property>
-		<factor alias="../../params/flapB/factor"/>
-		<center>
-			<x-m>-2.317</x-m>
-			<y-m>0</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade3b</object-name>
-		<object-name>blade3c</object-name>
-		<object-name>blade3d</object-name>
-		<property>rotors/main/blade[2]/flap-deg</property>
-		<factor alias="../../params/flapC/factor"/>
-		<center>
-			<x-m>-3.145</x-m>
-			<y-m>0</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade3c</object-name>
-		<object-name>blade3d</object-name>
-		<property>rotors/main/blade[2]/flap-deg</property>
-		<factor alias="../../params/flapD/factor"/>
-		<center>
-			<x-m>-3.984</x-m>
-			<y-m>0</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade3d</object-name>
-		<property>rotors/main/blade[2]/flap-deg</property>
-		<factor alias="../../params/flapD/factor"/>
-		<center>
-			<x-m>-4.821</x-m>
-			<y-m>0</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<!--blade4-->
-	<!-- incidence animation and flap-animation-->
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade4</object-name>
-		<object-name>blade4a</object-name>
-		<object-name>blade4b</object-name>
-		<object-name>blade4c</object-name>
-		<object-name>blade4d</object-name>
-		<property>rotors/main/blade[0]/incidence-deg</property>
-		<factor>1.5</factor>
-		<center>
-			<x-m>-0.989</x-m>
-			<y-m>0-102</y-m>
-			<z-m>3.384</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade4</object-name>
-		<object-name>blade4a</object-name>
-		<object-name>blade4b</object-name>
-		<object-name>blade4c</object-name>
-		<object-name>blade4d</object-name>
-		<property>rotors/main/blade[2]/flap-deg</property>
-		<factor alias="../../params/flapA/factor"/>
-		<center>
-			<x-m>-0.984</x-m>
-			<y-m>0.103</y-m>
-			<z-m>3.485</z-m>
-		</center>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade4a</object-name>
-		<object-name>blade4b</object-name>
-		<object-name>blade4c</object-name>
-		<object-name>blade4d</object-name>
-		<property>rotors/main/blade[2]/flap-deg</property>
-		<factor alias="../../params/flapB/factor"/>
-		<center>
-			<x-m>-0.984</x-m>
-			<y-m>1.311</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade4b</object-name>
-		<object-name>blade4c</object-name>
-		<object-name>blade4d</object-name>
-		<property>rotors/main/blade[2]/flap-deg</property>
-		<factor alias="../../params/flapC/factor"/>
-		<center>
-			<x-m>-0.984</x-m>
-			<y-m>2.153</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade4c</object-name>
-		<object-name>blade4d</object-name>
-		<property>rotors/main/blade[2]/flap-deg</property>
-		<factor alias="../../params/flapD/factor"/>
-		<center>
-			<x-m>-0.984</x-m>
-			<y-m>2.990</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blade4d</object-name>
-		<property>rotors/main/blade[2]/flap-deg</property>
-		<factor alias="../../params/flapD/factor"/>
-		<center>
-			<x-m>-0.984</x-m>
-			<y-m>3.834</y-m>
-			<z-m>3.342</z-m>
-		</center>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-
-
-
-	<!--blurred mainrotor cone-->
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blurred1</object-name>
-		<property>/rotors/main/cone-deg</property>
-		<factor>1.5</factor>
-
-		<axis>
-			<x1-m>-2.255</x1-m>
-			<y1-m>0.531</y1-m>
-			<z1-m>3.292</z1-m>
-			<x2-m>-1.609</x2-m>
-			<y2-m>1.233</y2-m>
-			<z2-m>3.292</z2-m>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blurred2</object-name>
-		<property>/rotors/main/cone-deg</property>
-		<factor>1.5</factor>
-		<axis>
-			<x1-m>-0.425</x1-m>
-			<y1-m>1.263</y1-m>
-			<z1-m>3.292</z1-m>
-			<x2-m>0.277</x2-m>
-			<y2-m>0.617</y2-m>
-			<z2-m>3.292</z2-m>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blurred3</object-name>
-		<property>/rotors/main/cone-deg</property>
-		<factor>1.5</factor>
-		<axis>
-			<x1-m>0.320</x1-m>
-			<y1-m>-0.748</y1-m>
-			<z1-m>3.292</z1-m>
-			<x2-m>-0.327</x2-m>
-			<y2-m>-1.450</y2-m>
-			<z2-m>3.292</z2-m>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>blurred4</object-name>
-		<property>/rotors/main/cone-deg</property>
-		<factor>1.5</factor>
-		<axis>
-			<x1-m>-1.674</x1-m>
-			<y1-m>-1.318</y1-m>
-			<z1-m>3.292</z1-m>
-			<x2-m>-2.376</x2-m>
-			<y2-m>-0.672</y2-m>
-			<z2-m>3.292</z2-m>
-		</axis>
-	</animation>
-
-
-	<!--tail rotor animation-->
-	<animation>
-		<type>material</type>
-		<object-name>rotor_disc_T</object-name>
-		<transparency>
-			<alpha-prop>rotors/tail/rpm</alpha-prop>
-			<factor>0.0015</factor>
-			<offset>-0.2</offset>
-			<max>0.55</max>
-		</transparency>
-		<threshold>0.001</threshold>
-	</animation>
-
-	<animation>
-		<type>noshadow</type>
-		<object-name>rotor_disc_T</object-name>
-	</animation>
-
-	<animation>
-		<type>material</type>
-		<object-name>Tblade</object-name>
-		<!--<object-name>tblade1</object-name>
-    <object-name>tblade2</object-name>
-    <object-name>tblade3</object-name>
-    <object-name>tblade4</object-name>
-    <object-name>tblade5</object-name>
-    <object-name>tblade6</object-name>
-    <object-name>tblade7</object-name>
-    <object-name>tblade8</object-name>
-    <object-name>tblade9</object-name>
-    <object-name>tblade10</object-name>-->
-		<global type="bool">true</global>
-		<transparency>
-			<alpha-prop>rotors/tail/rpm</alpha-prop>
-			<factor>-0.005</factor>
-			<offset>1</offset>
-			<max>1</max>
-		</transparency>
-	</animation>
-
-
-
-	<animation>
-		<type>rotate</type>
-		<object-name>Tblade</object-name>
-		<!--<object-name>tblade2</object-name>
-		<object-name>tblade2</object-name>
-    <object-name>tblade3</object-name>
-		<object-name>tblade4</object-name>
-    <object-name>tblade5</object-name>
-		<object-name>tblade6</object-name>
-    <object-name>tblade7</object-name>
-		<object-name>tblade8</object-name>
-    <object-name>tblade9</object-name>
-		<object-name>tblade10</object-name>-->
-		<property>rotors/tail/blade[0]/position-deg</property>
-		<axis>
-			<x1-m>5.106</x1-m>
-			<y1-m>-0.217</y1-m>
-			<z1-m>2.476</z1-m>
-			<x2-m>5.106</x2-m>
-			<y2-m>0.217</y2-m>
-			<z2-m>2.476</z2-m>
-		</axis>
-	</animation>
-
-	<animation>
-		<name>tailrotors</name>
-		<object-name>Tblade</object-name>
-		<!--<object-name>tblade1</object-name>
-		<object-name>tblade2</object-name>
-    <object-name>tblade3</object-name>
-		<object-name>tblade4</object-name>
-    <object-name>tblade5</object-name>
-		<object-name>tblade6</object-name>
-    <object-name>tblade7</object-name>
-		<object-name>tblade8</object-name>
-    <object-name>tblade9</object-name>
-		<object-name>tblade10</object-name>-->
-	</animation>
-
-	<animation>
-		<type>select</type>
-		<object-name>rotor_disc_T</object-name>
-		<condition>
-			<greater-than>
-				<property>/rotors/tail/rpm</property>
-				<value>200</value>
-			</greater-than>
-		</condition>
-	</animation>
-
-	<animation>
-		<type>select</type>
-		<object-name>tailrotors</object-name>
-		<condition>
-			<less-than>
-				<property>/rotors/tail/rpm</property>
-				<value>201</value>
-			</less-than>
-		</condition>
-	</animation>
-
-
-
-
-
-
-
-	<!--animation of doors, sticks and pedals-->
-	<animation>
-		<type>rotate</type>
-		<object-name>frontdoor_re</object-name>
-		<object-name>frontdoorglas_re</object-name>
-		<object-name>windowcross_re</object-name>
-		<!--<object-name>doorknob_front_re</object-name>-->
-		
-		<property>/sim/model/door-positions/pilotDoor/position-norm</property>
-		<factor>60</factor>
-
-		<axis>
-			<x1-m>-3.368</x1-m>
-			<y1-m>0.750</y1-m>
-			<z1-m>1.282</z1-m>
-			<x2-m>-3.019</x2-m>
-			<y2-m>0.749</y2-m>
-			<z2-m>1.893</z2-m>
-		</axis>
-	</animation>
-	<animation>
-		<type>rotate</type>
-		<object-name>frontdoor_li</object-name>
-		<object-name>frontdoorglas_li</object-name>
-		<object-name>windowcross_li</object-name>
-		<!--<object-name>doorknob_front_li</object-name>-->
-		<object-name>frontdoorglas_li</object-name>
-		<property>/sim/model/door-positions/copilotDoor/position-norm</property>
-		<factor>-60</factor>
-
-		<axis>
-			<x1-m>-3.368</x1-m>
-			<y1-m>-0.750</y1-m>
-			<z1-m>1.282</z1-m>
-			<x2-m>-3.019</x2-m>
-			<y2-m>-0.749</y2-m>
-			<z2-m>1.893</z2-m>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>reardoor_re</object-name>
-		
-		<property>/sim/model/door-positions/rearDoors/position-norm</property>
-		<factor>100</factor>
-
-		<axis>
-			<x1-m>0.010</x1-m>
-			<y1-m>0.727</y1-m>
-			<z1-m>1.271</z1-m>
-			<x2-m>0.260</x2-m>
-			<y2-m>0.733</y2-m>
-			<z2-m>1.567</z2-m>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>reardoor_li</object-name>
-		<object-name>reardoor_li_win</object-name>
-		<object-name>reardoor_li_window</object-name>		
-		<!--<object-name>rearglas_li</object-name>-->
-		<property>/sim/model/door-positions/rearDoors/position-norm</property>
-		<factor>-100</factor>
-
-		<axis>
-			<x1-m>0.010</x1-m>
-			<y1-m>-0.727</y1-m>
-			<z1-m>1.271</z1-m>
-			<x2-m>0.260</x2-m>
-			<y2-m>-0.773</y2-m>
-			<z2-m>1.567</z2-m>
-		</axis>
-	</animation>
-
-	<!--sideward animation backdoor right-->
-	<animation>
-		<type>translate</type>
-		<object-name>backdoor_re</object-name>
-		<object-name>backdoorglas_re</object-name>
-		<object-name>gummi_re</object-name>
-		<!--<object-name>doorknob_back_re</object-name>-->
-		
-		<property>/sim/model/door-positions/ribackDoor/position-norm</property>
-		<interpolation>
-			<entry>
-				<ind>0</ind>
-				<dep>0</dep>
-			</entry>
-			<entry>
-				<ind>.1</ind>
-				<dep>.05</dep>
-			</entry>
-			<entry>
-				<ind>1</ind>
-				<dep>.05</dep>
-			</entry>
-		</interpolation>
-		<axis>
-			<x>01</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<!--forward animation backdoor right-->
-	<animation>
-		<type>translate</type>
-		<object-name>backdoor_re</object-name>
-		<object-name>backdoorglas_re</object-name>
-		<object-name>gummi_re</object-name>
-		<!--<object-name>doorknob_back_re</object-name>-->
-		
-		<property>/sim/model/door-positions/ribackDoor/position-norm</property>
-		<interpolation>
-			<entry>
-				<ind>0</ind>
-				<dep>0</dep>
-			</entry>
-			<entry>
-				<ind>.1</ind>
-				<dep>0</dep>
-			</entry>
-			<entry>
-				<ind>1</ind>
-				<dep>0.9</dep>
-			</entry>
-		</interpolation>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<!--sideward animation backdoor left-->
-	<animation>
-		<type>translate</type>
-		<object-name>backdoor_li</object-name>
-		<object-name>backdoorglas_li</object-name>
-		<object-name>gummi_li</object-name>
-		<!--<object-name>doorknob_back_li</object-name>-->
-		
-		<property>/sim/model/door-positions/lebackDoor/position-norm</property>
-		<interpolation>
-			<entry>
-				<ind>0</ind>
-				<dep>0</dep>
-			</entry>
-			<entry>
-				<ind>.1</ind>
-				<dep>.05</dep>
-			</entry>
-			<entry>
-				<ind>1</ind>
-				<dep>.05</dep>
-			</entry>
-		</interpolation>
-		<axis>
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<!--forward animation backdoor left-->
-	<animation>
-		<type>translate</type>
-		<object-name>backdoor_li</object-name>
-		<object-name>backdoorglas_li</object-name>
-		<object-name>gummi_li</object-name>
-		<!--<object-name>doorknob_back_li</object-name>-->
-		
-		<property>/sim/model/door-positions/lebackDoor/position-norm</property>
-		<interpolation>
-			<entry>
-				<ind>0</ind>
-				<dep>0</dep>
-			</entry>
-			<entry>
-				<ind>.1</ind>
-				<dep>0</dep>
-			</entry>
-			<entry>
-				<ind>1</ind>
-				<dep>0.9</dep>
-			</entry>
-		</interpolation>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	
-
-
-
-
-<!--retractable landinglight-->
-  	<animation>
-		<type>rotate</type>
-    <object-name>landinglight</object-name>
-		<object-name>lightglas</object-name>
-    <object-name>llight</object-name>
-        		<property>gear/gear[0]/position-norm</property>
-		<factor>45</factor>
-		<center>
-			<x-m>-3.236</x-m>
-			<y-m>0.269</y-m>
-			<z-m>0.712</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
+</nasal>
   
-  	<animation>
-		<type>rotate</type>
-    <object-name>lighthalo</object-name>
-        		<property>gear/gear[0]/position-norm</property>
-		<factor>45</factor>
-    <offset-deg>0</offset-deg>
-		<center>
-			<x-m>-3.236</x-m>
-			<y-m>0.269</y-m>
-			<z-m>0.712</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-  
-      	<animation>
-		<type>select</type>
-		   <object-name>llight</object-name>
-       <object-name>lighthalo</object-name>
-    		<condition>
-			<property>gear/gear[0]/position-norm</property>
-       		</condition>
-	</animation>
-  
-  <animation>
-   <type>noshadow</type>
-   <object-name>lighthalo</object-name>
- </animation>
+ 
+	<path>ec135.ac</path>
+	<offsets>
+		<z-m>0.0</z-m>
+		<y-m>0.0</y-m>
+		<x-m>0.0</x-m>
 
-  <animation>
-  <type>flash</type>
-  <object-name>lighthalo</object-name>
-  <center>
-   <x-m>-3.230</x-m>
-   <y-m>0.246</y-m>
-   <z-m>0.682</z-m>
-  </center>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
-  <power>5</power>
-  <factor>1</factor>
-  <offset>0</offset>
-  <two-sides type="bool">false</two-sides>
-  <min>0.01</min>
-  <max>1</max>
- </animation>
-
-	<!--frontlight-->
-
-	<animation>
-		<type>noshadow</type>
-		<object-name>lighthalo2</object-name>
-	</animation>
-
-	<animation>
-		<type>flash</type>
-		<object-name>lighthalo2</object-name>
-		<center>
-			<x-m>-4.160</x-m>
-			<y-m>0.00</y-m>
-			<z-m>1.198</z-m>
-		</center>
-		<axis>
-			<x>-1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-		<power>5</power>
-		<factor>1</factor>
-		<offset>0</offset>
-		<two-sides type="bool">false</two-sides>
-		<min>0.01</min>
-		<max>1</max>
-	</animation>
-
-	<!--Lights-->
-
-	<!--strobe originally by David Glowsky simulates correctly the random strobes-->
-	<model>
-		<name>stroberandom</name>
-		<path>Aircraft/ec135/Models/stroberandom.xml</path>
-		<offsets>
-
-			<x-m>-0.002</x-m>
-			<y-m>-0.868</y-m>
-			<z-m>1.704</z-m>
-
-			<pitch-deg>0</pitch-deg>
-
-		</offsets>
-	</model>
+		<pitch-deg>0.0</pitch-deg>
+		
+	</offsets>
 	
-	<model>
-		<name>stroberandom</name>
-		<path>Aircraft/ec135/Models/stroberandom.xml</path>
-		<offsets>
+<effect>
+		<inherits-from>Aircraft/ec135/Models/Effects/ec135reflectglas-uber</inherits-from>
+		<object-name>windscreen_tri</object-name>
+		<object-name>windscreen</object-name>
+		<object-name>glas</object-name>
+		<object-name>frontdoorglas.R</object-name>
+		<object-name>frontdoorglas.L</object-name>
+		<object-name>backdoorglas.L</object-name>
+		<object-name>backdoorglas.R</object-name>
+                    <object-name>rearwin.L</object-name>
+		<object-name>rearwin.R</object-name>	
+</effect>
 
-			<x-m>-0.002</x-m>
-			<y-m>0.868</y-m>
-			<z-m>1.704</z-m>
-
-			<pitch-deg>0</pitch-deg>
-
-		</offsets>
-	</model>
+<effect>
+		<inherits-from>Aircraft/ec135/Models/Effects/ec135bumpspecreflect</inherits-from>
+		<object-name>EC135</object-name>
+</effect>
 
 
-	<!--beacon tail-->
-	<model>
-		<name>stroberandom</name>
-		<path>Aircraft/ec135/Models/beacon.xml</path>
-		<offsets>
 
-			<x-m>5.385</x-m>
-			<y-m>-0.048</y-m>
-			<z-m>4.264</z-m>
-
-			<pitch-deg>0</pitch-deg>
-
-		</offsets>
-	</model>
-	
-<!--bigsearchlight
 <model>
-		<name>bigsearchlight</name>
-		<path>Aircraft/ec135/Models/bigsearchlight.xml</path>
-		<offsets>
-			<x-m>-3.400</x-m>
-			<y-m>-0.902</y-m>
-			<z-m>0.548</z-m>
+	<name>flightdeck</name>
+		<path>Aircraft/ec135/Models/flightdeckanalog.xml</path>
+</model>
 
-			<pitch-deg>-3.5</pitch-deg>
+<model>
+		<name>Interior</name>
+		<path>Aircraft/ec135/Models/interior.xml</path>
+
+		<offsets>
+
+			<x-m>0.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.0</z-m>
+
+			<pitch-deg>0</pitch-deg>
 
 		</offsets>
-	</model>-->
+</model>
 
 
-	<!--variant select animation-->
+
+<model>
+		<name>mainrotor</name>
+		<path>Aircraft/ec135/Models/rotors/rotoranimation.xml</path>
+
+		<offsets>
+
+			<x-m>3.023</x-m>
+			<y-m>0</y-m>
+			<z-m>1.801</z-m>
+
+			<pitch-deg>-5</pitch-deg>
+
+		</offsets>
+</model>
+
 
 	<animation>
-		<type>select</type>
-		<!--<object-name>binocular_standart</object-name>-->
-		<object-name>windshield</object-name>
-		<condition>
-			<property>sim/model/ec135/binocular_standart</property>
-		</condition>
+		<type>rotate</type>
+		<object-name>rotorcap</object-name>
+		<property>rotors/main/blade/position-deg</property>
+		<factor>1</factor>
+		<center>
+			<x-m>3.010738</x-m>
+			<y-m>-0.000171</y-m>
+			<z-m>1.937808</z-m>
+		</center>
+		<axis>
+			<x>-0.024525</x>
+			<y>-0.000342</y>
+			<z>0.273617</z>
+		</axis>
 	</animation>
+	
+
+
+<!--Doors-->
+<animation>
+   <type>pick</type>
+   <object-name>frontdoor.L</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>ec135.leftFrontDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
 
 <animation>
-		<name>Triangle</name>
-		<object-name>windshield_tri</object-name>
-		<object-name>triangle</object-name>
+   <type>rotate</type>
+   <object-name>frontdoor.L</object-name>
+  <object-name>frontdoorglas.L</object-name>
+     <object-name>frontdoorhandle.L</object-name>
+   <property>sim/model/ec135/door-positions/leftFrontDoor/position-norm</property><interpolation>
+     <entry>
+       <ind>0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind>0.25</ind>
+       <dep>0</dep>
+     </entry>
+     <entry>
+       <ind>1</ind>
+       <dep>60.0</dep>
+     </entry>
+   </interpolation>
+<center>
+			<x-m>0.816197</x-m>
+			<y-m>-0.744383</y-m>
+			<z-m>0.166909</z-m>
+		</center>
+		<axis>
+			<x>-0.289498</x>
+			<y>-0.005941</y>
+			<z>-0.503452</z>
+		</axis>
+ </animation>
+ 
+
+ 
+ <animation>
+   <type>pick</type>
+   <object-name>frontdoor.R</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>ec135.rightFrontDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+<animation>
+   <type>rotate</type>
+   <object-name>frontdoor.R</object-name>
+   <object-name>frontdoorglas.R</object-name>
+       <object-name>frontdoorhandle.R</object-name>
+   <property>sim/model/ec135/door-positions/rightFrontDoor/position-norm</property><interpolation>
+     <entry>
+       <ind>0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind>0.25</ind>
+       <dep>0</dep>
+     </entry>
+     <entry>
+       <ind>1</ind>
+       <dep>60.0</dep>
+     </entry>
+   </interpolation>
+<center>
+			<x-m>0.816197</x-m>
+			<y-m>0.744383</y-m>
+			<z-m>0.166909</z-m>
+		</center>
+		<axis>
+			<x>0.289498</x>
+			<y>0.005941</y>
+			<z>0.503452</z>
+		</axis>
+ </animation>
+ 
+  <animation>
+   <type>pick</type>
+   <object-name>backdoor.L</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>ec135.leftBackDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+<animation>
+   <type>translate</type>
+   <object-name>backdoor.L</object-name>
+  <object-name>backdoorglas.L</object-name>
+   <object-name>backdoorhandle.L</object-name>
+   <property>sim/model/ec135/door-positions/leftBackDoor/position-norm</property><interpolation>
+     <entry>
+       <ind>0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind>0.25</ind>
+       <dep>0</dep>
+     </entry>
+     <entry>
+       <ind>0.5</ind>
+       <dep>0.07</dep>
+     </entry>
+      <entry>
+       <ind>1.0</ind>
+       <dep>0.07</dep>
+     </entry>
+   </interpolation>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+ </animation>
+ <animation>
+   <type>translate</type>
+   <object-name>backdoor.L</object-name>
+  <object-name>backdoorglas.L</object-name>
+   <object-name>backdoorhandle.L</object-name>
+   <property>sim/model/ec135/door-positions/leftBackDoor/position-norm</property><interpolation>
+     <entry>
+       <ind>0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind>0.5</ind>
+       <dep>0</dep>
+     </entry>
+     <entry>
+       <ind>1.0</ind>
+       <dep>0.85</dep>
+     </entry>
+   </interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+ </animation>
+ 
+   <animation>
+   <type>pick</type>
+   <object-name>backdoor.R</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>ec135.rightBackDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+<animation>
+   <type>translate</type>
+   <object-name>backdoor.R</object-name>
+  <object-name>backdoorglas.R</object-name>
+   <object-name>backdoorhandle.R</object-name>
+   <property>sim/model/ec135/door-positions/rightBackDoor/position-norm</property><interpolation>
+     <entry>
+       <ind>0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind>0.25</ind>
+       <dep>0</dep>
+     </entry>
+     <entry>
+       <ind>0.5</ind>
+       <dep>0.07</dep>
+     </entry>
+      <entry>
+       <ind>1.0</ind>
+       <dep>0.07</dep>
+     </entry>
+   </interpolation>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+ </animation>
+ <animation>
+   <type>translate</type>
+   <object-name>backdoor.R</object-name>
+  <object-name>backdoorglas.R</object-name>
+   <object-name>backdoorhandle.R</object-name>
+   <property>sim/model/ec135/door-positions/rightBackDoor/position-norm</property><interpolation>
+     <entry>
+       <ind>0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind>0.5</ind>
+       <dep>0</dep>
+     </entry>
+     <entry>
+       <ind>1.0</ind>
+       <dep>0.85</dep>
+     </entry>
+   </interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+ </animation>
+
+ 
+  <animation>
+   <type>pick</type>
+   <object-name>reardoor_win.L</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>ec135.leftRearDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+<animation>
+   <type>rotate</type>
+  <object-name>reardoor_win.L</object-name>
+   <object-name>rearwin.L</object-name>
+   <property>sim/model/ec135/door-positions/leftRearDoor/position-norm</property><interpolation>
+     <entry>
+       <ind>0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind>0.25</ind>
+       <dep>0</dep>
+     </entry>
+     <entry>
+       <ind>1</ind>
+       <dep>-110.0</dep>
+     </entry>
+   </interpolation>
+<center>
+			<x-m>3.997808</x-m>
+			<y-m>-0.724311</y-m>
+			<z-m>-0.112415</z-m>
+		</center>
+		<axis>
+			<x>0.471599</x>
+			<y>0.01563</y>
+			<z>0.538602</z>
+		</axis>
+ </animation>
+ 
+  <animation>
+   <type>pick</type>
+   <object-name>reardoor_win.R</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>ec135.rightRearDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+<animation>
+   <type>rotate</type>
+  <object-name>reardoor_win.R</object-name>
+   <object-name>rearwin.R</object-name>
+   <property>sim/model/ec135/door-positions/rightRearDoor/position-norm</property><interpolation>
+     <entry>
+       <ind>0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind>0.25</ind>
+       <dep>0</dep>
+     </entry>
+     <entry>
+       <ind>1</ind>
+       <dep>-110.0</dep>
+     </entry>
+   </interpolation>
+<center>
+			<x-m>3.997808</x-m>
+			<y-m>0.724311</y-m>
+			<z-m>-0.112415</z-m>
+		</center>
+		<axis>
+			<x>-0.471599</x>
+			<y>-0.01563</y>
+			<z>-0.538602</z>
+		</axis>
+ </animation>
+ 
+ 
+ 
+ <!--reardoorswithoutwindows-->
+  <animation>
+   <type>pick</type>
+   <object-name>reardoor.L</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>ec135.leftRearDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+<animation>
+   <type>rotate</type>
+  <object-name>reardoor.L</object-name>
+   <property>sim/model/ec135/door-positions/leftRearDoor/position-norm</property><interpolation>
+     <entry>
+       <ind>0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind>0.25</ind>
+       <dep>0</dep>
+     </entry>
+     <entry>
+       <ind>1</ind>
+       <dep>-110.0</dep>
+     </entry>
+   </interpolation>
+<center>
+			<x-m>3.997808</x-m>
+			<y-m>-0.724311</y-m>
+			<z-m>-0.112415</z-m>
+		</center>
+		<axis>
+			<x>0.471599</x>
+			<y>0.01563</y>
+			<z>0.538602</z>
+		</axis>
+ </animation>
+ 
+  <animation>
+   <type>pick</type>
+   <object-name>reardoor.R</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>ec135.rightRearDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+<animation>
+   <type>rotate</type>
+  <object-name>reardoor.R</object-name>
+    <property>sim/model/ec135/door-positions/rightRearDoor/position-norm</property><interpolation>
+     <entry>
+       <ind>0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind>0.25</ind>
+       <dep>0</dep>
+     </entry>
+     <entry>
+       <ind>1</ind>
+       <dep>-110.0</dep>
+     </entry>
+   </interpolation>
+<center>
+			<x-m>3.997808</x-m>
+			<y-m>0.724311</y-m>
+			<z-m>-0.112415</z-m>
+		</center>
+		<axis>
+			<x>-0.471599</x>
+			<y>-0.01563</y>
+			<z>-0.538602</z>
+		</axis>
+ </animation>
+ 
+ <animation>
+   <type>rotate</type>
+  <object-name>buckle</object-name>
+    <property>sim/model/ec135/door-positions/rightRearDoor/position-norm</property><interpolation>
+     <entry>
+       <ind>0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind>0.25</ind>
+       <dep>0</dep>
+     </entry>
+     <entry>
+       <ind>1</ind>
+       <dep>-110.0</dep>
+     </entry>
+   </interpolation>
+<center>
+			<x-m>3.997808</x-m>
+			<y-m>0.724311</y-m>
+			<z-m>-0.112415</z-m>
+		</center>
+		<axis>
+			<x>-0.471599</x>
+			<y>-0.01563</y>
+			<z>-0.538602</z>
+		</axis>
+ </animation>
+
+
+
+	
+	
+
+<!--variant select animation-->
+
+<animation>
+	<type>select</type>
+	<object-name>BigRadom</object-name>
+	<condition>
+	<property>sim/model/ec135/BigRadom</property>
+	</condition>
 </animation>
 
-	<animation>
-		<type>select</type>
-		<!--<object-name>binocular_tri</object-name>-->
-		<object-name>Triangle</object-name>
-		<!--<object-name>triangle</object-name>-->
-		<condition>
-			<property>sim/model/ec135/binocular_tri</property>
-		</condition>
-	</animation>
-	
-	
+<animation>
+	<type>select</type>
+	<object-name>smallradom</object-name>
+	<condition>
+	<property>sim/model/ec135/smallradom</property>
+	</condition>
+</animation>
 
-	<animation>
-		<type>select</type>
-		<object-name>winch</object-name>
-		<condition>
-			<property>sim/model/ec135/winch</property>
-		</condition>
-	</animation>
-
-	<animation>
-		<type>select</type>
-		<object-name>mirror</object-name>
-		<condition>
-			<property>sim/model/ec135/mirror</property>
-		</condition>
-	</animation>
-
-	<animation>
-		<type>select</type>
-		<object-name>wirecutter_skid</object-name>
-		<condition>
-			<property>sim/model/ec135/wirecutter_skid</property>
-		</condition>
-	</animation>
-
-	<animation>
-		<type>select</type>
-		<object-name>wirecutter_up</object-name>
-		<condition>
-			<property>sim/model/ec135/wirecutter_up</property>
-		</condition>
-	</animation>
-
-	<animation>
-		<type>select</type>
-		<object-name>wirecutter_down</object-name>
-		<condition>
-			<property>sim/model/ec135/wirecutter_down</property>
-		</condition>
-	</animation>
-	
-	<animation>
-		<type>select</type>
-		<object-name>nose</object-name>
-		<condition>
-			<property>sim/model/ec135/nose</property>
-		</condition>
-	</animation>
-	
-	<animation>
-		<type>select</type>
-		<object-name>nosefl</object-name>
-		<object-name>hull</object-name>
-		<object-name>frontlight</object-name>
-		<object-name>flight</object-name>
-		<object-name>lighthalo2</object-name>
-		<condition>
-			<property>sim/model/ec135/nosefl</property>
-		</condition>
-	</animation>
-	
-	<animation>
-		<type>select</type>
-		<object-name>radardome</object-name>
-		<condition>
-			<property>sim/model/ec135/radardome</property>
-		</condition>
-	</animation>
-	
-	<animation>
-		<type>select</type>
-		<object-name>antenna</object-name>
-		<condition>
-			<property>sim/model/ec135/antennaset</property>
-		</condition>
-	</animation>
-	
-	<animation>
-		<type>select</type>
-		<object-name>plateleft</object-name>
-		<condition>
-			<property>sim/model/ec135/plateleft</property>
-		</condition>
-	</animation>
-	
-	<animation>
-		<type>select</type>
-		<object-name>plateright</object-name>
-		<condition>
-			<property>sim/model/ec135/plateright</property>
-		</condition>
-	</animation>
-
-          <animation>
-		<type>select</type>
-		<object-name>reardoor_li_window</object-name>
-		<object-name>reardoor_li_win</object-name>
-		<condition>
-			<property>sim/model/ec135/reardoorwindow</property>
-		</condition>
-	</animation>
- <animation>
-		<type>select</type>
-		<object-name>reardoor_li</object-name>
-		<condition>
-			<property>sim/model/ec135/reardoor_norm</property>
-		</condition>
-	</animation>
+<animation>
+	<type>select</type>
+	<object-name>nosefl</object-name>
+	<object-name>frontlight</object-name>
+	<condition>
+	<property>sim/model/ec135/nosefl</property>
+	</condition>
+</animation>
 
 
-<!--<animation>
-		<type>shader</type>
-		<shader>chrome</shader>
-		<texture>Aircraft/Generic/Effects/Sperical/sperical_map2.png</texture>
-		<object-name>windshield</object-name>
-		<object-name>glas</object-name>
-		<object-name>frontdoorglas_re</object-name>
-		<object-name>backdoorglas_re</object-name>
-		<object-name>backglas</object-name>
-		<object-name>windshield_tri</object-name>
-		<object-name>frontdoorglas_li</object-name>
-		<object-name>backdoorglas_li</object-name>
-		<object-name>reardoor_li_window</object-name>
-</animation>-->
+<animation>
+	<type>select</type>
+	<object-name>nose</object-name>
+	<condition>
+	<or>
+	<property>sim/model/ec135/nose</property>
+	<property>sim/model/ec135/BigRadom</property>
+	<property>sim/model/ec135/smallradom</property>
+	</or>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>frontlight2</object-name>
+	<condition>
+	<or>
+	<property>sim/model/ec135/nose</property>
+	<property>sim/model/ec135/smallradom</property>
+	<property>sim/model/ec135/BigRadom</property>
+	</or>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>searchlight_front</object-name>
+	<condition>
+	<property>sim/model/ec135/searchlight_front</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>searchlight_left</object-name>
+	<condition>
+	<property>sim/model/ec135/searchlight_left</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>FLIR</object-name>
+	<condition>
+	<property>sim/model/ec135/FLIR</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>windscreen_tri</object-name>
+	<object-name>triangle</object-name>
+	<condition>
+	<property>sim/model/ec135/windscreen_tri</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>windscreen</object-name>
+	<condition>
+	<property>sim/model/ec135/windscreen</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>mirror</object-name>
+	<condition>
+	<property>sim/model/ec135/mirror</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>wirecutter_up</object-name>
+	<condition>
+	<property>sim/model/ec135/wirecutter_up</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>wirecutter_down</object-name>
+	<condition>
+	<property>sim/model/ec135/wirecutter_down</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>wirecutter_skid</object-name>
+	<condition>
+	<property>sim/model/ec135/wirecutter_skid</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>sandfilter</object-name>
+	<condition>
+	<property>sim/model/ec135/sandfilter</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>IBF</object-name>
+	<condition>
+	<property>sim/model/ec135/IBF</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>nonIBF</object-name>
+	<condition>
+	<property>sim/model/ec135/nonIBF</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>winch</object-name>
+	<object-name>winchhook</object-name>
+	<object-name>winchfix</object-name>
+	<condition>
+	<property>sim/model/ec135/winch</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>SLLight_Cover.R</object-name>
+	<object-name>SLLight_Cover.R</object-name>
+	<condition>
+	<property>sim/model/ec135/SLLightR</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>SLLight_Cover.L</object-name>
+	<object-name>SLLight_Cover.L</object-name>
+	<condition>
+	<property>sim/model/ec135/SLLightL</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>midskid</object-name>
+	<condition>
+	<property>sim/model/ec135/midskid</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>snowboard_midskid</object-name>
+	<condition>
+	<property>sim/model/ec135/snowboard_midskid</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>wirecutter_midskid</object-name>
+	<condition>
+	<property>sim/model/ec135/wirecutter_midskid</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>lowskid</object-name>
+	<condition>
+	<property>sim/model/ec135/lowskid</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>Loudspeaker</object-name>
+	<condition>
+	<property>sim/model/ec135/loudspeaker</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>Hellas</object-name>
+	<condition>
+	<property>sim/model/ec135/hellas</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>longskid_floats</object-name>
+	<object-name>EmergFloats</object-name>
+	<condition>
+	<property>sim/model/ec135/longskid_floats</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>highskid</object-name>
+	<condition>
+	<property>sim/model/ec135/highskid</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>snowboard_highskid</object-name>
+	<condition>
+	<property>sim/model/ec135/snowboard_highskid</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>wirecutter_highskid</object-name>
+	<condition>
+	<property>sim/model/ec135/wirecutter_highskid</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>standardstep</object-name>
+	<condition>
+	<property>sim/model/ec135/standardstep</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>multifunctioncarrier</object-name>
+	<condition>
+	<property>sim/model/ec135/multifunctioncarrier</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>roundstep</object-name>
+	<condition>
+	<property>sim/model/ec135/roundstep</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>snowboard_lowskid</object-name>
+	<condition>
+	<property>sim/model/ec135/snowboard</property>
+	</condition>
+</animation>
 
 
+<animation>
+	<type>select</type>
+	<object-name>DoubleCargoHook</object-name>
+	<condition>
+	<property>sim/model/ec135/DoubleCargoHook</property>
+	</condition>
+</animation>
 
-	<!-- Material Animations -->
+<animation>
+	<type>select</type>
+	<object-name>buckle</object-name>
+	<condition>
+	<property>sim/model/ec135/buckle</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>reardoor_win.R</object-name>
+	<object-name>rearwin.R</object-name>
+	<condition>
+	<property>sim/model/ec135/reardoor_winR</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>reardoor_win.L</object-name>
+	<object-name>rearwin.L</object-name>
+	<condition>
+	<property>sim/model/ec135/reardoor_winL</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>reardoor.R</object-name>
+	<condition>
+	<property>sim/model/ec135/reardoorR</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>reardoor.L</object-name>
+	<condition>
+	<property>sim/model/ec135/reardoorL</property>
+	</condition>
+</animation>
+
+<!-- Material Animations -->
 
 	<animation>
 		<type>material</type>
 		<!--global type="bool">true</global-->
-		<object-name>fuselage</object-name>
+		<object-name>EC135</object-name>
 		<property-base>sim/model/livery/</property-base>
 		<texture-prop>texture</texture-prop>
-		<texture>fuselage.adac.png</texture>
+		<texture>default.png</texture>
 	</animation>
 	
 	
 	
 	
-	<animation>
+	<!--<animation>
 		<type>material</type>
-		<!--global type="bool">true</global-->
-		<object-name>fenestron</object-name>
-		<property-base>sim/model/liverytail/</property-base>
-		<texture-prop>texture</texture-prop>
-		<texture>tail.rgb</texture>
-	</animation>
-	
-	
-	
-	<animation>
-		<type>material</type>
-		<!--global type="bool">true</global-->
 		<object-name>blade1</object-name>
 		<object-name>blade1a</object-name>
 		<object-name>blade1b</object-name>
@@ -1646,19 +924,11 @@
 		<object-name>blade4b</object-name>
 		<object-name>blade4c</object-name>
 		<object-name>blade4d</object-name>
-		<!--<object-name>blurred1</object-name>
-		<object-name>blurred2</object-name>
-		<object-name>blurred3</object-name>
-		<object-name>blurred4</object-name>-->
 		<property-base>sim/model/rotorblade/</property-base>
 		<texture-prop>texture</texture-prop>
 		<texture>rotorblade.rgb</texture>
-	</animation>
-	
-	
+	</animation>-->
 
 	
-
 	
-
 </PropertyList>

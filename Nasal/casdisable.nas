@@ -8,6 +8,7 @@
 	 {
 	  
 	  setprop("/controls/flight/fcs/cas-enabled", 0);
+	 	  
 	  
 	  } else {
 
