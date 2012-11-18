@@ -15,6 +15,20 @@
 		
 	</offsets>
 	
+<model>
+		<name>AI</name>
+		<path>Aircraft/ec135/Models/pilots.ac</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+
+			<pitch-deg>0</pitch-deg>
+
+		</offsets>
+	</model>
+
+	
  
 	<!--Instrumentation
 
@@ -440,21 +454,22 @@
 			<pitch-deg>-24</pitch-deg>
 
 		</offsets>
-</model>
+</model>-->
 
 
 
 	<animation>
 		<type>rotate</type>
+		<object-name>stickgrip.002</object-name>
 		<object-name>stickgrip</object-name>
-		<object-name>griphead</object-name>
+		<object-name>stickgrip.001</object-name>
 		<property>/controls/flight/elevator</property>
-		<factor>10.9</factor>
-		<offset-deg>-2.6</offset-deg>
+		<factor>11</factor>
+		<offset-deg>0</offset-deg>
 		<center>
-			<x-m>-3.134</x-m>
-			<y-m>0.401</y-m>
-			<z-m>1.003</z-m>
+			<x-m>0.965</x-m>
+			<y-m>0.408</y-m>
+			<z-m>-0.494</z-m>
 		</center>
 		<axis>
 			<x>0</x>
@@ -465,15 +480,16 @@
 
 	<animation>
 		<type>rotate</type>
-			<object-name>stickgrip</object-name>
-		<object-name>griphead</object-name>
+		<object-name>stickgrip.002</object-name>
+		<object-name>stickgrip</object-name>
+		<object-name>stickgrip.001</object-name>
 		<property>/controls/flight/aileron</property>
-		<factor>7.5</factor>
-		<offset>-2.16</offset>
+		<factor>8.2</factor>
+		<offset>0</offset>
 		<center>
-			<x-m>-3.134</x-m>
-			<y-m>0.401</y-m>
-			<z-m>1.003</z-m>
+			<x-m>0.965</x-m>
+			<y-m>0.408</y-m>
+			<z-m>-0.494</z-m>
 		</center>
 		<axis>
 			<x>-1</x>
@@ -485,7 +501,7 @@
 	
 
 
-	<animation>
+	<!--<animation>
 		<type>rotate</type>
 		<object-name>rrpedal</object-name>
 
@@ -521,7 +537,7 @@
 			<y>1</y>
 			<z>0</z>
 		</axis>
-	</animation>
+	</animation>-->
 
 <animation>
 		<type>rotate</type>
@@ -540,9 +556,9 @@
 		<factor>-22.5</factor>
 		<offset>45</offset>
 		<center>
-			<x-m>-2.448</x-m>
-			<y-m>0.0</y-m>
-			<z-m>0.973</z-m>
+			<x-m>1.451</x-m>
+			<y-m>0.128</y-m>
+			<z-m>-0.479</z-m>
 		</center>
 		<axis>
 			<x>0</x>
@@ -551,7 +567,7 @@
 		</axis>
 	</animation>
 	
-<animation>
+<!--<animation>
 		<type>rotate</type>
 		<object-name>frontdoor_intli</object-name>
 			<object-name>frontdoor_crossli</object-name>

@@ -7,11 +7,11 @@
 		<normalmap-enabled type="int">0</normalmap-enabled>
 		<lightmap-enabled type="int">0</lightmap-enabled>
 		<reflection-enabled type="int">1</reflection-enabled>
-		<reflection-correction type="float">0.8</reflection-correction>
+		<reflection-correction type="float">1.0</reflection-correction>
 		<reflect-map-enabled type="int">0</reflect-map-enabled>
-		<reflection-fresnel type="float">0.01</reflection-fresnel>
+		<reflection-fresnel type="float">0.001</reflection-fresnel>
 		<reflection-rainbow type="float">0.15</reflection-rainbow>
-		<reflection-noise type="float">0.01</reflection-noise>
+		<reflection-noise type="float">0.001</reflection-noise>
 		<reflection-dynamic type="int">1</reflection-dynamic>
 		<texture n="5">
 			<type>cubemap</type>

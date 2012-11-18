@@ -928,6 +928,28 @@
 		<texture-prop>texture</texture-prop>
 		<texture>rotorblade.rgb</texture>
 	</animation>-->
+	
+<!-- == PARTICLE SYSTEMS , Thanks to Oliver Thurau== -->
+
+  <model>
+    <name>mainrotors_dirt</name>
+    <path>Aircraft/ec135/Models/particle/rotor_particle_dry.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>mainrotors_dirt</name>
+    <path>Aircraft/ec135/Models/particle/rotor_particle_wet.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </model>
 
 	
 	

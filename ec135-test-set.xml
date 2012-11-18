@@ -12,7 +12,7 @@ Thanks for all the help!
 <PropertyList>
 	<sim>
 		<description>Eurocopter EC135 P2</description>
-		<author>Heiko Schulz, Maik Justus (FDM), Melchior Franz (Nasal)</author>
+		<author>Heiko Schulz, Maik Justus (FDM), Melchior Franz (Nasal), Oliver Thurau (Particles)</author>
 		<status>beta</status>
 		<rating>
                     <FDM type="int">4</FDM>
@@ -155,8 +155,8 @@ Thanks for all the help!
 			<config>
                                         <x-offset-m type="double">0.42</x-offset-m><!--left-->
 				<y-offset-m type="double">0.64</y-offset-m><!--up-->
-				<z-offset-m type="double">1.42</z-offset-m><!--back-->
-				<pitch-offset-deg>-14</pitch-offset-deg>
+				<z-offset-m type="double">1.33</z-offset-m><!--back-->
+				<pitch-offset-deg>-20</pitch-offset-deg>
 				<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
 			</config>
 		</view>
@@ -260,9 +260,9 @@ Thanks for all the help!
 			<line>shut down the engines -> press {-key</line>
 			<line>toggle rotor brake -> press N-key</line>
 			<line>collective -> page up/down- keys</line>
-			<line>Open/ Close doors -> click the menu "EC135" panel above</line>
-			<line>change livery ->press l-key</line>
-			<line>landinglight ->press g/G-key</line>
+			<line>Open/ Close doors -> click the doorse</line>
+			<line></line>
+			<line></line>
 
 
 		</help>
@@ -314,6 +314,17 @@ Thanks for all the help!
 							<property>/sim/model/hide-gsdi</property>
 						</binding>
 					</item>
+	<item>
+		<label>Show/hide Rotor Particles</label>
+			<binding>
+				<command>nasal</command>
+				<script>
+				var p = "sim/model/rotor-particles";
+				setprop(p, var i = !getprop(p));
+				gui.popupTip("Rotor Particles visible " ~ (i ? "Off" : "On"));
+				</script>
+			</binding>
+	</item>
 				</menu>
 			</default>
 		</menubar>
