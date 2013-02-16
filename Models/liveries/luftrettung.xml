@@ -50,7 +50,7 @@
 	<wirecutter_midskid>false</wirecutter_midskid>
 	<!--or-->
 	<highskid>1</highskid>
-	<snowboard_highskid>false</snowboard_highskid>
+	<snowboard_highskid>true</snowboard_highskid>
 	<wirecutter_highskid>false</wirecutter_highskid>
 	<!--steps-->
 	<standardstep>false</standardstep>

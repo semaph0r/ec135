@@ -11,6 +11,19 @@
 		<pitch-deg>0.0</pitch-deg>
 		
 	</offsets>
+	
+<model>
+		<name>MagCompass</name>
+		<path>Aircraft/ec135/Models/instrumentation/MagCompass/magcompass.xml</path>
+		<offsets>
+			<x-m>0.500</x-m>
+			<y-m>0.00</y-m>
+			<z-m>0.528</z-m>
+
+			<pitch-deg>0</pitch-deg>
+
+		</offsets>
+	</model>
 
 <!--Doors-->
 <animation>

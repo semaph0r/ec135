@@ -40,7 +40,7 @@
 	<loudspeaker>false</loudspeaker>
 	<hellas>false</hellas>
 	<lowskid>1</lowskid>
-	<snowboard_lowskid>false</snowboard_lowskid>
+	<snowboard_lowskid>true</snowboard_lowskid>
 	<wirecutter_skid>false</wirecutter_skid>
 	<!--or-->
 	<longskid_floats>0</longskid_floats>

@@ -49,7 +49,7 @@
 
 <model>
 	<name>flightdeck</name>
-		<path>Aircraft/ec135/Models/flightdeckanalog.xml</path>
+		<path>Aircraft/ec135/Models/flightdeck.xml</path>
 </model>
 
 <model>

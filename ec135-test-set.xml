@@ -36,9 +36,9 @@ Thanks for all the help!
 		</sound>
 
 
-		<instrumentation>
-			<path>Aircraft/ec135/instrumentation/instrumentation.xml</path>
-		</instrumentation>
+<instrumentation>
+<path>Aircraft/ec135/Systems/instrumentation.xml</path>
+</instrumentation>
 
 
 		<model>
@@ -154,7 +154,7 @@ Thanks for all the help!
 			<internal type="bool">true</internal>
 			<config>
                                         <x-offset-m type="double">0.42</x-offset-m><!--left-->
-				<y-offset-m type="double">0.64</y-offset-m><!--up-->
+				<y-offset-m type="double">0.62</y-offset-m><!--up-->
 				<z-offset-m type="double">1.33</z-offset-m><!--back-->
 				<pitch-offset-deg>-20</pitch-offset-deg>
 				<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
@@ -329,6 +329,12 @@ Thanks for all the help!
 			</default>
 		</menubar>
 	</sim>
+<limits>
+<vne>155</vne>
+<MTOW>6251</MTOW>
+<MCP>69</MCP>
+<MTOP>75</MTOP>
+</limits>
 
 	<consumables>
 		<fuel>
@@ -377,6 +383,7 @@ Thanks for all the help!
 	</controls>
 
 	<instrumentation>
+	<kcs55 include="Systems/kcs55.xml"/>
 		<gsdi>
 			<serviceable type="bool">true</serviceable>
 		</gsdi>
@@ -572,11 +579,16 @@ only needed for test flights and bug hunting
 	<nasal>
 		<ec135>
 			<file>Aircraft/ec135/Nasal/ec135.nas</file>
+			<file>Aircraft/ec135/Nasal/limits.nas</file>
 			<!--<file>Aircraft/ec135/Models/hsi.nas</file>-->
 			<!--<file>Aircraft/ec135/Nasal/fcs.nas</file>-->
 			<file>Aircraft/ec135/Nasal/fcs2.nas</file>
 			<file>Aircraft/ec135/Nasal/casdisable.nas</file>
 			<file>Aircraft/ec135/Nasal/residualthrust.nas</file>
+			<file>Aircraft/ec135/Systems/kcs55.nas</file>
+			<script><![CDATA[
+              KCS55.new();
+            ]]></script>
 		</ec135>
 	</nasal>
 

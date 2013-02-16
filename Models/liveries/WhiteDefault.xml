@@ -7,7 +7,7 @@
 			<livery>
 					<name type="string">WhiteDefault</name>
 					 <index type="int">1</index>
-					  <texture>WhiteDefault.png</texture>
+					  <texture>liveries/WhiteDefault.png</texture>
 			</livery>
 		<!--<rotorblade>
 				<name type="string">ANWB</name>

@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+
+<!-- Eurocopter EC 135 Helicopter by Heiko Schulz, animation set -->
+
+<PropertyList>
+
+
+	<path>flightdeck.ac</path>
+	<offsets>
+		<z-m>0</z-m>
+		<y-m>0.0</y-m>
+		<x-m>0</x-m>
+
+		<pitch-deg>0</pitch-deg>
+		
+	</offsets>
+	
+	<model>
+		<name>AI</name>
+		<path>Aircraft/ec135/Models/pilots.ac</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+
+			<pitch-deg>0</pitch-deg>
+
+		</offsets>
+	</model>
+	
+	<model>
+		<name>AnalogPanel</name>
+		<path>Aircraft/ec135/Models/cpdsa.xml</path>
+		<offsets>
+			<x-m>0.633</x-m>
+			<y-m>0</y-m>
+			<z-m>-0.045</z-m>
+
+			<pitch-deg>-23</pitch-deg>
+
+		</offsets>
+	</model>
+
+<animation>
+		<type>rotate</type>
+		<object-name>stickgrip.002</object-name>
+		<object-name>stickgrip</object-name>
+		<object-name>stickgrip.001</object-name>
+		<property>/controls/flight/elevator</property>
+		<factor>11</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>0.965</x-m>
+			<y-m>0.408</y-m>
+			<z-m>-0.494</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>stickgrip.002</object-name>
+		<object-name>stickgrip</object-name>
+		<object-name>stickgrip.001</object-name>
+		<property>/controls/flight/aileron</property>
+		<factor>8.2</factor>
+		<offset>0</offset>
+		<center>
+			<x-m>0.965</x-m>
+			<y-m>0.408</y-m>
+			<z-m>-0.494</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+
+<animation>
+		<type>rotate</type>
+		<object-name>collective</object-name>
+		<object-name>collectivehead</object-name>
+		<object-name>lever.002</object-name>
+		<object-name>lever.003</object-name>
+		<object-name>lever</object-name>
+		<object-name>lever.001</object-name>
+		<object-name>basis</object-name>
+		<object-name>Plane.005</object-name>
+		<object-name>knobs</object-name>
+		<object-name>Cylinder.003</object-name>
+		<object-name>leather</object-name>
+		<property>/controls/engines/engine/throttle</property>
+		<factor>-22.5</factor>
+		<offset>45</offset>
+		<center>
+			<x-m>1.451</x-m>
+			<y-m>0.128</y-m>
+			<z-m>-0.479</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<!--<animation>
+		<type>rotate</type>
+		<object-name>rrpedal</object-name>
+
+		<property>/controls/flight/rudder</property>
+		<factor>10.0</factor>
+		<offset>17.4</offset>
+		<center>
+			<x-m>-3.603</x-m>
+			<y-m>0.0</y-m>
+			<z-m>1.035</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>rlpedal</object-name>
+
+		<property>/controls/flight/rudder</property>
+		<factor>10.0</factor>
+		<offset>17.4</offset>
+		<center>
+			<x-m>-3.603</x-m>
+			<y-m>0.0</y-m>
+			<z-m>1.035</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>-->
+
+</PropertyList>

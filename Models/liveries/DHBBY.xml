@@ -7,7 +7,7 @@
 			<livery>
 					<name type="string">Adebar 16 "D-HBBY"</name>
 					 <index type="int">1</index>
-					  <texture>DHBBY.png</texture>
+					  <texture>liveries/DHBBY.png</texture>
 			</livery>
 		<!--<rotorblade>
 				<name type="string">ANWB</name>

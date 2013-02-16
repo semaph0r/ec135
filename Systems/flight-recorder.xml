@@ -18,13 +18,15 @@
         <name type="string">EC135 P2 Flight Recorder</name>
 
         <!-- include generic stuff -->
+	<signals include="/Aircraft/Generic/flightrecorder/components/carrier.xml"/>
+	
        <signals include="/Aircraft/Generic/flightrecorder/components/position.xml"/>
 	<signals include="/Aircraft/Generic/flightrecorder/components/gear-retractable.xml"/>
     <signals include="/Aircraft/Generic/flightrecorder/components/controls.xml"/>
     <signals include="/Aircraft/Generic/flightrecorder/components/environment.xml"/>
     <signals include="/Aircraft/Generic/flightrecorder/components/tanks.xml">
 
-            <count type="int">2</count> 
+            <count type="int">8</count> 
     </signals>
       
 <!--  main rotor -->
@@ -43,6 +45,7 @@
             <type>float</type>
             <property type="string">/controls/engines/engine/throttle</property>
         </signal>
+	
 	
 
 
