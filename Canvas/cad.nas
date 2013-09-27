@@ -1,4 +1,4 @@
-var my_canvas = canvas.new({
+var cad_canvas = canvas.new({
   "name": "CAD-test",   # The name is optional but allow for easier identification
   "size": [512, 512],   # Size of the underlying texture (should be a power of 2, required)
   "view": [512, 512],  # Virtual resolution (Defines the coordinate system of the canvas
