@@ -532,9 +532,6 @@ only needed for test flights and bug hunting
 
 
 	<nasal>
-		<canvas_instruments>
-			<file>Aircraft/ec135/Canvas/cad.nas</file><!--nas file for CAD-->
-		</canvas_instruments>
 		<ec135>
 			<file>Aircraft/ec135/Models/ec135.nas</file>
 			<file>Aircraft/ec135/Models/hsi.nas</file>
