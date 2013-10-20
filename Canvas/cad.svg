@@ -74,6 +74,10 @@
        orientation="1,0"
        position="491,678.82251"
        id="guide3020" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="260,685.89358"
+       id="guide3804" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -110,5 +114,139 @@
        id="path3794"
        inkscape:connector-curvature="0"
        transform="translate(0,28.362183)" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999999999996px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
+       x="260"
+       y="297.27316"
+       id="text3796"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3798"
+         x="260"
+         y="297.27316"
+         style="font-size:12px;letter-spacing:0.94999999999999996px;word-spacing:0.2px"
+         dx="0">ENG FAIL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
+       x="260"
+       y="312.93051"
+       id="text3800"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3802"
+         x="260"
+         y="312.93051"
+         style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">XMSN OIL P</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
+       x="260"
+       y="328.41037"
+       id="text3800-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3802-9"
+         x="260"
+         y="328.41037"
+         style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">FUEL PRESS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
+       x="260"
+       y="344.06772"
+       id="text3800-9-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3802-9-0"
+         x="260"
+         y="344.06772"
+         style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">ENG OIL PRESS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
+       x="260"
+       y="360.4686"
+       id="text3800-9-1-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3802-9-0-8"
+         x="260"
+         y="360.4686"
+         style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">INVERTER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
+       x="496.46616"
+       y="297.40268"
+       id="text3796-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3798-7"
+         x="496.46616"
+         y="297.40268"
+         style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px"
+         dx="0">ENG FAIL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
+       x="496.46616"
+       y="313.06003"
+       id="text3800-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3802-3"
+         x="496.46616"
+         y="313.06003"
+         style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">XMSN OIL P</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
+       x="496.46616"
+       y="328.53989"
+       id="text3800-9-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3802-9-8"
+         x="496.46616"
+         y="328.53989"
+         style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">FUEL PRESS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
+       x="496.46616"
+       y="344.19724"
+       id="text3800-9-1-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3802-9-0-84"
+         x="496.46616"
+         y="344.19724"
+         style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">ENG OIL PRESS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
+       x="496.46616"
+       y="360.59811"
+       id="text3800-9-1-7-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3802-9-0-8-4"
+         x="496.46616"
+         y="360.59811"
+         style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">INVERTER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+       x="397.43411"
+       y="297.33408"
+       id="text3914"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3916"
+         x="397.43411"
+         y="297.33408"
+         style="fill:#ffffff">PAGE 1 OF 2</tspan></text>
   </g>
 </svg>
