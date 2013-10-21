@@ -1,10 +1,12 @@
 var cad_canvas = canvas.new({
   "name": "cad-instrument",   # The name is optional but allow for easier identification
   "size": [512, 512],   # Size of the underlying texture (should be a power of 2, required)
-  "view": [512, 512],  # Virtual resolution (Defines the coordinate system of the canvas
+  "view": [339, 263],  # Virtual resolution (Defines the coordinate system of the canvas
                         # which will be stretched the size of the texture, required)
   "mipmapping": 0       # Enable mipmapping (optional)
 });
+
+canvas.parsesvg(cad, "Aircraft/EC-135/Canvas/cad.svg", {'font-mapper': font_mapper});
 
 # Place it on all objects called cad (maybe use the texture identifier later)
 cad_canvas.addPlacement({"node": "cad"});
