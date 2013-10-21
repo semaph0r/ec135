@@ -7,6 +7,14 @@
 var cad_canvas = {};
 var cad_display = {};
 
+var warnings = {
+  new : func() {
+    var member = { parents : [warnings] };
+    var message = "";
+    return member
+  }
+};
+
 
 # message lists which hold the current advisories displayed in the different areas
 var messageListLeft = [];
@@ -49,7 +57,7 @@ var canvas_cad = {
       #TODO: provide appropriate fonts
     };
 
-    canvas.parsesvg(cad, "Aircraft/ec-135/Canvas/cad.svg", {'font-mapper' : font_mapper});
+    canvas.parsesvg(cad, "Aircraft/ec135/Canvas/cad.svg", {'font-mapper' : font_mapper});
 
     paged = 0;
 
