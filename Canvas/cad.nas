@@ -8,12 +8,17 @@ var cad_canvas = {};
 var cad_display = {};
 
 var warnings = {
-  new : func() {
+  new: func() {
     var member = { parents : [warnings] };
     var message = "";
     return member
   }
 };
+
+# init testing properties
+
+setprop("/system/cad/warnings/eng1-fail", 0);
+setprop("/system/cad/warnings/eng2-fail", 1);
 
 
 # message lists which hold the current advisories displayed in the different areas
@@ -46,7 +51,7 @@ var paged = {};
 
 # Display class which manages all svg elements
 var canvas_cad = {
-  new : func (canvas_group)
+  new: func (canvas_group)
   {
     var member = { parents : [canvas_cad] };
     var cad = canvas_group;
@@ -84,10 +89,18 @@ var canvas_cad = {
 
     return member;
   },
-  update : func()
+  update: func()
   {
-    if(getprop("system/cad/warnings/eng1-fail"))
-      append(messageListLeft.add(eng1Fail);
+    print("called canvas update");
+
+    if(getprop("system/cad/warnings/eng1-fail" == 1)){
+      append(messageListLeft, eng1Fail);
+      eng1Fail.show();
+      print("engine 1 failure");
+    } 
+
+    inverter1.show();
+    inverter2.show();
 
     if(getprop("system/cad/warnings/eng2-fail"))
       append(messageListRight, eng2Fail);
@@ -107,21 +120,21 @@ var canvas_cad = {
     if(getprop("system/cad/warnings/inverter1"))
       append(messageListLeft, inverter1);
 
-    if(getElementById("system/cad/warnings/inverter2"))
+    if(getprop("system/cad/warnings/inverter2"))
       append(messageListRight, inverter2);
 
     # directly converted lbs to kg
-    aux1FuelText.setText(getprop("/consumables/fuel/tank[0]/level-lbs")/2.2046);
-    aux2FuelText.setText(getprop("/consumables/fuel/tank[2]/level-lbs")/2.2046);
-    MainFuelText.setText(getprop("/consumables/fuel/tank[1]/level-lbs")/2.2046);
+    #aux1FuelText.setText(getprop("/consumables/fuel/tank[0]/level-lbs")/2.2046);
+    #aux2FuelText.setText(getprop("/consumables/fuel/tank[2]/level-lbs")/2.2046);
+    #MainFuelText.setText(getprop("/consumables/fuel/tank[1]/level-lbs")/2.2046);
 
+    #displayMessageList(messageListLeft, messageListRight);
 
-    settimer(func me.update(), 0.2);
+    settimer(func me.update(), 5.00);
   }
 
 };
 
-cad_canvas.addPlacement({"node": "cad"});
 
 # initialize cad canvas after fdm is ready
 setlistener("sim/signals/fdm-initialized", func(){
@@ -167,8 +180,8 @@ var displayMessageList = func(list...) {
   # translation from the origin in the upper left corner
   var gTranslationX = 55;
   var gTranslationY = 93;
-
-  if(list[0] == "messageListLeft" and size(list[0]) != nil) {
+  foreach(elem; list){
+  if(elem == "messageListLeft" and size(elem) != nil) {
     var messageListLeft = list[0];
     var translationX = gTranslationX;
     var translationY = gTranslationY;
@@ -177,13 +190,13 @@ var displayMessageList = func(list...) {
       paged = 1;
       #TODO: implement paging (building range list, ...)
     }
-    foreach(elem, messageListLeft) {
+    foreach(elem; messageListLeft) {
       elem.setTranslation(translationX, translationY);
       elem.show();
       translationY += 20;
     }
 
-  }elsif (list[1] == "messageListCenter" and size(list[1]) != nil) {
+  }elsif (elem == "messageListCenter" and size(elem) != nil) {
       var messageListCenter = list[1];
       var translationX = gTranslationX + 113;
       var translationY = gTranslationY;
@@ -192,13 +205,13 @@ var displayMessageList = func(list...) {
       paged = 1;
       #TODO: implement paging (building range list, ...)
     }
-    foreach(elem, messageListLeft) {
+    foreach(elem; messageListLeft) {
       elem.setTranslation(translationX, translationY);
       elem.show();
       translationY += 20;
     }
 
-  }else if (list[2] == "messageListRight" and size(list[2]) != nil){
+  }else if (elem == "messageListRight" and size(elem) != nil){
     var messageListRight = list[2];
     var translationX = gTranslationX + 226;
     var translationY = gTranslationY;
@@ -207,11 +220,12 @@ var displayMessageList = func(list...) {
       paged = 1;
       #TODO: implement paging (building range list, ...)
     }
-    foreach(elem, messageListLeft) {
+    foreach(elem; messageListLeft) {
       elem.setTranslation(translationX, translationY);
       elem.show();
       translationY += 20;
     }
+  }
   }
 }
 
