@@ -2623,7 +2623,7 @@ refs 4
 292 0.995641410351 0.909636259079
 kids 0
 OBJECT poly
-name "plane"
+name "cad"
 data 9
 Plane.002
 texture "cad.png"
