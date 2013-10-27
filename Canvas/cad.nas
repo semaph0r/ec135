@@ -214,13 +214,6 @@ var convertGalToKg = func(gal_us) {
   return value; # returns the fuel weight in kg
 }
 
-var roundToNearest = func(n, m) {
-  var x = int(n/m)*m;
-  if((math.mod(n,m)) > (m/2))
-      x = x + m;
-  return x;
-}
-
 # toggles the state of the flashing signal bar
 var toggleSignalBar = func(barLeft, barRight) {
   if(barLeft.hidden() and barRight.hidden()) {
