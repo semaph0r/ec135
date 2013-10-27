@@ -1,24 +1,41 @@
 #
 # CAD display implementation for EC 135
-# @author Patrik Schmidt 
+# @author Patrik Schmidt / semaph0r
 #
 
 
 var cad_canvas = {};
 var cad_display = {};
 
+# class definition for all warnings 
 var warnings = {
   new: func() {
     var member = { parents : [warnings] };
+    var canvasRef = {};
     var message = "";
+    var order = -1;
     return member
+  },
+  show: func() {
+    me.canvasRef.show();
+  },
+  hide: func() {
+    me.canvasRef.hide();
   }
 };
 
 # init testing properties
 
-setprop("/system/cad/warnings/eng1-fail", 0);
-setprop("/system/cad/warnings/eng2-fail", 1);
+setprop("/systems/cad/warnings/eng1-fail", 0);
+setprop("/systems/cad/warnings/eng2-fail", 0);
+setprop("/systems/electrical/inverter1", 0);
+setprop("/systems/electrical/inverter2", 0);
+setprop("/systems/cad/warnings/xmsn1-oil-press", 0);
+setprop("/systems/cad/warnings/xmsn2-oil-press", 0);
+setprop("/systems/cad/warnings/eng1-oil-press", 0);
+setprop("/systems/cad/warnings/eng2-oil-press", 0);
+setprop("/systems/cad/warnings/eng1-fuel-press", 0);
+setprop("/systems/cad/warnings/eng2-fuel-press", 0);
 
 
 # message lists which hold the current advisories displayed in the different areas
@@ -27,6 +44,10 @@ var messageListCenter = [];
 var messageListRight = [];
 
 # variables for holding all the advisories and warnings
+
+var pagerText = { parents: [warnings], message: "PAGE 1 OF 2" };
+
+
 var pager = {};
 var aux1FuelText = {};
 var aux1FuelIndicator = {};
@@ -34,7 +55,7 @@ var mainFuelText = {};
 var mainFuelIndicator = {};
 var aux2FuelText = {};
 var aux2FuelIndicator = {};
-var eng1Fail = {};
+var eng1Fail = { parents : [warnings], message: "ENG FAIL", order: 1 };
 var eng2Fail = {};
 var xmsn1OilPress = {};
 var xmsn2OilPress = {};
@@ -59,18 +80,22 @@ var canvas_cad = {
     {
       if( family == "Liberation Sans" and weight == "normal" )
         return "LiberationFonts/LiberationSans-Regular.ttf";
-      #TODO: provide appropriate fonts
     };
 
     canvas.parsesvg(cad, "Aircraft/ec135/Canvas/cad.svg", {'font-mapper' : font_mapper});
 
     paged = 0;
 
+    # hack to align canvas properly inside cad display area
+    cad.updateCenter();
+    cad.setRotation(180*D2R);
+    cad.setTranslation(0, -60);
+
     pager = cad.getElementById("pager");
     aux1FuelText = cad.getElementById("aux1-fuel-text");
     aux2FuelText = cad.getElementById("aux2-fuel-text");
     mainFuelText = cad.getElementById("main-fuel-text");
-    eng1Fail = cad.getElementById("eng1-fail");
+    eng1Fail.canvasRef = cad.getElementById("eng1-fail");
     eng2Fail = cad.getElementById("eng2-fail");
     xmsn1OilPress = cad.getElementById("xmsn1-oil-press");
     xmsn2OilPress = cad.getElementById("xmsn2-oil-press");
@@ -81,9 +106,12 @@ var canvas_cad = {
     inverter1 = cad.getElementById("inverter1");
     inverter2 = cad.getElementById("inverter2");
 
+    inverter1.hide();
+    inverter2.hide();
+
     #TODO: add all warnings/advisories, especially for center area
 
-    pager.setText("Page 1 of 2");
+    #pager.setText(pagerText.message);
 
     print("CAD initialized");
 
@@ -93,44 +121,68 @@ var canvas_cad = {
   {
     print("called canvas update");
 
-    if(getprop("system/cad/warnings/eng1-fail" == 1)){
+    if(getprop("systems/cad/warnings/eng1-fail")){
       append(messageListLeft, eng1Fail);
       eng1Fail.show();
-      print("engine 1 failure");
-    } 
+    }else {
+      eng1Fail.hide();
+    }
 
-    inverter1.show();
-    inverter2.show();
-
-    if(getprop("system/cad/warnings/eng2-fail"))
+    if(getprop("systems/cad/warnings/eng2-fail")){
       append(messageListRight, eng2Fail);
+      eng2Fail.show();
+    }else {
+      eng2Fail.hide();
+    }
 
-    if(getprop("system/cad/warnings/xmsn1-oil-press"))
+    if(getprop("systems/cad/warnings/xmsn1-oil-press")){
       append(messageListLeft, xmsn1OilPress);
+      xmsn1OilPress.show();
+    }else {
+      xmsn1OilPress.hide();
+    }
 
-    if(getprop("system/cad/warnings/xmsn2-oil-press"))
+    if(getprop("systems/cad/warnings/xmsn2-oil-press")){
       append(messageListRight, xmsn2OilPress);
+      xmsn2OilPress.show();
+    }else {
+      xmsn2OilPress.hide();
+    }
 
-    if(getprop("system/cad/warnings/eng1-oil-press"))
+    if(getprop("systems/cad/warnings/eng1-oil-press")){
       append(messageListLeft, eng1-oil-press);
+    }
 
-    if(getprop("system/cad/warnings/eng2-oil-press"))
+    if(getprop("systems/cad/warnings/eng2-oil-press")){
       append(messageListRight, eng2-oil-press);
+    }
 
-    if(getprop("system/cad/warnings/inverter1"))
+    if(getprop("systems/electrical/inverter1")){
       append(messageListLeft, inverter1);
+      inverter1.show();
+    } else {
+      inverter1.hide();
+    }
 
-    if(getprop("system/cad/warnings/inverter2"))
+    if(getprop("systems/electrical/inverter2")){
       append(messageListRight, inverter2);
+      inverter2.show();
+    } else {
+      inverter2.hide();
+    }
 
     # directly converted lbs to kg
     #aux1FuelText.setText(getprop("/consumables/fuel/tank[0]/level-lbs")/2.2046);
     #aux2FuelText.setText(getprop("/consumables/fuel/tank[2]/level-lbs")/2.2046);
     #MainFuelText.setText(getprop("/consumables/fuel/tank[1]/level-lbs")/2.2046);
 
+    #sort(messageListLeft, sortMessages);
+    #sort(messageListCenter, sortMessages);
+    #sort(messageListRight, sortMessages);
+
     #displayMessageList(messageListLeft, messageListRight);
 
-    settimer(func me.update(), 5.00);
+    settimer(func me.update(), 0.50);
   }
 
 };
@@ -139,7 +191,7 @@ var canvas_cad = {
 # initialize cad canvas after fdm is ready
 setlistener("sim/signals/fdm-initialized", func(){
   cad_display = canvas.new({
-  "name": "CAD",
+  "name": "cad",
   "size": [512, 512],
   "view": [512, 512],
   "mipmapping": 1
@@ -157,21 +209,30 @@ var calcTotalFuelWeight = func() {
   var weight = getprop("/consumables/fuel/tank[0]/level-lbs") #aux1
              + getprop("/consumables/fuel/tank[2]/level-lbs") #aux2
              + getprop("/consumables/fuel/tank[1]/level-lbs");#main 
-  wieght/2.2046;
-  return weight;
+  weight/2.2046; 
+  return weight; # returns the fuel weight in kg not lbs
 }
 
 # toggles the state of the flashing signal bar
 var toggleSignalBar = func(barLeft, barRight) {
-  if(barLeft.hidden())
+  if(barLeft.hidden() and barRight.hidden()) {
     barLeft.show();
-  else
-    barLeft.hide();
-
-  if(barRight.hidden())
     barRight.show();
-  else
+  }
+  else {
+    barLeft.hide();
     barRight.hide();
+  }
+}
+
+# sort func to ensure proper ordering of the warnings (should be stable)
+var sortMessages = func(message1, message2) {
+  if(message1.order < message2.order)
+    return -1;
+  elsif(message1.order > message2.order)
+    return 1;
+  else
+    return 0;
 }
 
 # iterates all message lists and displays all entries in their designated area
