@@ -12,7 +12,7 @@ var warnings = {
   new: func() {
     var member = { parents : [warnings] };
     var canvasRef = {};
-    var message = "";
+    var text = "";
     var order = -1;
     return member
   },
@@ -25,7 +25,6 @@ var warnings = {
 };
 
 # init testing properties
-
 setprop("/systems/cad/warnings/eng1-fail", 0);
 setprop("/systems/cad/warnings/eng2-fail", 0);
 setprop("/systems/electrical/inverter1", 0);
@@ -44,19 +43,15 @@ var messageListCenter = [];
 var messageListRight = [];
 
 # variables for holding all the advisories and warnings
-
-var pagerText = { parents: [warnings], message: "PAGE 1 OF 2" };
-
-
-var pager = {};
-var aux1FuelText = {};
+var pager = { parents : [warnings], text: "1 OF 2", order: 1};
+var aux1FuelText = { parents : [warnings], text: "999", order: 0};
 var aux1FuelIndicator = {};
-var mainFuelText = {};
+var mainFuelText = { parents : [warnings], text: "999", order: 0};
 var mainFuelIndicator = {};
-var aux2FuelText = {};
+var aux2FuelText = { parents : [warnings], text: "999", order: 0};
 var aux2FuelIndicator = {};
-var eng1Fail = { parents : [warnings], message: "ENG FAIL", order: 1 };
-var eng2Fail = {};
+var eng1Fail = { parents : [warnings], text: "ENG FAIL", order: 1 };
+var eng2Fail = { parents : [warnings], text: "ENG FAIL", order: 1 };
 var xmsn1OilPress = {};
 var xmsn2OilPress = {};
 var eng1FuelPress = {};
@@ -66,6 +61,8 @@ var eng2OilPress = {};
 var inverter1 = {};
 var inverter2 = {};
 var fuelWeight = {};
+var mainFuel = {};
+var supplyFuel = {};
 
 # variables which indicates the current display state
 var paged = {};
@@ -91,6 +88,7 @@ var canvas_cad = {
     cad.setRotation(180*D2R);
     cad.setTranslation(0, -60);
 
+    # obtain handle for all svg elements
     pager = cad.getElementById("pager");
     aux1FuelText = cad.getElementById("aux1-fuel-text");
     aux2FuelText = cad.getElementById("aux2-fuel-text");
@@ -110,8 +108,6 @@ var canvas_cad = {
     inverter2.hide();
 
     #TODO: add all warnings/advisories, especially for center area
-
-    #pager.setText(pagerText.message);
 
     print("CAD initialized");
 
@@ -172,21 +168,29 @@ var canvas_cad = {
     }
 
     # directly converted lbs to kg
-    #aux1FuelText.setText(getprop("/consumables/fuel/tank[0]/level-lbs")/2.2046);
-    #aux2FuelText.setText(getprop("/consumables/fuel/tank[2]/level-lbs")/2.2046);
-    #MainFuelText.setText(getprop("/consumables/fuel/tank[1]/level-lbs")/2.2046);
+    mainFuel = getprop("/consumables/fuel/tank[0]/level-gal_us");
+    mainFuel = convertGalToKg(mainFuel);
 
+    mainFuelText.setText(sprintf("%3.0f", mainFuel));
+
+    supplyFuel = getprop("/consumables/fuel/tank[1]/level-gal_us");
+    supplyFuel = convertGalToKg(supplyFuel)/2;
+    
+    aux1FuelText.setText(sprintf("%3.0f", supplyFuel));
+    aux2FuelText.setText(sprintf("%3.0f", supplyFuel));
+
+    # sort messages to appear in their relative order
     #sort(messageListLeft, sortMessages);
     #sort(messageListCenter, sortMessages);
     #sort(messageListRight, sortMessages);
 
+    # render all messages to columns
     #displayMessageList(messageListLeft, messageListRight);
 
     settimer(func me.update(), 0.50);
   }
 
 };
-
 
 # initialize cad canvas after fdm is ready
 setlistener("sim/signals/fdm-initialized", func(){
@@ -204,13 +208,17 @@ setlistener("sim/signals/fdm-initialized", func(){
 
 # --- helper functions ---
 
-# calculates the total fuel weight of all three fuel tanks
-var calcTotalFuelWeight = func() {
-  var weight = getprop("/consumables/fuel/tank[0]/level-lbs") #aux1
-             + getprop("/consumables/fuel/tank[2]/level-lbs") #aux2
-             + getprop("/consumables/fuel/tank[1]/level-lbs");#main 
-  weight/2.2046; 
-  return weight; # returns the fuel weight in kg not lbs
+# converts the fuel weight from us gallon to kilogramm
+var convertGalToKg = func(gal_us) {
+  var value = gal_us*3.78; 
+  return value; # returns the fuel weight in kg
+}
+
+var roundToNearest = func(n, m) {
+  var x = int(n/m)*m;
+  if((math.mod(n,m)) > (m/2))
+      x = x + m;
+  return x;
 }
 
 # toggles the state of the flashing signal bar
@@ -289,5 +297,3 @@ var displayMessageList = func(list...) {
   }
   }
 }
-
-# TODO: implement sort func for warnings/advisories
