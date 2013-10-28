@@ -61,11 +61,25 @@ var eng2OilPress = {};
 var inverter1 = {};
 var inverter2 = {};
 var fuelWeight = {};
+var leftBarTop = {};
+var leftBarBottom = {};
+var rightBarTop = {};
+var rightBarBottom = {};
+
+# fuel properties
 var mainFuel = {};
 var supplyFuel = {};
+var initialMainFuel = {}; 
+var initialSupplyFuel = {}; 
+var normalizedMainFuel = 0;
+var normalizedSupplyFuel = 0;
+var leftFuelLevel = {};
+var mainFuelLevel = {};
+var rightFuelLevel = {};
 
 # variables which indicates the current display state
 var paged = {};
+var flashOn = 1;
 
 # Display class which manages all svg elements
 var canvas_cad = {
@@ -86,7 +100,7 @@ var canvas_cad = {
     # hack to align canvas properly inside cad display area
     cad.updateCenter();
     cad.setRotation(180*D2R);
-    cad.setTranslation(0, -60);
+    cad.setTranslation(0, -65);
 
     # obtain handle for all svg elements
     pager = cad.getElementById("pager");
@@ -103,11 +117,24 @@ var canvas_cad = {
     eng2OilPress = cad.getElementById("eng2-oil-press");
     inverter1 = cad.getElementById("inverter1");
     inverter2 = cad.getElementById("inverter2");
+    leftFuelLevel = cad.getElementById("leftFuelLevel");
+    mainFuelLevel = cad.getElementById("mainFuelLevel");
+    rightFuelLevel = cad.getElementById("rightFuelLevel");
+    leftBarTop = cad.getElementById("leftBarTop");
+    leftBarBottom = cad.getElementById("leftBarBottom");
+    rightBarTop = cad.getElementById("rightBarTop");
+    rightBarBottom = cad.getElementById("rightBarBottom");
 
     inverter1.hide();
     inverter2.hide();
 
     #TODO: add all warnings/advisories, especially for center area
+
+    initialMainFuel = convertGalToKg(getprop("/consumables/fuel/tank[0]/level-gal_us"));
+    initialSupplyFuel = convertGalToKg(getprop("/consumables/fuel/tank[1]/level-gal_us"));
+
+    # define clip area for fuel level indicator
+    leftFuelLevel.set("clip", "rect(244, 705, 764, 230)");
 
     print("CAD initialized");
 
@@ -179,6 +206,9 @@ var canvas_cad = {
     aux1FuelText.setText(sprintf("%3.0f", supplyFuel));
     aux2FuelText.setText(sprintf("%3.0f", supplyFuel));
 
+    normalizedMainFuel = mainFuel/initialMainFuel;
+    normalizedSupplyFuel = supplyFuel/initialSupplyFuel;
+
     # sort messages to appear in their relative order
     #sort(messageListLeft, sortMessages);
     #sort(messageListCenter, sortMessages);
@@ -186,6 +216,9 @@ var canvas_cad = {
 
     # render all messages to columns
     #displayMessageList(messageListLeft, messageListRight);
+
+    toggleSignalBar(flashOn);
+    
 
     settimer(func me.update(), 0.50);
   }
@@ -215,14 +248,20 @@ var convertGalToKg = func(gal_us) {
 }
 
 # toggles the state of the flashing signal bar
-var toggleSignalBar = func(barLeft, barRight) {
-  if(barLeft.hidden() and barRight.hidden()) {
-    barLeft.show();
-    barRight.show();
+var toggleSignalBar = func(flag) {
+  if(flag) {
+    leftBarTop.show();
+    leftBarBottom.show();
+    rightBarTop.show();
+    rightBarBottom.show();
+    flashOn = 0;
   }
   else {
-    barLeft.hide();
-    barRight.hide();
+    leftBarTop.hide();
+    leftBarBottom.hide();
+    rightBarTop.hide();
+    rightBarBottom.hide();
+    flashOn = 1;
   }
 }
 
