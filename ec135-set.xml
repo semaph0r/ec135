@@ -294,15 +294,21 @@ Thanks for all the help!
 
 	<consumables>
 		<fuel>
-			<tank>
+			<tank n="0">
 				<name>Main</name>
 				<selected type="bool" write="n">1</selected>
+				<capacity-gal_us type="double">125</capacity-gal_us>
+				<unusable-gal_us type="double">2.5</unusable-gal_us>
+        		<level-gal_us type="double">125</level-gal_us>
 				<density-ppg type="double" write="n">6.682</density-ppg>
 			</tank>
 
-			<tank>
+			<tank n="1">
 				<name>Supply</name>
 				<selected type="bool" write="n">1</selected>
+				<capacity-gal_us type="double">24.7</capacity-gal_us>
+				<unusable-gal_us type="double">2.5</unusable-gal_us>
+        		<level-gal_us type="double">24</level-gal_us>
 				<density-ppg type="double" write="n">6.682</density-ppg>
 			</tank>
 		</fuel>
@@ -533,11 +539,7 @@ only needed for test flights and bug hunting
 
 	<nasal>
 		<canvas_instruments>
-			<file>Aircraft/ec135/Canvas/cad.nas</file><!--nas file for CAD-->
-			<!--<file>Aircraft/ec135/Canvas/fli.nas</file><!--nas file for FLI-->
-			<!--<file>Aircraft/ec135/Canvas/elec.nas</file><!--nas file for ELEC-->
-			<!--<file>Aircraft/ec135/Canvas/pfd.nas</file><!--nas file for PFD-->
-			<!--<file>Aircraft/ec135/Canvas/nd.nas</file><!--nas file for nd-->
+			<file>Aircraft/ec135/Canvas/cad.nas</file>
 		</canvas_instruments>
 		<ec135>
 			<file>Aircraft/ec135/Models/ec135.nas</file>

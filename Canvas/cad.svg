@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="424.98675"
-     inkscape:cy="239.38366"
+     inkscape:zoom="3.959798"
+     inkscape:cx="242.69449"
+     inkscape:cy="331.38506"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -66,24 +66,24 @@
      style="opacity:1">
     <path
        style="fill:#20b2aa;stroke:#20b2aa;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="M 398.19191,837.36218 59.19192,837.97623"
+       d="M 398.19191,837.36218 59.191915,837.97623"
        id="path3790"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;stroke:#20b2aa;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 163.19192,705.36218 0,132"
+       d="m 163.19191,705.36218 0,132"
        id="path3792"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;stroke:#20b2aa;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 276.19192,837.36218 0,-132"
+       d="m 276.19191,837.36218 0,-132"
        id="path3794"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
        x="-394.19193"
-       y="718.27319"
+       y="726.27319"
        id="eng1-fail"
        sodipodi:linespacing="125%"
        inkscape:label="#text3796"
@@ -91,14 +91,14 @@
          sodipodi:role="line"
          id="tspan3798"
          x="-394.19193"
-         y="718.27319"
+         y="726.27319"
          style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px"
          dx="0">ENG FAIL</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
        x="-394.19193"
-       y="733.93054"
+       y="741.93054"
        id="xmsn1-oil-press"
        sodipodi:linespacing="125%"
        inkscape:label="#text3800"
@@ -106,13 +106,13 @@
          sodipodi:role="line"
          id="tspan3802"
          x="-394.19193"
-         y="733.93054"
+         y="741.93054"
          style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">XMSN OIL P</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
        x="-394.19193"
-       y="749.4104"
+       y="757.4104"
        id="eng1-fuel-press"
        sodipodi:linespacing="125%"
        inkscape:label="#text3800-9"
@@ -120,13 +120,13 @@
          sodipodi:role="line"
          id="tspan3802-9"
          x="-394.19193"
-         y="749.4104"
+         y="757.4104"
          style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">FUEL PRESS</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
        x="-394.19189"
-       y="765.06775"
+       y="773.06775"
        id="eng1-oil-press"
        sodipodi:linespacing="125%"
        inkscape:label="#text3800-9-1"
@@ -134,13 +134,13 @@
          sodipodi:role="line"
          id="tspan3802-9-0"
          x="-394.19189"
-         y="765.06775"
+         y="773.06775"
          style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">ENG OIL PRESS</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
        x="-394.19189"
-       y="781.46863"
+       y="789.46863"
        id="inverter1"
        sodipodi:linespacing="125%"
        inkscape:label="#text3800-9-1-7"
@@ -148,13 +148,13 @@
          sodipodi:role="line"
          id="tspan3802-9-0-8"
          x="-394.19189"
-         y="781.46863"
+         y="789.46863"
          style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">INVERTER</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
        x="-157.7258"
-       y="718.40271"
+       y="728.40271"
        id="eng2-fail"
        sodipodi:linespacing="125%"
        inkscape:label="#text3796-1"
@@ -162,14 +162,14 @@
          sodipodi:role="line"
          id="tspan3798-7"
          x="-157.7258"
-         y="718.40271"
+         y="728.40271"
          style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px"
          dx="0">ENG FAIL</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
        x="-157.7258"
-       y="734.06006"
+       y="744.06006"
        id="xmsn2-oil-press"
        sodipodi:linespacing="125%"
        inkscape:label="#text3800-7"
@@ -177,13 +177,13 @@
          sodipodi:role="line"
          id="tspan3802-3"
          x="-157.7258"
-         y="734.06006"
+         y="744.06006"
          style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">XMSN OIL P</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
        x="-157.7258"
-       y="749.53992"
+       y="759.53992"
        id="eng2-fuel-press"
        sodipodi:linespacing="125%"
        inkscape:label="#text3800-9-8"
@@ -191,13 +191,13 @@
          sodipodi:role="line"
          id="tspan3802-9-8"
          x="-157.7258"
-         y="749.53992"
+         y="759.53992"
          style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">FUEL PRESS</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
        x="-157.7258"
-       y="765.19727"
+       y="775.19727"
        id="eng2-oil-press"
        sodipodi:linespacing="125%"
        inkscape:label="#text3800-9-1-8"
@@ -205,7 +205,7 @@
          sodipodi:role="line"
          id="tspan3802-9-0-84"
          x="-157.7258"
-         y="765.19727"
+         y="775.19727"
          style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px">ENG OIL PRESS</tspan></text>
     <text
        xml:space="preserve"
@@ -236,28 +236,31 @@
          style="fill:#ffffff">FUEL</tspan></text>
     <rect
        style="fill:#0096c8;fill-opacity:1;stroke:none"
-       id="rect4063"
+       id="leftFuelLevel"
        width="45"
-       height="80"
+       height="80.714287"
        x="-334.19196"
-       y="878.36218"
+       y="877.64789"
+       inkscape:label="#rect4063"
        transform="scale(-1,1)" />
     <path
        style="fill:#0096c8;fill-opacity:1;stroke:none"
-       d="m 153.84817,878.36218 0,80 -30.65625,0 0,-14 -11,0 -3.3125,0 -0.0312,0 0,-66 45,0 z"
-       id="rect4063-5"
-       inkscape:connector-curvature="0" />
+       d="m 153.84816,877.64789 0,80.71429 -30.65625,0 0,-14.125 -11,0 -3.3125,0 -0.0312,0 0,-66.58929 45,0 z"
+       id="rightFuelLevel"
+       inkscape:connector-curvature="0"
+       inkscape:label="#rect4063-5" />
     <rect
        style="fill:#0095c8;fill-opacity:1;stroke:none"
-       id="rect4063-5-0"
+       id="mainFuelLevel"
        width="123.78968"
-       height="69.147751"
-       x="-278.54932"
-       y="888.88916"
-       transform="matrix(-1,0,0.00516492,0.99998666,0,0)" />
+       height="80.576195"
+       x="-279.25113"
+       y="877.45734"
+       transform="matrix(-1,0,0.00443236,0.99999018,0,0)"
+       inkscape:label="#rect4063-5-0" />
     <path
        style="fill:none;stroke:#d2d2d2;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 334.19193,958.36219 -45.00002,0 0,-85 -5,0 0,85 -125,0 0,-85 -5,0 0,85 -30,0 0,-15 -15,0 0,-70 0,-15 225.00002,0 z"
+       d="m 334.19192,958.36219 -45.00002,0 0,-85 -5,0 0,85 -125,0 0,-85 -5,0 0,85 -30,0 0,-15 -15,0 0,-70 0,-15 225.00002,0 z"
        id="path3963"
        inkscape:connector-curvature="0" />
     <text
@@ -294,14 +297,14 @@
        id="rect3971-1-4"
        width="25"
        height="15"
-       x="-230.19196"
+       x="-234.19196"
        y="883.36218"
        transform="scale(-1,1)" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot4009"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-       transform="translate(2e-5,-2e-5)"><flowRegion
+       transform="matrix(-1,0,0,1,454.1919,-2e-5)"><flowRegion
          id="flowRegion4011"><rect
            id="rect4013"
            width="23.928572"
@@ -312,7 +315,7 @@
          id="flowPara4015" /></flowRoot>    <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-       x="-227.97766"
+       x="-231.97766"
        y="894.11218"
        id="main-fuel-text"
        sodipodi:linespacing="125%"
@@ -320,7 +323,7 @@
        transform="scale(-1,1)"><tspan
          sodipodi:role="line"
          id="tspan4019"
-         x="-227.97766"
+         x="-231.97766"
          y="894.11218">200</tspan></text>
     <text
        xml:space="preserve"
@@ -339,7 +342,7 @@
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
        x="-141.19196"
-       y="893.36218"
+       y="895.36218"
        id="aux2-fuel-text"
        sodipodi:linespacing="125%"
        inkscape:label="#text4017-0-7"
@@ -347,12 +350,12 @@
          sodipodi:role="line"
          id="tspan4019-7-1"
          x="-141.19196"
-         y="893.36218">200</tspan></text>
+         y="895.36218">200</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Sans"
        x="-157.7258"
-       y="781.59814"
+       y="791.59814"
        id="inverter2"
        sodipodi:linespacing="125%"
        inkscape:label="#text3800-9-1-7-8"
@@ -360,7 +363,51 @@
          sodipodi:role="line"
          id="tspan3802-9-0-8-4"
          x="-157.7258"
-         y="781.59814"
+         y="791.59814"
          style="font-size:12px;letter-spacing:0.94999999px;word-spacing:0.2px;fill:#ffff00">INVERTER</tspan></text>
+    <rect
+       style="fill:#000000;fill-opacity:1"
+       id="rect3053"
+       width="15"
+       height="15"
+       x="-123.19193"
+       y="944.36218"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#ffff00;fill-opacity:1"
+       id="rightBarTop"
+       width="100"
+       height="5"
+       x="-159.19193"
+       y="707.36218"
+       transform="scale(-1,1)"
+       inkscape:label="#rect3055" />
+    <rect
+       style="fill:#ffff00;fill-opacity:1"
+       id="rightBarBottom"
+       width="100"
+       height="5"
+       x="-159.06564"
+       y="797.35205"
+       inkscape:label="#rect3055-4"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#ffff00;fill-opacity:1"
+       id="leftBarTop"
+       width="113.38452"
+       height="5"
+       x="-393.57645"
+       y="707.36218"
+       inkscape:label="#rect3055"
+       transform="scale(-1,1)" />
+    <rect
+       style="fill:#ffff00;fill-opacity:1"
+       id="leftBarBottom"
+       width="112.62691"
+       height="5"
+       x="-393.81882"
+       y="797.60455"
+       inkscape:label="#rect3055"
+       transform="scale(-1,1)" />
   </g>
 </svg>

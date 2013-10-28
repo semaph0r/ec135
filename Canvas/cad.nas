@@ -134,7 +134,7 @@ var canvas_cad = {
     initialSupplyFuel = convertGalToKg(getprop("/consumables/fuel/tank[1]/level-gal_us"));
 
     # define clip area for fuel level indicator
-    leftFuelLevel.set("clip", "rect(244, 705, 764, 230)");
+    leftFuelLevel.set("clip", "rect(121, 95, 166, 175)");
 
     print("CAD initialized");
 
